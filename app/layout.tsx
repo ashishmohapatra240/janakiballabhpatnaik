@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Sora, Instrument_Sans } from "next/font/google";
 import "./globals.css";
+import BottomMarquee from "@/components/BottomMarquee";
 
 const sora = Sora({
   variable: "--font-sora",
@@ -28,6 +29,7 @@ export default function RootLayout({
         className={`${sora.variable} ${instrumentSans.variable} antialiased`}
       >
         {children}
+        <BottomMarquee />
       </body>
     </html>
   );

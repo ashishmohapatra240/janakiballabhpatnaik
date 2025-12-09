@@ -2,10 +2,14 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { Instagram, Facebook, Twitter, Menu, X } from 'lucide-react';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  const isActive = (href: string) => pathname === href;
 
   return (
     <nav className="fixed top-0 left-0 right-0 w-full bg-white z-50 border-b border-gray-100">
@@ -23,16 +27,36 @@ export default function Navbar() {
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center gap-8">
-              <Link href="/" className="text-base font-bold text-[#272727] hover:text-sky-500 transition-colors">
+              <Link
+                href="/"
+                className={`text-base ${
+                  isActive('/') ? 'font-bold text-sky-600' : 'font-normal'
+                } text-[#272727] hover:text-sky-500 transition-colors`}
+              >
                 Home
               </Link>
-              <Link href="/legacy" className="text-base font-normal text-[#272727] hover:text-sky-500 transition-colors">
+              <Link
+                href="/legacy"
+                className={`text-base ${
+                  isActive('/legacy') ? 'font-bold text-sky-600' : 'font-normal'
+                } text-[#272727] hover:text-sky-500 transition-colors`}
+              >
                 Legacy
               </Link>
-              <Link href="/contributions" className="text-base font-normal text-[#272727] hover:text-sky-500 transition-colors">
+              <Link
+                href="/contributions"
+                className={`text-base ${
+                  isActive('/contributions') ? 'font-bold text-sky-600' : 'font-normal'
+                } text-[#272727] hover:text-sky-500 transition-colors`}
+              >
                 Contributions
               </Link>
-              <Link href="/literature" className="text-base font-normal text-[#272727] hover:text-sky-500 transition-colors">
+              <Link
+                href="/literature"
+                className={`text-base ${
+                  isActive('/literature') ? 'font-bold text-sky-600' : 'font-normal'
+                } text-[#272727] hover:text-sky-500 transition-colors`}
+              >
                 Literature
               </Link>
             </div>
@@ -77,30 +101,38 @@ export default function Navbar() {
         <div className="md:hidden bg-white border-t border-gray-100 absolute w-full left-0 shadow-lg">
           <div className="px-4 pt-2 pb-6 space-y-4">
             <div className="flex flex-col gap-4 pt-4">
-              <Link 
-                href="/" 
-                className="text-base font-bold text-[#272727] hover:text-sky-500 transition-colors"
+              <Link
+                href="/"
+                className={`text-base ${
+                  isActive('/') ? 'font-bold text-sky-600' : 'font-normal'
+                } text-[#272727] hover:text-sky-500 transition-colors`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Home
               </Link>
-              <Link 
-                href="/legacy" 
-                className="text-base font-normal text-[#272727] hover:text-sky-500 transition-colors"
+              <Link
+                href="/legacy"
+                className={`text-base ${
+                  isActive('/legacy') ? 'font-bold text-sky-600' : 'font-normal'
+                } text-[#272727] hover:text-sky-500 transition-colors`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Legacy
               </Link>
-              <Link 
-                href="/contributions" 
-                className="text-base font-normal text-[#272727] hover:text-sky-500 transition-colors"
+              <Link
+                href="/contributions"
+                className={`text-base ${
+                  isActive('/contributions') ? 'font-bold text-sky-600' : 'font-normal'
+                } text-[#272727] hover:text-sky-500 transition-colors`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contributions
               </Link>
-              <Link 
-                href="/literature" 
-                className="text-base font-normal text-[#272727] hover:text-sky-500 transition-colors"
+              <Link
+                href="/literature"
+                className={`text-base ${
+                  isActive('/literature') ? 'font-bold text-sky-600' : 'font-normal'
+                } text-[#272727] hover:text-sky-500 transition-colors`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Literature

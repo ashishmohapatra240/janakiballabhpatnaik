@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { Instagram, Facebook, Twitter, Menu, X } from 'lucide-react';
+import { useState } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { Instagram, Facebook, Twitter, Menu, X } from "lucide-react";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,16 +11,22 @@ export default function Navbar() {
 
   const isActive = (href: string) => pathname === href;
 
+  const handlePdfClick = () => {
+    window.open("/100th-birth-anniversary", "_blank");
+  };
+
   return (
     <nav className="fixed top-0 left-0 right-0 w-full bg-white z-50 border-b border-gray-100">
       <div className="max-w-7xl mx-auto w-full px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          
           {/* Left Section: Logo + Desktop Navigation */}
           <div className="flex items-center gap-20">
             {/* Logo */}
             <div className="flex-shrink-0">
-              <Link href="/" className="text-xl font-bold text-[#272727] whitespace-nowrap">
+              <Link
+                href="/"
+                className="text-xl font-bold text-[#272727] whitespace-nowrap"
+              >
                 Janaki Ballav Patnaik
               </Link>
             </div>
@@ -30,7 +36,7 @@ export default function Navbar() {
               <Link
                 href="/"
                 className={`text-base ${
-                  isActive('/') ? 'font-bold text-sky-600' : 'font-normal'
+                  isActive("/") ? "font-bold text-sky-600" : "font-normal"
                 } text-[#272727] hover:text-sky-500 transition-colors`}
               >
                 Home
@@ -38,7 +44,7 @@ export default function Navbar() {
               <Link
                 href="/legacy"
                 className={`text-base ${
-                  isActive('/legacy') ? 'font-bold text-sky-600' : 'font-normal'
+                  isActive("/legacy") ? "font-bold text-sky-600" : "font-normal"
                 } text-[#272727] hover:text-sky-500 transition-colors`}
               >
                 Legacy
@@ -46,38 +52,61 @@ export default function Navbar() {
               <Link
                 href="/contributions"
                 className={`text-base ${
-                  isActive('/contributions') ? 'font-bold text-sky-600' : 'font-normal'
+                  isActive("/contributions")
+                    ? "font-bold text-sky-600"
+                    : "font-normal"
                 } text-[#272727] hover:text-sky-500 transition-colors`}
               >
                 Contributions
               </Link>
               <Link
-                href="/literature"
+                href="/the-scholar-statesman"
                 className={`text-base ${
-                  isActive('/literature') ? 'font-bold text-sky-600' : 'font-normal'
+                  isActive("/the-scholar-statesman")
+                    ? "font-bold text-sky-600"
+                    : "font-normal"
                 } text-[#272727] hover:text-sky-500 transition-colors`}
               >
-                Literature
+                The Scholar Statesman
               </Link>
             </div>
           </div>
 
           {/* Right Section: Button + Socials */}
           <div className="hidden md:flex items-center gap-6">
-            <button className="h-10 px-6 bg-sky-500 rounded-lg cursor-pointer hover:opacity-90 transition-opacity flex items-center justify-center whitespace-nowrap">
+            <button 
+              onClick={handlePdfClick}
+              className="h-10 px-6 bg-sky-500 rounded-lg cursor-pointer hover:opacity-90 transition-opacity flex items-center justify-center whitespace-nowrap"
+            >
               <span className="text-white text-sm font-medium capitalize">
-                100<sup className="text-white text-xs top-[-0.2em] relative">th</sup> Birth Anniversary
+                100
+                <sup className="text-white text-xs top-[-0.2em] relative">
+                  th
+                </sup>{" "}
+                Birth Anniversary
               </span>
             </button>
-            
+
             <div className="flex items-center gap-3">
-              <a href="#" aria-label="Instagram" className="text-[#272727] hover:text-[#2BA6E0] transition-colors">
+              <a
+                href="#"
+                aria-label="Instagram"
+                className="text-[#272727] hover:text-[#2BA6E0] transition-colors"
+              >
                 <Instagram size={20} />
               </a>
-              <a href="#" aria-label="Facebook" className="text-[#272727] hover:text-[#2BA6E0] transition-colors">
+              <a
+                href="#"
+                aria-label="Facebook"
+                className="text-[#272727] hover:text-[#2BA6E0] transition-colors"
+              >
                 <Facebook size={20} />
               </a>
-              <a href="#" aria-label="Twitter" className="text-[#272727] hover:text-[#2BA6E0] transition-colors">
+              <a
+                href="#"
+                aria-label="Twitter"
+                className="text-[#272727] hover:text-[#2BA6E0] transition-colors"
+              >
                 <Twitter size={20} />
               </a>
             </div>
@@ -104,7 +133,7 @@ export default function Navbar() {
               <Link
                 href="/"
                 className={`text-base ${
-                  isActive('/') ? 'font-bold text-sky-600' : 'font-normal'
+                  isActive("/") ? "font-bold text-sky-600" : "font-normal"
                 } text-[#272727] hover:text-sky-500 transition-colors`}
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -113,7 +142,7 @@ export default function Navbar() {
               <Link
                 href="/legacy"
                 className={`text-base ${
-                  isActive('/legacy') ? 'font-bold text-sky-600' : 'font-normal'
+                  isActive("/legacy") ? "font-bold text-sky-600" : "font-normal"
                 } text-[#272727] hover:text-sky-500 transition-colors`}
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -122,38 +151,61 @@ export default function Navbar() {
               <Link
                 href="/contributions"
                 className={`text-base ${
-                  isActive('/contributions') ? 'font-bold text-sky-600' : 'font-normal'
+                  isActive("/contributions")
+                    ? "font-bold text-sky-600"
+                    : "font-normal"
                 } text-[#272727] hover:text-sky-500 transition-colors`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contributions
               </Link>
               <Link
-                href="/literature"
+                href="/the-scholar-statesman"
                 className={`text-base ${
-                  isActive('/literature') ? 'font-bold text-sky-600' : 'font-normal'
+                  isActive("/the-scholar-statesman")
+                    ? "font-bold text-sky-600"
+                    : "font-normal"
                 } text-[#272727] hover:text-sky-500 transition-colors`}
                 onClick={() => setIsMenuOpen(false)}
               >
-                Literature
+                The Scholar Statesman
               </Link>
             </div>
 
             <div className="pt-4 border-t border-gray-100 flex flex-col gap-4">
-              <button className="h-10 w-full bg-sky-500 rounded-lg cursor-pointer hover:opacity-90 transition-opacity flex items-center justify-center">
+              <button 
+                onClick={handlePdfClick}
+                className="h-10 w-full bg-sky-500 rounded-lg cursor-pointer hover:opacity-90 transition-opacity flex items-center justify-center"
+              >
                 <span className="text-white text-sm font-medium capitalize">
-                  100<sup className="text-white text-xs top-[-0.2em] relative">th</sup> Birth Anniversary
+                  100
+                  <sup className="text-white text-xs top-[-0.2em] relative">
+                    th
+                  </sup>{" "}
+                  Birth Anniversary
                 </span>
               </button>
-              
+
               <div className="flex items-center gap-6 justify-center">
-                <a href="#" aria-label="Instagram" className="text-[#272727] hover:text-[#2BA6E0] transition-colors">
+                <a
+                  href="#"
+                  aria-label="Instagram"
+                  className="text-[#272727] hover:text-[#2BA6E0] transition-colors"
+                >
                   <Instagram size={24} />
                 </a>
-                <a href="#" aria-label="Facebook" className="text-[#272727] hover:text-[#2BA6E0] transition-colors">
+                <a
+                  href="#"
+                  aria-label="Facebook"
+                  className="text-[#272727] hover:text-[#2BA6E0] transition-colors"
+                >
                   <Facebook size={24} />
                 </a>
-                <a href="#" aria-label="Twitter" className="text-[#272727] hover:text-[#2BA6E0] transition-colors">
+                <a
+                  href="#"
+                  aria-label="Twitter"
+                  className="text-[#272727] hover:text-[#2BA6E0] transition-colors"
+                >
                   <Twitter size={24} />
                 </a>
               </div>
@@ -164,4 +216,3 @@ export default function Navbar() {
     </nav>
   );
 }
-

@@ -13,10 +13,22 @@ import {
   FiLayers,
   FiPenTool,
   FiUsers,
+  FiZap,
+  FiGlobe,
+  FiTrendingUp,
+  FiShield,
+  FiActivity,
+  FiTarget,
 } from "react-icons/fi";
 
 // Reusable Section Title Component
-function SectionTitle({ title, highlight }: { title: string; highlight?: string }) {
+function SectionTitle({
+  title,
+  highlight,
+}: {
+  title: string;
+  highlight?: string;
+}) {
   return (
     <div className="flex items-center justify-center gap-5 mb-12 max-md:mb-8">
       <div className="w-96 h-px bg-gradient-to-r from-transparent via-stone-300 to-stone-300 max-lg:w-24 max-md:hidden"></div>
@@ -34,20 +46,22 @@ function SectionTitle({ title, highlight }: { title: string; highlight?: string 
   );
 }
 
-function ImageWithFallback({ 
-  src, 
-  alt, 
+function ImageWithFallback({
+  src,
+  alt,
   className = "",
-  fill = false
-}: { 
-  src: string; 
-  alt: string; 
+  fill = false,
+}: {
+  src: string;
+  alt: string;
   className?: string;
   fill?: boolean;
 }) {
   return (
     <div
-      className={`relative ${fill ? "w-full h-full" : ""} overflow-hidden rounded-lg bg-gradient-to-br from-gray-100 to-gray-200`}
+      className={`relative ${
+        fill ? "w-full h-full" : ""
+      } overflow-hidden rounded-lg bg-gradient-to-br from-gray-100 to-gray-200`}
     >
       <Image
         src={src}
@@ -121,7 +135,7 @@ export default function LiteraturePage() {
   return (
     <main className="min-h-screen">
       <Navbar />
-      
+
       {/* Hero Section */}
       <section className="min-h-screen flex items-center justify-center px-6 lg:px-8 pt-20">
         <div className="w-full max-w-7xl mx-auto">
@@ -129,19 +143,24 @@ export default function LiteraturePage() {
             <div className="flex-1 space-y-6 max-lg:text-center max-lg:w-full">
               <h1 className="text-5xl text-[#272727] leading-[64px] max-md:text-3xl">
                 <span className="font-semibold">
-                  Literature & Philosophy
+                  The Scholar Statesman
                   <br />
                 </span>
                 <span className="font-normal">
-                  of J.B. Patnaik
+                  Beyond Politics: The Philosophy, Ideology, and
+                  Literary-Journalistic Universe
                 </span>
               </h1>
 
               <p className="max-w-[584px] text-neutral-400 text-base font-normal leading-6 max-lg:max-w-full">
-                Beyond his political achievements, Janaki Ballabh Patnaik was a prolific writer, 
-                journalist, and intellectual. His literary works reflect his deep understanding of 
-                society, politics, and the Odia cultural ethos. His writings continue to inspire 
-                and guide generations of readers and scholars.
+                Long before taking the oath of office, Janaki Ballav Patnaik
+                took up the pen. For him, politics was a vehicle for progress,
+                but literature was the vessel for the soul. A prolific writer
+                and polyglot, he bridged the gap between ancient wisdom and
+                modern thought—whether thundering against injustice in the press
+                or translating the Mahabharata for the common reader. His
+                writings reflect a deep love for the Odia ethos, leaving an
+                intellectual legacy as enduring as his political achievements.
               </p>
 
               <div className="flex gap-4 max-lg:justify-center">
@@ -204,8 +223,12 @@ export default function LiteraturePage() {
                 <div className="w-12 h-12 rounded-full bg-sky-50 text-sky-500 flex items-center justify-center mb-4">
                   <item.icon className="text-xl" />
                 </div>
-                <h3 className="text-xl font-semibold text-[#272727] mb-2">{item.title}</h3>
-                <p className="text-neutral-400 text-sm leading-6">{item.description}</p>
+                <h3 className="text-xl font-semibold text-[#272727] mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-neutral-400 text-sm leading-6">
+                  {item.description}
+                </p>
               </div>
             ))}
           </div>
@@ -218,12 +241,15 @@ export default function LiteraturePage() {
           <SectionTitle title="Literary" highlight="Works" />
 
           <div className="max-w-4xl space-y-6 mx-auto text-center">
-            <h3 className="text-2xl font-semibold text-[#272727]">A Prolific Author</h3>
+            <h3 className="text-2xl font-semibold text-[#272727]">
+              A Prolific Author
+            </h3>
             <p className="text-neutral-400 text-base leading-7">
-              J.B. Patnaik authored numerous books, articles, and essays throughout his life. 
-              His writings span various subjects including politics, society, culture, and his 
-              personal experiences during India's freedom struggle. His literary contributions 
-              have enriched Odia literature and provided valuable insights into the political 
+              J.B. Patnaik authored numerous books, articles, and essays
+              throughout his life. His writings span various subjects including
+              politics, society, culture, and his personal experiences during
+              India's freedom struggle. His literary contributions have enriched
+              Odia literature and provided valuable insights into the political
               history of Odisha.
             </p>
           </div>
@@ -258,68 +284,316 @@ export default function LiteraturePage() {
       <section className="py-16 px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
           <SectionTitle title="Philosophy" highlight="& Ideology" />
-          
-          <div className="grid grid-cols-2 gap-12 max-lg:grid-cols-1">
+
+          <div className="max-w-4xl mx-auto mb-12 text-center">
+            <h3 className="text-3xl font-bold text-[#272727] mb-4">
+              "Pragyan & Pragati: The Scholar-Statesman"
+            </h3>
+            <p className="text-neutral-400 text-lg leading-8">
+              J.B. Patnaik rejected the binary between tradition and modernity.
+              His worldview was a unique synthesis of ancient wisdom,
+              nationalist fervor, and scientific progress.
+            </p>
+          </div>
+
+          <div className="space-y-16">
+            {/* Gandhian Roots */}
             <div className="space-y-6">
-              <h3 className="text-2xl font-semibold text-[#272727]">Gandhian Principles</h3>
-              <p className="text-neutral-400 text-base leading-7">
-                J.B. Patnaik's political philosophy was deeply rooted in Gandhian principles. 
-                He believed in non-violence, truth, and service to humanity as the cornerstones 
-                of effective governance. His approach to politics was guided by these values 
-                throughout his career.
-              </p>
-              
-              <div className="space-y-4">
-                {[
-                  {
-                    title: "Sarvodaya",
-                    description: "Believed in the welfare of all sections of society"
-                  },
-                  {
-                    title: "Swadeshi",
-                    description: "Promoted local industries and self-reliance"
-                  },
-                  {
-                    title: "Gram Swaraj",
-                    description: "Advocated for village self-governance"
-                  }
-                ].map((principle, index) => (
-                  <div key={index} className="p-4 bg-slate-50 rounded-lg">
-                    <h4 className="text-sky-500 font-semibold mb-1">{principle.title}</h4>
-                    <p className="text-neutral-400 text-sm">{principle.description}</p>
-                  </div>
-                ))}
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-14 h-14 rounded-full bg-sky-50 text-sky-500 flex items-center justify-center">
+                  <FiHeart className="text-2xl" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-semibold text-[#272727]">
+                    Gandhian Roots: Simplicity & Antyodaya
+                  </h3>
+                  <p className="text-sky-500 text-sm">The Living Example</p>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="p-6 bg-gradient-to-br from-slate-50 to-white rounded-xl border border-gray-100">
+                  <h4 className="text-lg font-semibold text-[#272727] mb-3">
+                    The Living Example
+                  </h4>
+                  <p className="text-neutral-400 text-sm leading-6">
+                    A lifelong Gandhian, he was steeped in the values of the
+                    freedom struggle, having participated in the Quit India
+                    Movement (1942) as a student. He wore Khadi and spun the
+                    charkha throughout his life, believing that true power lies
+                    in simplicity.
+                  </p>
+                </div>
+
+                <div className="p-6 bg-gradient-to-br from-slate-50 to-white rounded-xl border border-gray-100">
+                  <h4 className="text-lg font-semibold text-[#272727] mb-3">
+                    Governance for the Last Man
+                  </h4>
+                  <p className="text-neutral-400 text-sm leading-6">
+                    His administration was guided by Gandhi's Talisman—focusing
+                    on the poorest of the poor (Antyodaya). This philosophy
+                    birthed welfare schemes like the 2-Rupee Rice for tribals,
+                    ensuring that the state's resources reached the most
+                    vulnerable first.
+                  </p>
+                </div>
+
+                <div className="p-6 bg-gradient-to-br from-slate-50 to-white rounded-xl border border-gray-100">
+                  <h4 className="text-lg font-semibold text-[#272727] mb-3">
+                    The Path of Dialogue
+                  </h4>
+                  <p className="text-neutral-400 text-sm leading-6">
+                    Even when facing insurgency or unrest, he prioritized
+                    dialogue over force, embodying the Gandhian principle of
+                    non-violent conflict resolution.
+                  </p>
+                </div>
               </div>
             </div>
-            
+
+            {/* Nehruvian Modernity */}
             <div className="space-y-6">
-              <h3 className="text-2xl font-semibold text-[#272727]">Democratic Socialism</h3>
-              <p className="text-neutral-400 text-base leading-7">
-                As a Congress leader, J.B. Patnaik was committed to the ideals of democratic 
-                socialism. He believed that economic development should be inclusive and benefit 
-                all sections of society, especially the marginalized and underprivileged.
-              </p>
-              
-              <div className="space-y-4">
-                {[
-                  {
-                    title: "Inclusive Growth",
-                    description: "Development that reaches the last person in the queue"
-                  },
-                  {
-                    title: "Social Justice",
-                    description: "Equal opportunities for all irrespective of caste or creed"
-                  },
-                  {
-                    title: "Secularism",
-                    description: "Unity in diversity and respect for all religions"
-                  }
-                ].map((principle, index) => (
-                  <div key={index} className="p-4 bg-slate-50 rounded-lg">
-                    <h4 className="text-sky-500 font-semibold mb-1">{principle.title}</h4>
-                    <p className="text-neutral-400 text-sm">{principle.description}</p>
-                  </div>
-                ))}
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-14 h-14 rounded-full bg-sky-50 text-sky-500 flex items-center justify-center">
+                  <FiActivity className="text-2xl" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-semibold text-[#272727]">
+                    Nehruvian Modernity: Temples of the Future
+                  </h3>
+                  <p className="text-sky-500 text-sm">
+                    Temples of Modern India
+                  </p>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="p-6 bg-gradient-to-br from-slate-50 to-white rounded-xl border border-gray-100">
+                  <h4 className="text-lg font-semibold text-[#272727] mb-3">
+                    Temples of Modern India
+                  </h4>
+                  <p className="text-neutral-400 text-sm leading-6">
+                    Much like Jawaharlal Nehru, J.B. Patnaik believed that dams,
+                    power plants, and industries were the "new temples" of a
+                    modern state. His aggressive push for massive
+                    infrastructure—like the Upper Indravati Project and
+                    NALCO—mirrored Nehru's vision of a self-reliant,
+                    industrialized nation.
+                  </p>
+                </div>
+
+                <div className="p-6 bg-gradient-to-br from-slate-50 to-white rounded-xl border border-gray-100">
+                  <h4 className="text-lg font-semibold text-[#272727] mb-3">
+                    Scientific Temper
+                  </h4>
+                  <p className="text-neutral-400 text-sm leading-6">
+                    He was a staunch advocate for cultivating a scientific
+                    mindset among the youth. He established the Pathani Samanta
+                    Planetarium and upgraded the Institute of Physics, ensuring
+                    that the land of ancient temples also became a land of
+                    modern technology.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Ambedkarite Equality */}
+            <div className="space-y-6">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-14 h-14 rounded-full bg-sky-50 text-sky-500 flex items-center justify-center">
+                  <FiTarget className="text-2xl" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-semibold text-[#272727]">
+                    Ambedkarite Equality: The Architecture of Social Justice
+                  </h3>
+                  <p className="text-sky-500 text-sm">
+                    Political vs. Social Democracy
+                  </p>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="p-6 bg-gradient-to-br from-slate-50 to-white rounded-xl border border-gray-100">
+                  <h4 className="text-lg font-semibold text-[#272727] mb-3">
+                    Political vs. Social Democracy
+                  </h4>
+                  <p className="text-neutral-400 text-sm leading-6">
+                    Echoing Dr. Ambedkar, J.B. Patnaik believed that political
+                    liberty was meaningless without social equality. He argued
+                    that the state must actively intervene to dismantle
+                    historical hierarchies, famously stating that "democracy is
+                    not just a form of government, but a form of associated
+                    living."
+                  </p>
+                </div>
+
+                <div className="p-6 bg-gradient-to-br from-slate-50 to-white rounded-xl border border-gray-100">
+                  <h4 className="text-lg font-semibold text-[#272727] mb-3">
+                    Representation as a Right
+                  </h4>
+                  <p className="text-neutral-400 text-sm leading-6">
+                    He was a fierce guardian of constitutional rights for the
+                    marginalized. His administration was known for the strict
+                    enforcement of reservation rosters, aggressively clearing
+                    backlogs in government jobs to ensure Dalits and Tribals had
+                    their rightful share in power.
+                  </p>
+                </div>
+
+                <div className="p-6 bg-gradient-to-br from-slate-50 to-white rounded-xl border border-gray-100">
+                  <h4 className="text-lg font-semibold text-[#272727] mb-3">
+                    Education as Liberation
+                  </h4>
+                  <p className="text-neutral-400 text-sm leading-6">
+                    True to the Ambedkarite slogan "Educate, Agitate, Organize,"
+                    he viewed education as the only exit route from caste
+                    stagnation. This drove his massive expansion of residential
+                    schools (Sevashrams) and SC/ST hostels, ensuring that the
+                    poorest child had the same educational footing as the
+                    privileged.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* The Double March */}
+            <div className="space-y-6">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-14 h-14 rounded-full bg-sky-50 text-sky-500 flex items-center justify-center">
+                  <FiZap className="text-2xl" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-semibold text-[#272727]">
+                    The Double March: Velocity of Development
+                  </h3>
+                </div>
+              </div>
+
+              <div className="p-8 bg-gradient-to-br from-sky-50 to-white rounded-xl border border-sky-100">
+                <p className="text-neutral-600 text-base leading-8">
+                  He believed Odisha could not afford the luxury of gradual
+                  growth. His doctrine of the "Double March Order" dictated that
+                  the state must industrialize at twice the speed of others to
+                  bridge the historical gap—simultaneously building steel plants
+                  for the economy and universities for the mind.
+                </p>
+              </div>
+            </div>
+
+            {/* Nationalistic Regionalism */}
+            <div className="space-y-6">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-14 h-14 rounded-full bg-sky-50 text-sky-500 flex items-center justify-center">
+                  <FiGlobe className="text-2xl" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-semibold text-[#272727]">
+                    Nationalistic Regionalism: Unity in Diversity
+                  </h3>
+                </div>
+              </div>
+
+              <div className="p-8 bg-gradient-to-br from-slate-50 to-white rounded-xl border border-gray-100">
+                <p className="text-neutral-600 text-base leading-8 mb-4">
+                  He championed Odia identity not in isolation, but as a vital
+                  organ of the Indian body politic. His philosophy was that a
+                  strong Odisha makes a strong India. He famously described the
+                  state as the "filament in the lotus of the nation," implying
+                  that while the petals (India) are vast, the filament (Odisha)
+                  holds the core beauty and life.
+                </p>
+              </div>
+            </div>
+
+            {/* Compassionate Economics */}
+            <div className="space-y-6">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-14 h-14 rounded-full bg-sky-50 text-sky-500 flex items-center justify-center">
+                  <FiTrendingUp className="text-2xl" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-semibold text-[#272727]">
+                    Compassionate Economics: Industry for Welfare
+                  </h3>
+                </div>
+              </div>
+
+              <div className="p-8 bg-gradient-to-br from-slate-50 to-white rounded-xl border border-gray-100">
+                <p className="text-neutral-600 text-base leading-8">
+                  His economic model was unique: aggressively court private
+                  investment (Capitalism) to fund massive social welfare
+                  (Socialism). He viewed heavy industry not as an end in itself,
+                  but as the engine to subsidize food security and education for
+                  the poor.
+                </p>
+              </div>
+            </div>
+
+            {/* Secular Humanism */}
+            <div className="space-y-6">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-14 h-14 rounded-full bg-sky-50 text-sky-500 flex items-center justify-center">
+                  <FiShield className="text-2xl" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-semibold text-[#272727]">
+                    Secular Humanism: The Spirit of Inclusion
+                  </h3>
+                  <p className="text-sky-500 text-sm">
+                    The Spirit of Inclusion
+                  </p>
+                </div>
+              </div>
+
+              <div className="space-y-6">
+                <div className="p-6 bg-gradient-to-br from-slate-50 to-white rounded-xl border border-gray-100">
+                  <h4 className="text-lg font-semibold text-[#272727] mb-3">
+                    Respect for All Faiths
+                  </h4>
+                  <p className="text-neutral-400 text-sm leading-6">
+                    J.B. Patnaik's secularism was not merely political; it was
+                    spiritual. He believed that the true essence of Indian
+                    culture was its ability to embrace diversity without
+                    conflict. He was a pluralist who saw the same divinity in
+                    every faith. He famously broke protocol to connect with
+                    communities across the religious spectrum. As Governor of
+                    Assam, he attended Jumma prayers at the Sijubari Jame Masjid
+                    in Guwahati. In a progressive move that resonated deeply
+                    with the minority community, he championed the right of
+                    women to offer prayers in the mosque, earning him respect as
+                    a true liberal humanist.
+                  </p>
+                </div>
+
+                <div className="p-6 bg-gradient-to-br from-slate-50 to-white rounded-xl border border-gray-100">
+                  <h4 className="text-lg font-semibold text-[#272727] mb-3">
+                    The Reformer's Zeal
+                  </h4>
+                  <p className="text-neutral-400 text-sm leading-6">
+                    He believed spirituality should unify, not divide. In a
+                    historic act of social reform, he led a group of women into
+                    the Patbausi Satra (a Vaishnavite monastery in Assam),
+                    breaking a 300-year-old tradition that barred their entry.
+                    This act demonstrated his conviction that devotion
+                    transcends gender and dogma.
+                  </p>
+                </div>
+
+                <div className="p-6 bg-gradient-to-br from-slate-50 to-white rounded-xl border border-gray-100">
+                  <h4 className="text-lg font-semibold text-[#272727] mb-3">
+                    The Jagannath Ethos
+                  </h4>
+                  <p className="text-neutral-400 text-sm leading-6">
+                    His pluralism was rooted in the Jagannath Cult, which he
+                    studied extensively. He often cited Lord Jagannath as the
+                    ultimate symbol of syncretism—a deity originally worshipped
+                    by tribals (Sabaras), revered by Hindus, and historically
+                    respected by followers of Jainism and Buddhism. For him,
+                    secularism was the practical application of this inclusive
+                    Jagannath consciousness.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -330,35 +604,43 @@ export default function LiteraturePage() {
       <section className="py-16 px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white">
         <div className="max-w-7xl mx-auto">
           <SectionTitle title="Journalism" highlight="& Media" />
-          
+
           <div className="flex items-center gap-12 max-lg:flex-col-reverse">
             <div className="flex-1 space-y-4">
-              <h3 className="text-2xl font-semibold text-[#272727]">Voice of the People</h3>
+              <h3 className="text-2xl font-semibold text-[#272727]">
+                Voice of the People
+              </h3>
               <p className="text-neutral-400 text-base leading-7">
-                Before entering full-time politics, J.B. Patnaik had a distinguished career in 
-                journalism. He worked as an editor and columnist, using the power of the pen 
-                to advocate for social causes and highlight issues affecting the common people 
-                of Odisha.
+                Before entering full-time politics, J.B. Patnaik had a
+                distinguished career in journalism. He worked as an editor and
+                columnist, using the power of the pen to advocate for social
+                causes and highlight issues affecting the common people of
+                Odisha.
               </p>
               <p className="text-neutral-400 text-base leading-7">
-                His journalistic work during the pre-independence era was instrumental in 
-                mobilizing public opinion for the freedom struggle. He continued to write 
-                opinion pieces and columns throughout his political career, maintaining his 
-                connection with the written word.
+                His journalistic work during the pre-independence era was
+                instrumental in mobilizing public opinion for the freedom
+                struggle. He continued to write opinion pieces and columns
+                throughout his political career, maintaining his connection with
+                the written word.
               </p>
-              
+
               <div className="grid grid-cols-2 gap-4 mt-6 max-md:grid-cols-1">
                 <div className="p-4 bg-white rounded-lg border border-gray-100">
                   <p className="text-sky-500 font-bold text-xl">Editor</p>
-                  <p className="text-neutral-400 text-sm">Leading Odia publications</p>
+                  <p className="text-neutral-400 text-sm">
+                    Leading Odia publications
+                  </p>
                 </div>
                 <div className="p-4 bg-white rounded-lg border border-gray-100">
                   <p className="text-sky-500 font-bold text-xl">Columnist</p>
-                  <p className="text-neutral-400 text-sm">Regular political commentary</p>
+                  <p className="text-neutral-400 text-sm">
+                    Regular political commentary
+                  </p>
                 </div>
               </div>
             </div>
-            
+
             <div className="flex-shrink-0 max-lg:w-full">
               <div className="relative w-[400px] h-[350px] max-lg:w-full max-lg:h-[300px]">
                 <ImageWithFallback
@@ -377,7 +659,7 @@ export default function LiteraturePage() {
       <section className="py-16 px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
           <SectionTitle title="Speeches" highlight="& Oratory" />
-          
+
           <div className="flex items-start gap-12 max-lg:flex-col">
             <div className="flex-shrink-0 max-lg:w-full">
               <div className="relative w-[400px] h-[350px] max-lg:w-full max-lg:h-[300px]">
@@ -389,16 +671,19 @@ export default function LiteraturePage() {
                 />
               </div>
             </div>
-            
+
             <div className="flex-1 space-y-6">
-              <h3 className="text-2xl font-semibold text-[#272727]">A Master Orator</h3>
+              <h3 className="text-2xl font-semibold text-[#272727]">
+                A Master Orator
+              </h3>
               <p className="text-neutral-400 text-base leading-7">
-                J.B. Patnaik was renowned for his powerful oratory. His speeches in the 
-                Legislative Assembly, Parliament, and public gatherings were marked by 
-                eloquence, depth, and a command over both Odia and Hindi languages. His 
-                ability to connect with audiences made him a compelling public speaker.
+                J.B. Patnaik was renowned for his powerful oratory. His speeches
+                in the Legislative Assembly, Parliament, and public gatherings
+                were marked by eloquence, depth, and a command over both Odia
+                and Hindi languages. His ability to connect with audiences made
+                him a compelling public speaker.
               </p>
-              
+
               <div className="space-y-4">
                 <QuoteCard
                   quote="Development without social justice is meaningless. Our progress must lift every citizen of Odisha."
@@ -418,26 +703,29 @@ export default function LiteraturePage() {
       <section className="py-16 px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white">
         <div className="max-w-7xl mx-auto">
           <SectionTitle title="Influence on" highlight="Odia Literature" />
-          
+
           <div className="text-center mb-12 max-w-3xl mx-auto">
             <p className="text-neutral-400 text-lg leading-8">
-              J.B. Patnaik's contributions to Odia literature extended beyond his own writings. 
-              He actively supported and promoted Odia writers, established literary institutions, 
-              and championed the cause of Odia language recognition.
+              J.B. Patnaik's contributions to Odia literature extended beyond
+              his own writings. He actively supported and promoted Odia writers,
+              established literary institutions, and championed the cause of
+              Odia language recognition.
             </p>
           </div>
-          
+
           <div className="grid grid-cols-3 gap-6 max-lg:grid-cols-2 max-md:grid-cols-1">
             {[
               {
                 icon: FiBookOpen,
                 title: "Literary Patronage",
-                description: "Supported Odia writers and poets through various initiatives and awards",
+                description:
+                  "Supported Odia writers and poets through various initiatives and awards",
               },
               {
                 icon: FiAward,
                 title: "Sahitya Akademi",
-                description: "Promoted Odia literature through state and national academies",
+                description:
+                  "Promoted Odia literature through state and national academies",
               },
               {
                 icon: FiFeather,
@@ -447,17 +735,20 @@ export default function LiteraturePage() {
               {
                 icon: FiFlag,
                 title: "Language Policy",
-                description: "Advocated for Odia as medium of instruction in schools",
+                description:
+                  "Advocated for Odia as medium of instruction in schools",
               },
               {
                 icon: FiLayers,
                 title: "Classical Status",
-                description: "Contributed to the movement for classical language status for Odia",
+                description:
+                  "Contributed to the movement for classical language status for Odia",
               },
               {
                 icon: FiPenTool,
                 title: "Cultural Programs",
-                description: "Organized literary festivals and cultural programs across Odisha",
+                description:
+                  "Organized literary festivals and cultural programs across Odisha",
               },
             ].map((item, index) => (
               <div
@@ -467,7 +758,9 @@ export default function LiteraturePage() {
                 <div className="w-12 h-12 rounded-full bg-sky-50 text-sky-500 flex items-center justify-center mx-auto mb-4">
                   <item.icon className="text-xl" />
                 </div>
-                <h4 className="text-xl font-semibold text-[#272727] mb-2">{item.title}</h4>
+                <h4 className="text-xl font-semibold text-[#272727] mb-2">
+                  {item.title}
+                </h4>
                 <p className="text-neutral-400 text-base">{item.description}</p>
               </div>
             ))}
@@ -479,10 +772,11 @@ export default function LiteraturePage() {
       <section className="py-16 px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
           <SectionTitle title="Publications" highlight="Gallery" />
-          
+
           <p className="text-center text-neutral-400 text-base mb-12 max-w-2xl mx-auto">
-            A showcase of J.B. Patnaik's published works, including books, articles, and 
-            contributions to various publications over his illustrious career.
+            A showcase of J.B. Patnaik's published works, including books,
+            articles, and contributions to various publications over his
+            illustrious career.
           </p>
 
           <div className="grid lg:grid-cols-2 gap-10 items-center">
@@ -515,10 +809,13 @@ export default function LiteraturePage() {
 
             <div className="space-y-6">
               <div className="space-y-3">
-                <h3 className="text-2xl font-semibold text-[#272727]">Signature Works</h3>
+                <h3 className="text-2xl font-semibold text-[#272727]">
+                  Signature Works
+                </h3>
                 <p className="text-neutral-500">
-                  Essays, translations, and policy writings that shaped discourse in Odisha and beyond.
-                  Explore the diversity of his contributions spanning literature, governance, and culture.
+                  Essays, translations, and policy writings that shaped
+                  discourse in Odisha and beyond. Explore the diversity of his
+                  contributions spanning literature, governance, and culture.
                 </p>
               </div>
 
@@ -528,25 +825,29 @@ export default function LiteraturePage() {
                   {
                     title: "Political Essays",
                     type: "Book",
-                    description: "Sharp commentaries on democracy, welfare, and governance.",
+                    description:
+                      "Sharp commentaries on democracy, welfare, and governance.",
                     icon: FiFileText,
                   },
                   {
                     title: "Odia Editorials",
                     type: "Collection",
-                    description: "Influential op-eds that amplified the Odia voice in national debates.",
+                    description:
+                      "Influential op-eds that amplified the Odia voice in national debates.",
                     icon: FiFeather,
                   },
                   {
                     title: "Freedom Memories",
                     type: "Memoir",
-                    description: "Recollections from the independence movement and early public life.",
+                    description:
+                      "Recollections from the independence movement and early public life.",
                     icon: FiBookmark,
                   },
                   {
                     title: "Development Vision",
                     type: "Policy Papers",
-                    description: "Blueprints for inclusive growth, rural upliftment, and education.",
+                    description:
+                      "Blueprints for inclusive growth, rural upliftment, and education.",
                     icon: FiLayers,
                   },
                 ].map((pub, index) => (
@@ -559,11 +860,15 @@ export default function LiteraturePage() {
                         <pub.icon className="text-xl" />
                       </div>
                       <div>
-                        <h4 className="text-lg font-semibold text-[#272727] leading-6">{pub.title}</h4>
+                        <h4 className="text-lg font-semibold text-[#272727] leading-6">
+                          {pub.title}
+                        </h4>
                         <p className="text-sky-500 text-sm">{pub.type}</p>
                       </div>
                     </div>
-                    <p className="text-neutral-500 text-sm leading-6">{pub.description}</p>
+                    <p className="text-neutral-500 text-sm leading-6">
+                      {pub.description}
+                    </p>
                   </div>
                 ))}
               </div>
@@ -579,14 +884,20 @@ export default function LiteraturePage() {
             Continue Exploring
           </h2>
           <p className="text-neutral-400 mb-8 max-w-2xl mx-auto">
-            Discover more about Janaki Ballabh Patnaik's remarkable life, his contributions 
-            to Odisha, and his lasting legacy.
+            Discover more about Janaki Ballabh Patnaik's remarkable life, his
+            contributions to Odisha, and his lasting legacy.
           </p>
           <div className="flex gap-4 justify-center max-md:flex-col max-md:items-center">
-            <a href="/legacy" className="h-11 px-6 bg-sky-500 text-white rounded-lg hover:opacity-90 transition-opacity flex items-center justify-center">
+            <a
+              href="/legacy"
+              className="h-11 px-6 bg-sky-500 text-white rounded-lg hover:opacity-90 transition-opacity flex items-center justify-center"
+            >
               View Life & Legacy
             </a>
-            <a href="/contributions" className="h-11 px-6 border border-sky-500 text-sky-500 rounded-lg hover:bg-sky-50 transition-colors flex items-center justify-center">
+            <a
+              href="/contributions"
+              className="h-11 px-6 border border-sky-500 text-sky-500 rounded-lg hover:bg-sky-50 transition-colors flex items-center justify-center"
+            >
               Explore Contributions
             </a>
           </div>

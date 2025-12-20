@@ -21,7 +21,7 @@ const timelineEvents: TimelineEvent[] = [
     year: 1927,
     title: "Birth of a Visionary",
     description:
-      "Janaki Ballabh Patnaik was born on January 3, 1927, in Rameswar village, Ganjam district, Odisha. Born into a modest family, young Janaki showed exceptional intelligence and leadership qualities from an early age. His birthplace would later become a pilgrimage for his followers and admirers.",
+      "Born on January 3 in Rameswar village, Khordha.",
     images: [
       "images/contributions/1.png",
       "images/contributions/2.png",
@@ -29,10 +29,54 @@ const timelineEvents: TimelineEvent[] = [
     ],
   },
   {
-    year: 1946,
+    year: 1942,
     title: "Freedom Fighter",
     description:
-      "At the age of 19, J.B. Patnaik actively participated in India's freedom struggle. He joined the Quit India Movement and was deeply influenced by Mahatma Gandhi's principles of non-violence and civil disobedience. This period shaped his political ideology and commitment to public service.",
+      "Participated in the historic Quit India Movement while a student at Khordha High School.",
+    images: [
+      "images/contributions/4.png",
+      "images/contributions/5.png",
+      "images/contributions/6.png",
+    ],
+  },
+  {
+    year: 1946,
+    title: "Student Leader",
+    description:
+      "Emerged as a fearless student leader, leading the protest to lower the British Union Jack from the Ravenshaw College premises.",
+    images: [
+      "images/contributions/1.png",
+      "images/contributions/2.png",
+      "images/contributions/3.png",
+    ],
+  },
+  {
+    year: 1947,
+    title: "Academic Excellence",
+    description:
+      "Graduated with Honours in Sanskrit from the prestigious Ravenshaw College.",
+    images: [
+      "images/contributions/4.png",
+      "images/contributions/5.png",
+      "images/contributions/6.png",
+    ],
+  },
+  {
+    year: 1949,
+    title: "Master's Degree",
+    description:
+      "Completes his M.A. in Political Science from Banaras Hindu University (BHU).",
+    images: [
+      "images/contributions/1.png",
+      "images/contributions/2.png",
+      "images/contributions/3.png",
+    ],
+  },
+  {
+    year: 1949,
+    title: "Journalism Begins",
+    description:
+      "Began his professional journey in journalism by joining The Eastern Times as a Sub-Editor.",
     images: [
       "images/contributions/4.png",
       "images/contributions/5.png",
@@ -41,9 +85,9 @@ const timelineEvents: TimelineEvent[] = [
   },
   {
     year: 1950,
-    title: "Youth Congress Leader",
+    title: "Joint Editor",
     description:
-      "J.B. Patnaik became the President of the Odisha state unit of the youth wing of the Indian National Congress. This marked his formal entry into organized politics. His charismatic leadership and organizational skills quickly made him a prominent figure in Odisha's political landscape.",
+      "Appointed Joint Editor of the popular Odia daily Prajatantra.",
     images: [
       "images/contributions/1.png",
       "images/contributions/2.png",
@@ -51,10 +95,10 @@ const timelineEvents: TimelineEvent[] = [
     ],
   },
   {
-    year: 1957,
-    title: "Legislative Assembly Entry",
+    year: 1950,
+    title: "Political Entry",
     description:
-      "Elected to the Odisha Legislative Assembly for the first time, J.B. Patnaik began his illustrious career as a lawmaker. He represented his constituency with dedication and soon became known for his powerful oratory and deep understanding of governance.",
+      "Took charge as the President of the State Youth Congress, marking his entry into organised politics.",
     images: [
       "images/contributions/4.png",
       "images/contributions/5.png",
@@ -62,10 +106,76 @@ const timelineEvents: TimelineEvent[] = [
     ],
   },
   {
-    year: 1961,
-    title: "Parliament Debut",
+    year: 1951,
+    title: "Dual Editorship",
     description:
-      "J.B. Patnaik was elected to the Lok Sabha (House of the People), marking his entry into national politics. His eloquent speeches and sharp political acumen drew attention from senior Congress leaders, establishing him as a rising star in Indian politics.",
+      "Assumed the rare distinction of being the Editor of both The Eastern Times and Prajatantra concurrently.",
+    images: [
+      "images/contributions/1.png",
+      "images/contributions/2.png",
+      "images/contributions/3.png",
+    ],
+  },
+  {
+    year: 1953,
+    title: "Farmers' Champion",
+    description:
+      "Led a successful Farmers' Agitation in Madhupur, Cuttack district, championing the rights of the tillers.",
+    images: [
+      "images/contributions/4.png",
+      "images/contributions/5.png",
+      "images/contributions/6.png",
+    ],
+  },
+  {
+    year: 1954,
+    title: "Congress Committee Member",
+    description:
+      "Became a Member of the Working Committee, Pradesh Congress Committee.",
+    images: [
+      "images/contributions/1.png",
+      "images/contributions/2.png",
+      "images/contributions/3.png",
+    ],
+  },
+  {
+    year: 1956,
+    title: "Literary & Media Leadership",
+    description:
+      "Appointed Member of the Odisha Sahitya Akademi and the Executive Committee of the All-India Newspaper Editors' Conference (served until 1967).",
+    images: [
+      "images/contributions/4.png",
+      "images/contributions/5.png",
+      "images/contributions/6.png",
+    ],
+  },
+  {
+    year: 1957,
+    title: "University Senate",
+    description:
+      "Became a Member of the Senate, Utkal University (served until 1967).",
+    images: [
+      "images/contributions/1.png",
+      "images/contributions/2.png",
+      "images/contributions/3.png",
+    ],
+  },
+  {
+    year: 1967,
+    title: "Founder-Editor",
+    description:
+      "Founded the iconic monthly literary magazine Paurusha as its Founder-Editor.",
+    images: [
+      "images/contributions/4.png",
+      "images/contributions/5.png",
+      "images/contributions/6.png",
+    ],
+  },
+  {
+    year: 1967,
+    title: "Electoral Politics",
+    description:
+      "Entered electoral politics for the first time, contesting from the Dharmasala constituency as an Independent candidate.",
     images: [
       "images/contributions/1.png",
       "images/contributions/2.png",
@@ -74,9 +184,9 @@ const timelineEvents: TimelineEvent[] = [
   },
   {
     year: 1971,
-    title: "Re-elected to Lok Sabha",
+    title: "Lok Sabha Debut",
     description:
-      "Re-elected to the Lok Sabha with an impressive mandate, J.B. Patnaik consolidated his position in national politics. During this term, he worked closely with Prime Minister Indira Gandhi and played a key role in Congress party's organizational matters.",
+      "Elected to the Lok Sabha for the first time.",
     images: [
       "images/contributions/4.png",
       "images/contributions/5.png",
@@ -84,10 +194,10 @@ const timelineEvents: TimelineEvent[] = [
     ],
   },
   {
-    year: 1985,
-    title: "Continued Leadership",
+    year: 1973,
+    title: "Union Minister",
     description:
-      "Re-elected as Chief Minister, J.B. Patnaik focused on industrial development, infrastructure, and education. He initiated several flagship programs that transformed rural Odisha. His administrative acumen earned him respect across the political spectrum.",
+      "Inducted into the Union Government as the Minister of State for Defence.",
     images: [
       "images/contributions/1.png",
       "images/contributions/2.png",
@@ -95,10 +205,54 @@ const timelineEvents: TimelineEvent[] = [
     ],
   },
   {
-    year: 1989,
-    title: "End of First Era",
+    year: 1975,
+    title: "AICC Member",
     description:
-      "After nearly a decade of continuous leadership, J.B. Patnaik's first tenure as Chief Minister concluded. His nine-year stint had established him as one of the most influential political figures in Odisha's history, leaving behind a legacy of development and progress.",
+      "Became a member of the All-India Congress Committee (AICC).",
+    images: [
+      "images/contributions/4.png",
+      "images/contributions/5.png",
+      "images/contributions/6.png",
+    ],
+  },
+  {
+    year: 1978,
+    title: "OPCC President",
+    description:
+      "Appointed President of the Odisha Pradesh Congress Committee (OPCC).",
+    images: [
+      "images/contributions/1.png",
+      "images/contributions/2.png",
+      "images/contributions/3.png",
+    ],
+  },
+  {
+    year: 1980,
+    title: "Union Cabinet Minister",
+    description:
+      "Appointed Union Cabinet Minister holding key portfolios of Labour, Civil Aviation, and Tourism.",
+    images: [
+      "images/contributions/4.png",
+      "images/contributions/5.png",
+      "images/contributions/6.png",
+    ],
+  },
+  {
+    year: 1980,
+    title: "First Tenure as CM",
+    description:
+      "Sworn in as the Chief Minister of Odisha (First Tenure) and launched the visionary \"1000 Industries in 1000 Days\" policy.",
+    images: [
+      "images/contributions/1.png",
+      "images/contributions/2.png",
+      "images/contributions/3.png",
+    ],
+  },
+  {
+    year: 1985,
+    title: "Second Tenure as CM",
+    description:
+      "Sworn in as Chief Minister of Odisha (Second Tenure); mandated Odia as the official language of administration.",
     images: [
       "images/contributions/4.png",
       "images/contributions/5.png",
@@ -107,9 +261,9 @@ const timelineEvents: TimelineEvent[] = [
   },
   {
     year: 1995,
-    title: "Return to Power",
+    title: "Third Tenure as CM",
     description:
-      "J.B. Patnaik made a triumphant return as Chief Minister of Odisha. His second innings focused on economic reforms, social welfare programs, and strengthening the state's infrastructure. He remained committed to his vision of a prosperous Odisha.",
+      "Sworn in as Chief Minister of Odisha (Third Tenure); established institutions like XIMB and introduced the Mid-Day Meal scheme.",
     images: [
       "images/contributions/1.png",
       "images/contributions/2.png",
@@ -117,43 +271,32 @@ const timelineEvents: TimelineEvent[] = [
     ],
   },
   {
-    year: 1999,
-    title: "Transition of Leadership",
+    year: 2001,
+    title: "Literary Recognition",
     description:
-      "J.B. Patnaik's term as Chief Minister ended, marking the conclusion of his executive leadership in Odisha. His cumulative tenure of over 13 years remains the longest in Odisha's history until surpassed by Naveen Patnaik. He continued to mentor young leaders and guide the party.",
+      "Awarded the prestigious Sahitya Akademi Translation Prize for his work Bankima Upanyasmala.",
     images: [
       "images/contributions/4.png",
       "images/contributions/5.png",
       "images/contributions/6.png",
+    ],
+  },
+  {
+    year: 2004,
+    title: "Leader of Opposition",
+    description:
+      "Assumed the role of Leader of Opposition in the Odisha Legislative Assembly.",
+    images: [
+      "images/contributions/1.png",
+      "images/contributions/2.png",
+      "images/contributions/3.png",
     ],
   },
   {
     year: 2009,
     title: "Governor of Assam",
     description:
-      "J.B. Patnaik was appointed as the 25th Governor of Assam, a prestigious constitutional position. This appointment recognized his vast experience and statesmanship. As Governor, he worked to promote harmony and development in the northeastern state.",
-    images: [
-      "images/contributions/1.png",
-      "images/contributions/2.png",
-      "images/contributions/3.png",
-    ],
-  },
-  {
-    year: 2014,
-    title: "Completion of Gubernatorial Term",
-    description:
-      "After five years of distinguished service as Governor of Assam, J.B. Patnaik completed his term. He was lauded for his impartial governance, commitment to constitutional duties, and efforts in promoting cultural harmony in the diverse northeastern region.",
-    images: [
-      "images/contributions/1.png",
-      "images/contributions/2.png",
-      "images/contributions/3.png",
-    ],
-  },
-  {
-    year: 2015,
-    title: "A Legend Departs",
-    description:
-      "On April 21, 2015, Janaki Ballabh Patnaik passed away in Bhubaneswar at the age of 88. The nation mourned the loss of a visionary leader. His legacy of development, his commitment to Odisha's progress, and his exemplary public service continue to inspire generations.",
+      "Appointed as the Governor of Assam, where he played a pivotal role in cultural and social reforms.",
     images: [
       "images/contributions/4.png",
       "images/contributions/5.png",
@@ -161,16 +304,15 @@ const timelineEvents: TimelineEvent[] = [
     ],
   },
   {
-    year: 2025,
-    title: "Living Legacy",
+    year: 2015,
+    title: "A Legend Departs",
     description:
-      "A decade after his passing, J.B. Patnaik's legacy lives on through the institutions he built, the leaders he mentored, and the development he initiated. His birthday is commemorated annually, and his contributions to Odisha's growth remain a benchmark for public service.",
+      "Passed away on April 21 in Tirupati.",
     images: [
       "images/contributions/1.png",
       "images/contributions/2.png",
       "images/contributions/3.png",
     ],
-    isCurrentYear: true,
   },
 ];
 
@@ -224,21 +366,21 @@ export default function JourneySection() {
   return (
     <section
       id="journey"
-      className="w-full min-h-screen py-16 relative overflow-hidden bg-gradient-to-b from-slate-50 to-white"
+      className="w-full h-screen py-4 relative overflow-hidden bg-white"
       style={{ paddingLeft: "1.5rem", paddingRight: "1.5rem" }}
     >
       <div className="max-w-7xl mx-auto">
         {/* Section Title */}
-        <div className="flex items-center justify-center gap-5 mb-16 max-md:mb-12">
+        <div className="flex items-center justify-center gap-3 mb-4 max-md:mb-3">
           <div className="w-96 h-px bg-gradient-to-r from-transparent via-stone-300 to-stone-300 max-lg:w-full"></div>
-          <h2 className="text-4xl font-bold text-sky-500 px-5 whitespace-nowrap max-md:text-2xl max-md:whitespace-normal text-center leading-[54px]">
+          <h2 className="text-4xl font-bold text-sky-500 px-3 whitespace-nowrap max-md:text-2xl max-md:whitespace-normal text-center leading-tight mb-4">
             The Journey of the Legend
           </h2>
           <div className="w-96 h-px bg-gradient-to-l from-transparent via-stone-300 to-stone-300 max-lg:w-full"></div>
         </div>
 
         <div
-          className={`flex items-start justify-between gap-12 max-lg:flex-col mb-16 transition-all duration-500 ease-out transform
+          className={`flex items-center justify-center gap-8 max-lg:flex-col mb-4 transition-all duration-500 ease-out transform
             ${
               isAnimating
                 ? direction === "right"
@@ -247,9 +389,9 @@ export default function JourneySection() {
                 : "translate-x-0 opacity-100"
             }`}
         >
-          <div className="relative w-[600px] h-[500px] max-lg:w-full max-lg:h-[400px] flex-shrink-0">
+          <div className="relative w-[450px] h-[350px] max-lg:w-full max-lg:h-[300px] flex-shrink-0">
             <div
-              className="absolute top-0 left-[100px] w-96 h-56 transform -rotate-[5.87deg] border-[6px] border-white rounded-lg shadow-[0_8px_30px_rgba(0,0,0,0.12)] z-10 max-lg:w-64 max-lg:h-40 max-lg:left-4 transition-all duration-700 ease-out hover:scale-105 hover:z-40"
+              className="absolute top-0 left-[70px] w-72 h-40 transform -rotate-[5.87deg] border-4 border-white rounded-lg shadow-[0_8px_30px_rgba(0,0,0,0.12)] z-10 max-lg:w-48 max-lg:h-32 max-lg:left-4 transition-all duration-700 ease-out hover:scale-105 hover:z-40"
               style={{ transitionDelay: "100ms" }}
             >
               <div className="w-full h-full bg-gray-200 rounded-lg overflow-hidden">
@@ -262,7 +404,7 @@ export default function JourneySection() {
             </div>
 
             <div
-              className="absolute top-[200px] left-0 w-72 h-60 transform -rotate-[3.29deg] border-[6px] border-white rounded-lg shadow-[0_8px_30px_rgba(0,0,0,0.12)] z-20 max-lg:w-48 max-lg:h-40 max-lg:top-[150px] transition-all duration-700 ease-out hover:scale-105 hover:z-40"
+              className="absolute top-[140px] left-0 w-56 h-44 transform -rotate-[3.29deg] border-4 border-white rounded-lg shadow-[0_8px_30px_rgba(0,0,0,0.12)] z-20 max-lg:w-40 max-lg:h-32 max-lg:top-[100px] transition-all duration-700 ease-out hover:scale-105 hover:z-40"
               style={{ transitionDelay: "200ms" }}
             >
               <div className="w-full h-full bg-gray-300 rounded-lg overflow-hidden">
@@ -275,7 +417,7 @@ export default function JourneySection() {
             </div>
 
             <div
-              className="absolute top-[120px] right-[50px] w-52 h-80 transform rotate-3 border-[6px] border-white rounded-lg shadow-[0_8px_30px_rgba(0,0,0,0.12)] z-30 max-lg:w-40 max-lg:h-56 max-lg:right-0 max-lg:top-[50px] transition-all duration-700 ease-out hover:scale-105 hover:z-40"
+              className="absolute top-[80px] right-[30px] w-40 h-56 transform rotate-3 border-4 border-white rounded-lg shadow-[0_8px_30px_rgba(0,0,0,0.12)] z-30 max-lg:w-32 max-lg:h-40 max-lg:right-0 max-lg:top-[40px] transition-all duration-700 ease-out hover:scale-105 hover:z-40"
               style={{ transitionDelay: "300ms" }}
             >
               <div className="w-full h-full bg-gray-400 rounded-lg overflow-hidden">
@@ -286,32 +428,28 @@ export default function JourneySection() {
                 />
               </div>
             </div>
-
-            <div className="absolute -top-4 -left-4 bg-sky-500 text-white px-4 py-2 rounded-full font-bold text-lg shadow-lg z-50">
-              {currentEvent.year}
-            </div>
           </div>
 
           <div className="flex-1 max-w-[584px]">
-            <div className="flex items-center gap-3 mb-4">
-              <span className="text-6xl font-bold text-sky-500 leading-none max-md:text-4xl">
+            <div className="flex items-center gap-2 mb-2">
+              <span className="text-4xl font-bold text-sky-500 leading-none max-md:text-3xl">
                 {currentEvent.year}
               </span>
               {currentEvent.isCurrentYear && (
-                <span className="bg-sky-500 text-white text-xs px-3 py-1 rounded-full font-semibold animate-pulse">
+                <span className="bg-sky-500 text-white text-xs px-2 py-1 rounded-full font-semibold animate-pulse">
                   Current Year
                 </span>
               )}
             </div>
-            <h3 className="text-3xl font-bold text-neutral-800 leading-tight mb-4 max-md:text-2xl">
+            <h3 className="text-xl font-bold text-neutral-800 leading-tight mb-2 max-md:text-lg">
               {currentEvent.title}
             </h3>
-            <p className="text-base text-neutral-600 font-normal leading-7">
+            <p className="text-sm text-neutral-600 font-normal leading-6">
               {currentEvent.description}
             </p>
 
             {/* Progress indicator */}
-            <div className="mt-8 flex items-center gap-2">
+            <div className="mt-3 flex items-center gap-2">
               <span className="text-sm text-neutral-400">
                 {currentIndex + 1} of {timelineEvents.length}
               </span>
@@ -330,7 +468,7 @@ export default function JourneySection() {
         </div>
 
         {/* Timeline Strip */}
-        <div className="relative mt-12 mb-8" ref={timelineRef}>
+        <div className="relative mt-4 mb-3" ref={timelineRef}>
           {/* Dashed Timeline Line */}
           <div className="absolute top-1/2 left-0 right-0 h-0.5 -translate-y-1/2">
             <div className="w-full h-full border-t-2 border-dashed border-gray-300"></div>
@@ -354,7 +492,7 @@ export default function JourneySection() {
                       item.index > currentIndex ? "right" : "left"
                     )
                   }
-                  className="flex flex-col items-center gap-3 min-w-[80px] transition-all duration-500 ease-out cursor-pointer group"
+                  className="flex flex-col items-center gap-1.5 min-w-[60px] transition-all duration-500 ease-out cursor-pointer group"
                   style={{
                     opacity,
                     transform: `scale(${scale})`,
@@ -384,9 +522,9 @@ export default function JourneySection() {
 
                   {/* Year label */}
                   <span
-                    className={`text-lg font-bold transition-all duration-300 ${
+                    className={`text-sm font-bold transition-all duration-300 ${
                       isActive
-                        ? "text-sky-500 text-xl"
+                        ? "text-sky-500 text-base"
                         : "text-neutral-400 group-hover:text-neutral-600"
                     }`}
                   >
@@ -399,12 +537,12 @@ export default function JourneySection() {
         </div>
 
         {/* Navigation Buttons */}
-        <div className="flex items-center justify-center gap-3 mt-8">
+        <div className="flex items-center justify-center gap-2 mt-3">
           {/* Go to Start */}
           <button
             onClick={goToStart}
             disabled={currentIndex === 0}
-            className={`p-3 rounded-xl transition-all duration-300 group cursor-pointer
+            className={`p-2 rounded-xl transition-all duration-300 group cursor-pointer
               ${
                 currentIndex === 0
                   ? "opacity-40 cursor-not-allowed"
@@ -413,7 +551,7 @@ export default function JourneySection() {
             aria-label="Go to start"
           >
             <div
-              className={`w-12 h-12 border-2 rounded-full flex items-center justify-center transition-all duration-300
+              className={`w-10 h-10 border-2 rounded-full flex items-center justify-center transition-all duration-300
               ${
                 currentIndex === 0
                   ? "border-gray-300"
@@ -421,7 +559,7 @@ export default function JourneySection() {
               }`}
             >
               <ChevronsLeft
-                size={22}
+                size={18}
                 className={`transition-colors duration-300 ${
                   currentIndex === 0
                     ? "text-gray-300"
@@ -435,7 +573,7 @@ export default function JourneySection() {
           <button
             onClick={goToPrevious}
             disabled={currentIndex === 0}
-            className={`p-3 rounded-xl transition-all duration-300 group cursor-pointer
+            className={`p-2 rounded-xl transition-all duration-300 group cursor-pointer
               ${
                 currentIndex === 0
                   ? "opacity-40 cursor-not-allowed"
@@ -444,7 +582,7 @@ export default function JourneySection() {
             aria-label="Previous"
           >
             <div
-              className={`w-12 h-12 border-2 rounded-full flex items-center justify-center transition-all duration-300
+              className={`w-10 h-10 border-2 rounded-full flex items-center justify-center transition-all duration-300
               ${
                 currentIndex === 0
                   ? "border-gray-300"
@@ -452,7 +590,7 @@ export default function JourneySection() {
               }`}
             >
               <ChevronLeft
-                size={22}
+                size={18}
                 className={`transition-colors duration-300 ${
                   currentIndex === 0
                     ? "text-gray-300"
@@ -463,8 +601,8 @@ export default function JourneySection() {
           </button>
 
           {/* Year indicator in center */}
-          <div className="px-6 py-2 bg-gradient-to-r from-sky-500 to-sky-600 rounded-full shadow-lg shadow-sky-500/30">
-            <span className="text-white font-bold text-lg">
+          <div className="px-4 py-1.5 bg-gradient-to-r from-sky-500 to-sky-600 rounded-full shadow-lg shadow-sky-500/30">
+            <span className="text-white font-bold text-base">
               {currentEvent.year}
             </span>
           </div>
@@ -473,7 +611,7 @@ export default function JourneySection() {
           <button
             onClick={goToNext}
             disabled={currentIndex === timelineEvents.length - 1}
-            className={`p-3 rounded-xl transition-all duration-300 group cursor-pointer
+            className={`p-2 rounded-xl transition-all duration-300 group cursor-pointer
               ${
                 currentIndex === timelineEvents.length - 1
                   ? "opacity-40 cursor-not-allowed"
@@ -482,7 +620,7 @@ export default function JourneySection() {
             aria-label="Next"
           >
             <div
-              className={`w-12 h-12 border-2 rounded-full flex items-center justify-center transition-all duration-300
+              className={`w-10 h-10 border-2 rounded-full flex items-center justify-center transition-all duration-300
               ${
                 currentIndex === timelineEvents.length - 1
                   ? "border-gray-300"
@@ -490,7 +628,7 @@ export default function JourneySection() {
               }`}
             >
               <ChevronRight
-                size={22}
+                size={18}
                 className={`transition-colors duration-300 ${
                   currentIndex === timelineEvents.length - 1
                     ? "text-gray-300"
@@ -504,7 +642,7 @@ export default function JourneySection() {
           <button
             onClick={goToEnd}
             disabled={currentIndex === timelineEvents.length - 1}
-            className={`p-3 rounded-xl transition-all duration-300 group cursor-pointer
+            className={`p-2 rounded-xl transition-all duration-300 group cursor-pointer
               ${
                 currentIndex === timelineEvents.length - 1
                   ? "opacity-40 cursor-not-allowed"
@@ -513,7 +651,7 @@ export default function JourneySection() {
             aria-label="Go to end"
           >
             <div
-              className={`w-12 h-12 border-2 rounded-full flex items-center justify-center transition-all duration-300
+              className={`w-10 h-10 border-2 rounded-full flex items-center justify-center transition-all duration-300
               ${
                 currentIndex === timelineEvents.length - 1
                   ? "border-gray-300"
@@ -521,7 +659,7 @@ export default function JourneySection() {
               }`}
             >
               <ChevronsRight
-                size={22}
+                size={18}
                 className={`transition-colors duration-300 ${
                   currentIndex === timelineEvents.length - 1
                     ? "text-gray-300"
@@ -530,30 +668,6 @@ export default function JourneySection() {
               />
             </div>
           </button>
-        </div>
-
-        {/* Quick Jump */}
-        <div className="flex items-center justify-center gap-2 mt-8 flex-wrap max-w-3xl mx-auto">
-          {timelineEvents.map((event, idx) => (
-            <button
-              key={idx}
-              onClick={() =>
-                navigateTo(idx, idx > currentIndex ? "right" : "left")
-              }
-              className={`px-3 py-1.5 rounded-full text-sm font-medium transition-all duration-300
-                ${
-                  idx === currentIndex
-                    ? "bg-sky-500 text-white shadow-md shadow-sky-500/30"
-                    : "bg-gray-100 text-gray-600 hover:bg-sky-100 hover:text-sky-600"
-                }
-                ${
-                  event.isCurrentYear ? "ring-2 ring-sky-400 ring-offset-2" : ""
-                }
-              `}
-            >
-              {event.year}
-            </button>
-          ))}
         </div>
       </div>
     </section>

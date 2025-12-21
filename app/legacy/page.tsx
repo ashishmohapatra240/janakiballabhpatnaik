@@ -4,10 +4,28 @@ import Image from "next/image";
 import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { FiBookOpen, FiHeart, FiUsers } from "react-icons/fi";
+import {
+  FiBookOpen,
+  FiHeart,
+  FiUsers,
+  FiBriefcase,
+  FiGlobe,
+  FiZap,
+  FiAward,
+  FiDroplet,
+  FiAnchor,
+  FiChevronDown,
+  FiChevronRight,
+} from "react-icons/fi";
 
 // Reusable Section Title Component
-function SectionTitle({ title, highlight }: { title: string; highlight?: string }) {
+function SectionTitle({
+  title,
+  highlight,
+}: {
+  title: string;
+  highlight?: string;
+}) {
   return (
     <div className="flex items-center justify-center gap-5 mb-12 max-md:mb-8">
       <div className="w-96 h-px bg-gradient-to-r from-transparent via-stone-300 to-stone-300 max-lg:w-24 max-md:hidden"></div>
@@ -26,23 +44,27 @@ function SectionTitle({ title, highlight }: { title: string; highlight?: string 
 }
 
 // Image with fallback placeholder
-function ImageWithFallback({ 
-  src, 
-  alt, 
+function ImageWithFallback({
+  src,
+  alt,
   className = "",
   fill = false,
   width,
-  height
-}: { 
-  src: string; 
-  alt: string; 
+  height,
+}: {
+  src: string;
+  alt: string;
   className?: string;
   fill?: boolean;
   width?: number;
   height?: number;
 }) {
   return (
-    <div className={`relative ${fill ? "w-full h-full" : ""} bg-gradient-to-br from-gray-200 to-gray-300 rounded-lg flex items-center justify-center overflow-hidden`}>
+    <div
+      className={`relative ${
+        fill ? "w-full h-full" : ""
+      } bg-gradient-to-br from-gray-200 to-gray-300 rounded-lg flex items-center justify-center overflow-hidden`}
+    >
       <span className="text-gray-500 absolute z-0">Image</span>
       <Image
         src={src}
@@ -60,78 +82,310 @@ function ImageWithFallback({
 }
 
 const politicalMilestones = [
-  { year: "1950", event: "Became President of Odisha State Youth Congress" },
-  { year: "1957", event: "First elected to Odisha Legislative Assembly" },
-  { year: "1961", event: "Elected to Lok Sabha (Parliament)" },
-  { year: "1971", event: "Re-elected to Lok Sabha with impressive mandate" },
-  { year: "1980", event: "Became Chief Minister of Odisha" },
+  { year: "1950", event: "Became President of the State Youth Congress" },
+  { year: "1971", event: "Elected to Lok Sabha" },
+  { year: "1973", event: "Appointed Deputy Minister of Defence" },
+  {
+    year: "1980",
+    event: "Appointed Union Minister for Tourism, Civil Aviation, and Labour",
+  },
+  { year: "1980", event: "Became Chief Minister of Odisha (First Tenure)" },
+  { year: "1985", event: "Sworn in as Chief Minister (Second Tenure)" },
+  { year: "1995", event: "Sworn in as Chief Minister (Third Tenure)" },
+  { year: "2009", event: "Appointed Governor of Assam" },
 ];
 
 const personalHighlights = [
   {
     title: "Writer & Intellectual",
-    description: "Translated epics to Odia and championed literature & journalism.",
+    description:
+      "Founder-editor of Paurusha magazine. Sahitya Akademi Award winner. Translated Ramayana, Mahabharata, and Bhagavad Gita into Odia.",
     icon: FiBookOpen,
   },
   {
     title: "Gandhian Values",
-    description: "Lived truth, non-violence, and service as guiding principles.",
+    description:
+      "Wore Khadi and spun the charkha in his youth. Believed 'Service to the nation is the only philosophy of my life.'",
     icon: FiHeart,
   },
   {
-    title: "Service to People",
-    description: "Centred policies on upliftment, education, and welfare.",
+    title: "A Man of Principles",
+    description:
+      "Maintained composure and dignity, practicing daily Pranayama and swimming. Believed 'work speaks louder than words.'",
     icon: FiUsers,
   },
 ];
 
-const legacyHighlights = [
+const cmTenures = [
   {
-    title: "Infrastructure Development",
+    period: "June 9, 1980 – March 9, 1985",
+    title: "First Tenure",
+    subtitle: "The Era of Stability & Vision",
     description:
-      "Transformed Odisha's infrastructure with roads, bridges, and urban development projects",
-    image: "/images/contributions/1.png",
+      "Ended years of political volatility by providing a stable government and launching the audacious '1000 Industries' policy that woke the state from its agrarian slumber.",
   },
   {
-    title: "Educational Institutions",
+    period: "March 10, 1985 – December 7, 1989",
+    title: "Second Tenure",
+    subtitle: "The Infrastructure Surge",
     description:
-      "Established numerous schools, colleges, and universities across the state",
-    image: "/images/contributions/2.png",
+      "A period of aggressive institution-building and modernization where the physical blueprints of a new Odisha—from NALCO to the Planetarium—were turned into reality.",
   },
   {
-    title: "Industrial Growth",
+    period: "March 15, 1995 – February 17, 1999",
+    title: "Third Tenure",
+    subtitle: "The Modern Renaissance",
     description:
-      "Attracted major industries and laid the foundation for Odisha's industrial corridor",
-    image: "/images/contributions/3.png",
+      "The veteran statesman's return, marked by the transformation of Bhubaneswar into an IT & education hub and a renewed focus on preserving the state's cultural soul.",
+  },
+];
+
+const legacyCategories = [
+  {
+    id: "industrial",
+    title: "Industrial & Economic Engine",
+    icon: FiBriefcase,
+    color: "from-blue-50 to-blue-100",
+    achievements: [
+      {
+        title: "1000 Industries in 1000 Days",
+        description:
+          "The transformative policy that revolutionized Odisha's industrial landscape",
+        image: "/images/contributions/1.png",
+      },
+      {
+        title: "NALCO",
+        description: "National Aluminium Company Limited",
+        image: "/images/contributions/2.png",
+      },
+      {
+        title: "NTPC",
+        description: "National Thermal Power Corporation",
+        image: "/images/contributions/3.png",
+      },
+      {
+        title: "Paradeep Phosphates Limited (PPL)",
+        description: "Major fertilizer plant",
+        image: "/images/contributions/4.png",
+      },
+      {
+        title: "IFFCO",
+        description: "Indian Farmers Fertiliser Cooperative",
+        image: "/images/contributions/5.png",
+      },
+      {
+        title: "MESCO",
+        description: "Metal and Steel Company",
+        image: "/images/contributions/6.png",
+      },
+      {
+        title: "Birla Tyres",
+        description: "Major tire manufacturing unit",
+        image: "/images/contributions/1.png",
+      },
+      {
+        title: "IDCO & IPICOL",
+        description:
+          "Revitalized Industrial Development Corporation and Industrial Promotion & Investment Corporation",
+        image: "/images/contributions/2.png",
+      },
+      {
+        title: "Hotels as Industry",
+        description: "Granted industry status, triggering the tourism boom",
+        image: "/images/contributions/3.png",
+      },
+    ],
   },
   {
-    title: "Social Welfare",
-    description:
-      "Implemented programs for the welfare of marginalized communities and tribal populations",
-    image: "/images/contributions/4.png",
+    id: "infrastructure",
+    title: "Infrastructure & Connectivity",
+    icon: FiGlobe,
+    color: "from-purple-50 to-purple-100",
+    achievements: [
+      {
+        title: "400+ Bridges",
+        description:
+          "Connecting divided regions, including critical links over the Mahanadi",
+        image: "/images/contributions/4.png",
+      },
+      {
+        title: "Mahanadi Bridge Links",
+        description: "Critical connectivity across the Mahanadi river",
+        image: "/images/contributions/5.png",
+      },
+      {
+        title: "Ring Roads",
+        description:
+          "Massive ring roads protecting Cuttack and Sambalpur from floods",
+        image: "/images/contributions/6.png",
+      },
+      {
+        title: "Sambalpur-Talcher Rail Link",
+        description: "Key railway connectivity",
+        image: "/images/contributions/1.png",
+      },
+      {
+        title: "Koraput-Rayagada Rail Link",
+        description: "Rail connectivity in tribal regions",
+        image: "/images/contributions/2.png",
+      },
+    ],
   },
   {
-    title: "Cultural Preservation",
-    description:
-      "Championed Odia language, culture, and heritage throughout his career",
-    image: "/images/contributions/5.png",
+    id: "power",
+    title: "Power & Energy",
+    icon: FiZap,
+    color: "from-yellow-50 to-yellow-100",
+    achievements: [
+      {
+        title: "Power Transformation",
+        description:
+          "From power-deficit (373 MW) to power-surplus status by 2000",
+        image: "/images/contributions/3.png",
+      },
+      {
+        title: "Upper Indravati Hydro Electric Project",
+        description: "Massive hydroelectric power generation",
+        image: "/images/contributions/4.png",
+      },
+      {
+        title: "Ib Valley Thermal Power Station",
+        description: "Thermal power generation facility",
+        image: "/images/contributions/5.png",
+      },
+      {
+        title: "OPGC",
+        description: "Odisha Power Generation Corporation",
+        image: "/images/contributions/6.png",
+      },
+      {
+        title: "Power Sector Reforms",
+        description: "Pioneering reforms creating GRIDCO and OHPC",
+        image: "/images/contributions/1.png",
+      },
+    ],
   },
   {
-    title: "Political Mentorship",
-    description:
-      "Mentored numerous leaders who continue to serve in various capacities",
-    image: "/images/contributions/6.png",
+    id: "education",
+    title: "Education, Sports & Culture",
+    icon: FiAward,
+    color: "from-green-50 to-green-100",
+    achievements: [
+      {
+        title: "Xavier Institute of Management (XIMB)",
+        description: "Premier management institute",
+        image: "/images/contributions/2.png",
+      },
+      {
+        title: "Kalinga Stadium",
+        description: "Major sports facility",
+        image: "/images/contributions/3.png",
+      },
+      {
+        title: "Jawaharlal Nehru Indoor Stadium",
+        description: "Indoor sports complex",
+        image: "/images/contributions/4.png",
+      },
+      {
+        title: "District-level Sports Hostels",
+        description: "For nurturing rural talent",
+        image: "/images/contributions/5.png",
+      },
+      {
+        title: "Sri Jagannath Sanskrit University",
+        description: "Puri-based Sanskrit university",
+        image: "/images/contributions/6.png",
+      },
+      {
+        title: "Odissi Research Centre",
+        description: "Cultural preservation and research",
+        image: "/images/contributions/1.png",
+      },
+      {
+        title: "Odia as Official Language",
+        description: "Mandated in 1985 with first Odia typewriter",
+        image: "/images/contributions/2.png",
+      },
+      {
+        title: "Pathani Samanta Planetarium",
+        description: "Astronomical education and research",
+        image: "/images/contributions/3.png",
+      },
+    ],
+  },
+  {
+    id: "agriculture",
+    title: "Agriculture & Social Welfare",
+    icon: FiDroplet,
+    color: "from-orange-50 to-orange-100",
+    achievements: [
+      {
+        title: "Industry Status for Agriculture",
+        description: "Granted industry status to agriculture sector",
+        image: "/images/contributions/4.png",
+      },
+      {
+        title: "2-Rupee Rice Scheme",
+        description: "Subsidized rice in tribal blocks",
+        image: "/images/contributions/5.png",
+      },
+      {
+        title: "Mid-Day Meal Scheme (1995)",
+        description: "Nutrition program for school children",
+        image: "/images/contributions/6.png",
+      },
+      {
+        title: "OMFED",
+        description: "Odisha State Cooperative Milk Producers' Federation",
+        image: "/images/contributions/1.png",
+      },
+      {
+        title: "White Revolution in Odisha",
+        description: "Dairy development program",
+        image: "/images/contributions/2.png",
+      },
+      {
+        title: "ERRP",
+        description: "Economic Rehabilitation of Rural Poor program",
+        image: "/images/contributions/3.png",
+      },
+    ],
+  },
+  {
+    id: "environment",
+    title: "Environment & Ecology",
+    icon: FiAnchor,
+    color: "from-emerald-50 to-emerald-100",
+    achievements: [
+      {
+        title: "Chandaka Elephant Sanctuary",
+        description: "Wildlife conservation and protection",
+        image: "/images/contributions/4.png",
+      },
+      {
+        title: "Ekamra Kanan Botanical Garden",
+        description: "Botanical research and preservation",
+        image: "/images/contributions/5.png",
+      },
+      {
+        title: "Joint Forest Management",
+        description: "Resolution for community conservation",
+        image: "/images/contributions/6.png",
+      },
+    ],
   },
 ];
 
 export default function LegacyPage() {
   const [isPaused, setIsPaused] = useState(false);
+  const [activeTenure, setActiveTenure] = useState(0);
+  const [expandedCategory, setExpandedCategory] = useState<string | null>(null);
   const marqueeItems = [...politicalMilestones, ...politicalMilestones];
 
   return (
     <main className="min-h-screen">
       <Navbar />
-      
+
       {/* Hero Section */}
       <section className="min-h-screen flex items-center justify-center px-6 lg:px-8 pt-20">
         <div className="w-full max-w-7xl mx-auto">
@@ -142,30 +396,19 @@ export default function LegacyPage() {
                   Life & Legacy of
                   <br />
                 </span>
-                <span className="font-normal">
-                  Janaki Ballav Patnaik
-                </span>
+                <span className="font-normal">Janaki Ballav Patnaik</span>
               </h1>
 
               <p className="max-w-[584px] text-neutral-400 text-base font-normal leading-6 max-lg:max-w-full">
-                Janaki Ballabh Patnaik (3 January 1927 – 21 April 2015) was one of the most influential 
-                political figures in the history of Odisha. His journey from a small village in Ganjam 
-                to becoming the longest-serving Chief Minister of Odisha is a testament to his dedication, 
-                vision, and unwavering commitment to public service.
+                Born on January 3, 1927, in the village of Rameswar in Khordha
+                district, Janaki Ballav Patnaik was steeped in a heritage of
+                patriotism and learning. His father, Gokulananda Patnaik, was a
+                noted poet and freedom fighter, an influence that shaped Janaki
+                Ballav's character early on. Janaki Ballav Patnaik's fourteen
+                years at the helm marked a decisive turning point in Odisha's
+                history—shifting its trajectory from a quiet agrarian past to a
+                confident, modern future.
               </p>
-
-              {/* <div className="flex gap-4 max-lg:justify-center">
-                <button className="h-11 px-6 bg-sky-500 rounded-lg cursor-pointer hover:opacity-90 transition-opacity flex items-center justify-center whitespace-nowrap">
-                  <span className="text-white text-base font-normal capitalize leading-5">
-                    Explore His Journey
-                  </span>
-                </button>
-                <button className="h-11 px-6 border border-sky-500 text-sky-500 rounded-lg cursor-pointer hover:bg-sky-50 transition-colors flex items-center justify-center whitespace-nowrap">
-                  <span className="text-base font-normal capitalize leading-5">
-                    View Timeline
-                  </span>
-                </button>
-              </div> */}
             </div>
 
             <div className="flex-shrink-0 max-lg:w-full">
@@ -186,7 +429,7 @@ export default function LegacyPage() {
       <section className="py-16 px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white">
         <div className="max-w-7xl mx-auto">
           <SectionTitle title="Early Life" highlight="& Education" />
-          
+
           <div className="flex items-center gap-12 max-lg:flex-col">
             <div className="flex-shrink-0 max-lg:w-full">
               <div className="relative w-[400px] h-[350px] max-lg:w-full max-lg:h-[300px]">
@@ -198,22 +441,33 @@ export default function LegacyPage() {
                 />
               </div>
             </div>
-            
+
             <div className="flex-1 space-y-4">
-              <h3 className="text-2xl font-semibold text-[#272727]">A Humble Beginning in Rameswar</h3>
+              <h3 className="text-2xl font-semibold text-[#272727]">
+                A Heritage of Patriotism and Learning
+              </h3>
               <p className="text-neutral-400 text-base leading-7">
-                Janaki Ballabh Patnaik was born on January 3, 1927, in Rameswar village, Ganjam district, 
-                Odisha. Born into a family with modest means but rich values, young Janaki showed 
-                exceptional intelligence and a keen interest in public affairs from an early age.
+                Born on January 3, 1927, in the village of Rameswar in Khordha
+                district, Janaki Ballav Patnaik was steeped in a heritage of
+                patriotism and learning. His father, Gokulananda Patnaik, was a
+                noted poet and freedom fighter, an influence that shaped Janaki
+                Ballav's character early on.
               </p>
               <p className="text-neutral-400 text-base leading-7">
-                He completed his early education in local schools before pursuing higher studies. 
-                His academic brilliance was evident as he excelled in his studies while simultaneously 
-                developing a deep understanding of the socio-political landscape of pre-independence India.
+                His academic journey was marked by brilliance and rebellion. As
+                a student at Ravenshaw College, he famously led a protest to
+                lower the British Union Jack from the college building in
+                1946—an act that signalled his fearless spirit. He went on to
+                earn a degree in Sanskrit from Ravenshaw College (1947) and a
+                Master's in Political Science from the prestigious Banaras Hindu
+                University (BHU) in 1949. This dual grounding in ancient wisdom
+                and modern political thought would become the hallmark of his
+                career.
               </p>
               <p className="text-neutral-400 text-base leading-7">
-                The influence of the freedom movement and the teachings of Mahatma Gandhi profoundly 
-                shaped his worldview and instilled in him a lifelong commitment to serving the people.
+                Before entering active politics, he distinguished himself as a
+                journalist, serving as the Editor of the Eastern Times and the
+                Prajatantra, where he championed the causes of the common man.
               </p>
             </div>
           </div>
@@ -224,7 +478,7 @@ export default function LegacyPage() {
       <section className="py-16 px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
           <SectionTitle title="Political" highlight="Journey" />
-          
+
           <div className="grid grid-cols-2 gap-8 max-lg:grid-cols-1">
             <div className="space-y-6">
               <div className="relative w-full h-[300px]">
@@ -235,26 +489,37 @@ export default function LegacyPage() {
                   className="rounded-lg"
                 />
               </div>
-              
+
               <div className="space-y-4">
-                <h3 className="text-2xl font-semibold text-[#272727]">Rise in Indian Politics</h3>
+                <h3 className="text-2xl font-semibold text-[#272727]">
+                  A Desire to Serve
+                </h3>
                 <p className="text-neutral-400 text-base leading-7">
-                  J.B. Patnaik's political career began during India's freedom struggle. At 19, he actively 
-                  participated in the Quit India Movement of 1946, which marked the beginning of his 
-                  illustrious political journey.
+                  Janaki Ballav Patnaik's political ascent was driven by a
+                  desire to serve. Starting as the President of the State Youth
+                  Congress in 1950, he rose to national prominence in 1971 when
+                  he was elected to the Lok Sabha.
+                </p>
+                <p className="text-neutral-400 text-base leading-7">
+                  His competence caught the eye of Prime Minister Indira Gandhi,
+                  who entrusted him with significant responsibilities. Between
+                  1973 and 1980, he served as the Deputy Minister of Defence and
+                  later as the Union Minister for Tourism, Civil Aviation, and
+                  Labour. During this tenure, he was instrumental in placing
+                  Odisha on the national aviation and tourism map, laying the
+                  groundwork for his return to the state as its leader.
                 </p>
               </div>
             </div>
-            
+
             <div className="space-y-6">
               {/* Top-to-down marquee timeline */}
               <div
                 className="relative h-[360px] overflow-hidden rounded-xl border border-slate-100 bg-white shadow-sm"
-            
                 tabIndex={0}
               >
-                <div className="pointer-events-none absolute inset-x-0 top-0 h-10 bg-gradient-to-b from-white to-transparent" />
-                <div className="pointer-events-none absolute inset-x-0 bottom-0 h-10 bg-gradient-to-t from-white to-transparent" />
+                <div className="pointer-events-none absolute inset-x-0 top-0 h-10 bg-gradient-to-b from-white to-transparent z-20" />
+                <div className="pointer-events-none absolute inset-x-0 bottom-0 h-10 bg-gradient-to-t from-white to-transparent z-20" />
 
                 <div
                   className="flex flex-col gap-3 animate-marquee-vertical"
@@ -271,7 +536,9 @@ export default function LegacyPage() {
                       <span className="text-lg font-bold text-sky-600 whitespace-nowrap">
                         {milestone.year}
                       </span>
-                      <p className="text-neutral-700 text-base leading-6">{milestone.event}</p>
+                      <p className="text-neutral-700 text-base leading-6">
+                        {milestone.event}
+                      </p>
                     </div>
                   ))}
                 </div>
@@ -281,51 +548,203 @@ export default function LegacyPage() {
         </div>
       </section>
 
-      {/* Chief Ministership Section */}
+      {/* Chief Ministership Section - Timeline Based */}
       <section className="py-16 px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white">
         <div className="max-w-7xl mx-auto">
           <SectionTitle title="Chief Minister" highlight="of Odisha" />
-          
-          <div className="flex items-start gap-12 max-lg:flex-col-reverse">
-            <div className="flex-1 space-y-6">
-              <div className="grid grid-cols-2 gap-4 max-md:grid-cols-1">
-                <div className="p-6 bg-white rounded-xl shadow-sm border border-gray-100">
-                  <h4 className="text-sky-500 text-3xl font-bold mb-2">1980-1989</h4>
-                  <p className="text-[#272727] font-semibold">First Tenure</p>
-                  <p className="text-neutral-400 text-sm mt-2">Nine consecutive years of transformative leadership</p>
+
+          <div className="mb-8">
+            <p className="text-center text-neutral-400 text-lg leading-8 max-w-4xl mx-auto">
+              Janaki Ballav Patnaik's fourteen years at the helm marked a
+              decisive turning point in Odisha's history. His tenure was less
+              about managing the status quo and more about re-engineering the
+              state's identity; shifting its trajectory from a quiet agrarian
+              past to a confident, modern future.
+            </p>
+          </div>
+
+          {/* Timeline Tenures */}
+          <div className="relative mb-12">
+            {/* Timeline Line */}
+            <div
+              className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-sky-200 via-sky-300 to-sky-200 max-md:hidden z-0"
+              style={{ top: "40px", bottom: "40px" }}
+            ></div>
+
+            <div className="space-y-12 relative z-10">
+              {cmTenures.map((tenure, index) => (
+                <div
+                  key={index}
+                  className={`flex items-center gap-8 max-md:flex-col ${
+                    index % 2 === 0 ? "flex-row" : "flex-row-reverse"
+                  }`}
+                >
+                  {/* Timeline Dot */}
+                  <div className="relative z-20 max-md:hidden">
+                    <div className="w-16 h-16 bg-white rounded-full border-4 border-sky-500 flex items-center justify-center shadow-lg">
+                      <span className="text-sky-600 font-bold text-sm">
+                        {index + 1}
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Tenure Card */}
+                  <div
+                    className={`flex-1 cursor-pointer transition-all duration-300 relative z-10 ${
+                      activeTenure === index ? "scale-105 shadow-xl" : ""
+                    }`}
+                    onClick={() => setActiveTenure(index)}
+                  >
+                    <div
+                      className={`p-6 rounded-xl border-2 transition-all duration-300 ${
+                        activeTenure === index
+                          ? "border-sky-500 bg-gradient-to-br from-sky-50 to-white shadow-lg"
+                          : "border-gray-200 bg-white"
+                      }`}
+                    >
+                      <div className="flex items-start justify-between mb-3 max-md:flex-col max-md:gap-2">
+                        <div>
+                          <div className="inline-block px-3 py-1 bg-sky-100 text-sky-600 rounded-full text-xs font-medium mb-2">
+                            {tenure.period}
+                          </div>
+                          <h4 className="text-2xl font-bold text-[#272727] mb-1">
+                            {tenure.title}
+                          </h4>
+                          <p className="text-lg font-semibold text-sky-600">
+                            {tenure.subtitle}
+                          </p>
+                        </div>
+                      </div>
+                      <p className="text-neutral-600 text-base leading-7">
+                        {tenure.description}
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div className="p-6 bg-white rounded-xl shadow-sm border border-gray-100">
-                  <h4 className="text-sky-500 text-3xl font-bold mb-2">1995-1999</h4>
-                  <p className="text-[#272727] font-semibold">Second Tenure</p>
-                  <p className="text-neutral-400 text-sm mt-2">Continued vision for modern Odisha</p>
+              ))}
+            </div>
+          </div>
+
+          {/* Active Tenure Details */}
+          <div className="mt-12 space-y-8">
+            {activeTenure === 0 && (
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="p-6 bg-white rounded-xl border border-gray-100 shadow-sm">
+                  <h5 className="text-xl font-semibold text-[#272727] mb-3">
+                    The Industrial Visionary
+                  </h5>
+                  <p className="text-neutral-600 leading-7">
+                    He dared to imagine an industrialized Odisha at a time when
+                    the state was primarily known for agriculture. With
+                    audacious policies and a call for rapid development, he
+                    broke the inertia of the past, inviting massive capital and
+                    creating an ecosystem where manufacturing and enterprise
+                    could finally take root in the state's soil.
+                  </p>
+                </div>
+                <div className="p-6 bg-white rounded-xl border border-gray-100 shadow-sm">
+                  <h5 className="text-xl font-semibold text-[#272727] mb-3">
+                    Unifying the State
+                  </h5>
+                  <p className="text-neutral-600 leading-7">
+                    His administration prioritized physical connectivity to
+                    bridge the gap between the coastal hubs and the hinterlands.
+                    By weaving a network of critical infrastructure across
+                    rivers and districts, he integrated the state's geography,
+                    ensuring that the pulse of development could reach the
+                    remotest corners of the map.
+                  </p>
                 </div>
               </div>
-              
-              <h3 className="text-2xl font-semibold text-[#272727]">Architect of Modern Odisha</h3>
-              <p className="text-neutral-400 text-base leading-7">
-                As Chief Minister, J.B. Patnaik transformed Odisha from a primarily agrarian state 
-                into one with growing industrial potential. His tenure saw massive investments in 
-                infrastructure, education, and healthcare.
-              </p>
-              <p className="text-neutral-400 text-base leading-7">
-                Key achievements during his tenure included the establishment of numerous educational 
-                institutions, expansion of road networks, promotion of industries, and significant 
-                improvements in rural development programs.
-              </p>
-              <p className="text-neutral-400 text-base leading-7">
-                His cumulative tenure of over 13 years remains one of the longest in Odisha's history, 
-                a testament to the trust people placed in his leadership.
-              </p>
-            </div>
-            
-            <div className="flex-shrink-0 max-lg:w-full">
-              <div className="relative w-[450px] h-[400px] max-lg:w-full max-lg:h-[350px]">
-                <ImageWithFallback
-                  src="/images/contributions/3.png"
-                  alt="JBP as Chief Minister"
-                  fill
-                  className="rounded-lg"
-                />
+            )}
+            {activeTenure === 1 && (
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="p-6 bg-white rounded-xl border border-gray-100 shadow-sm">
+                  <h5 className="text-xl font-semibold text-[#272727] mb-3">
+                    Architect of Modern Institutions
+                  </h5>
+                  <p className="text-neutral-600 leading-7">
+                    Understanding that a modern state requires strong
+                    intellectual and physical foundations, he spearheaded the
+                    creation of world-class institutions. From management and
+                    technology to science and astronomy, he built the
+                    educational infrastructure that would eventually transform
+                    the capital city into a vibrant hub of learning and
+                    opportunity for future generations.
+                  </p>
+                </div>
+                <div className="p-6 bg-white rounded-xl border border-gray-100 shadow-sm">
+                  <h5 className="text-xl font-semibold text-[#272727] mb-3">
+                    Infrastructure Surge
+                  </h5>
+                  <p className="text-neutral-600 leading-7">
+                    A period of aggressive institution-building and
+                    modernization where the physical blueprints of a new
+                    Odisha—from NALCO to the Planetarium—were turned into
+                    reality. This era saw massive investments in infrastructure
+                    that transformed the state's physical landscape.
+                  </p>
+                </div>
+              </div>
+            )}
+            {activeTenure === 2 && (
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="p-6 bg-white rounded-xl border border-gray-100 shadow-sm">
+                  <h5 className="text-xl font-semibold text-[#272727] mb-3">
+                    Cultural & Linguistic Renaissance
+                  </h5>
+                  <p className="text-neutral-600 leading-7">
+                    A scholar in the seat of power, he ensured that the race for
+                    modernity did not leave heritage behind. He
+                    institutionalized the preservation of classical wisdom and
+                    championed the mother tongue in governance, proving that
+                    progress and culture are not adversaries, but partners.
+                    Under his watch, the state's artistic and spiritual soul
+                    found renewed patronage and global recognition.
+                  </p>
+                </div>
+                <div className="p-6 bg-white rounded-xl border border-gray-100 shadow-sm">
+                  <h5 className="text-xl font-semibold text-[#272727] mb-3">
+                    Social & Economic Empowerment
+                  </h5>
+                  <p className="text-neutral-600 leading-7">
+                    Beyond concrete and steel, his governance was defined by a
+                    deep compassion for the common citizen. He pioneered welfare
+                    initiatives that uplifted the vulnerable and laid the
+                    groundwork for women's empowerment, believing that true
+                    prosperity is one that is shared by all.
+                  </p>
+                </div>
+              </div>
+            )}
+          </div>
+
+          {/* Overall Vision */}
+          <div className="mt-8 p-8 bg-gradient-to-r from-sky-50 to-blue-50 rounded-xl border border-sky-100">
+            <div className="flex items-start gap-4 max-md:flex-col">
+              <div className="flex-shrink-0 max-md:w-full">
+                <div className="relative w-[300px] h-[250px] max-md:w-full max-md:h-[200px]">
+                  <ImageWithFallback
+                    src="/images/contributions/3.png"
+                    alt="JBP as Chief Minister"
+                    fill
+                    className="rounded-lg"
+                  />
+                </div>
+              </div>
+              <div className="flex-1 space-y-4">
+                <h3 className="text-2xl font-semibold text-[#272727]">
+                  The Complete Vision
+                </h3>
+                <p className="text-neutral-600 text-base leading-7">
+                  Through his three tenures as Chief Minister, Janaki Ballav
+                  Patnaik transformed Odisha into a state that balanced
+                  industrial growth with cultural preservation, infrastructure
+                  development with social welfare, and modern institutions with
+                  traditional values. His cumulative tenure of over 14 years
+                  remains one of the longest in Odisha's history, a testament to
+                  the trust people placed in his leadership and vision.
+                </p>
               </div>
             </div>
           </div>
@@ -336,8 +755,16 @@ export default function LegacyPage() {
       <section className="py-16 px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
           <SectionTitle title="Governor" highlight="of Assam" />
-          
-          <div className="flex items-center gap-12 max-lg:flex-col">
+
+          <div className="mb-8">
+            <p className="text-center text-neutral-400 text-lg leading-8 max-w-4xl mx-auto">
+              In the twilight of his career (2009–2014), he served as the
+              Governor of Assam. Far from a ceremonial figurehead, he became a
+              proactive "People's Governor."
+            </p>
+          </div>
+
+          <div className="flex items-start gap-12 max-lg:flex-col">
             <div className="flex-shrink-0 max-lg:w-full">
               <div className="relative w-[400px] h-[350px] max-lg:w-full max-lg:h-[300px]">
                 <ImageWithFallback
@@ -348,26 +775,49 @@ export default function LegacyPage() {
                 />
               </div>
             </div>
-            
-            <div className="flex-1 space-y-4">
+
+            <div className="flex-1 space-y-6">
               <div className="inline-block px-4 py-2 bg-sky-100 text-sky-600 rounded-full text-sm font-medium mb-2">
                 2009 - 2014
               </div>
-              <h3 className="text-2xl font-semibold text-[#272727]">25th Governor of Assam</h3>
-              <p className="text-neutral-400 text-base leading-7">
-                In 2009, recognizing his vast experience and statesmanship, J.B. Patnaik was appointed 
-                as the 25th Governor of Assam. This prestigious constitutional position marked the 
-                culmination of his illustrious political career.
-              </p>
-              <p className="text-neutral-400 text-base leading-7">
-                As Governor, he worked tirelessly to promote harmony and development in the 
-                northeastern state. His tenure was marked by his efforts to bridge communities, 
-                support educational initiatives, and maintain constitutional propriety.
-              </p>
-              <p className="text-neutral-400 text-base leading-7">
-                He completed his five-year term in 2014, earning praise from across the political 
-                spectrum for his impartial governance and commitment to constitutional duties.
-              </p>
+              <h3 className="text-2xl font-semibold text-[#272727]">
+                25th Governor of Assam: A Statesman's Healing Touch
+              </h3>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="p-5 bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl border border-purple-200">
+                  <h4 className="text-lg font-semibold text-[#272727] mb-2">
+                    Social Reformer
+                  </h4>
+                  <p className="text-neutral-600 text-sm leading-6">
+                    In a historic move, he led a group of women into the
+                    Patbausi Satra, breaking a centuries-old taboo that barred
+                    women from entering the sanctum sanctorum.
+                  </p>
+                </div>
+                <div className="p-5 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl border border-blue-200">
+                  <h4 className="text-lg font-semibold text-[#272727] mb-2">
+                    Cultural Bridge
+                  </h4>
+                  <p className="text-neutral-600 text-sm leading-6">
+                    He revived the ancient spiritual link between Odisha and
+                    Assam, celebrating the legacy of Srimanta Sankardeva. A
+                    monumental testament is the Jagannath Temple in Dibrugarh,
+                    which was built through his dedicated efforts, replicating
+                    the architectural grandeur of the Puri temple.
+                  </p>
+                </div>
+                <div className="p-5 bg-gradient-to-br from-green-50 to-green-100 rounded-xl border border-green-200 md:col-span-2">
+                  <h4 className="text-lg font-semibold text-[#272727] mb-2">
+                    Peacekeeper
+                  </h4>
+                  <p className="text-neutral-600 text-sm leading-6">
+                    His tenure is credited with improving the security scenario
+                    in Assam, as he actively engaged with insurgent groups to
+                    bring them to the negotiating table.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -377,51 +827,106 @@ export default function LegacyPage() {
       <section className="py-16 px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white">
         <div className="max-w-7xl mx-auto">
           <SectionTitle title="Personal Life" highlight="& Values" />
-          
-          <div className="flex items-start gap-12 max-lg:flex-col-reverse">
-            <div className="flex-1 space-y-4">
-              <h3 className="text-2xl font-semibold text-[#272727]">A Man of Principles</h3>
-              <p className="text-neutral-400 text-base leading-7">
-                Beyond his political achievements, J.B. Patnaik was known for his simple lifestyle, 
-                intellectual pursuits, and deep commitment to Odia culture and literature. He was 
-                a prolific writer and contributed significantly to Odia journalism and literature.
-              </p>
-              <p className="text-neutral-400 text-base leading-7">
-                His personal philosophy was deeply influenced by Gandhian principles of truth, 
-                non-violence, and service to humanity. He believed that politics should be a medium 
-                for social transformation and upliftment of the marginalized.
-              </p>
-              
-              <div className="grid grid-cols-3 gap-4 mt-6 max-md:grid-cols-1">
-                {personalHighlights.map((item) => (
-                  <div
-                    key={item.title}
-                    className="group relative overflow-hidden rounded-xl border border-slate-200 bg-white/80 p-5 shadow-sm backdrop-blur transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
-                  >
-                    <div className="absolute inset-0 bg-gradient-to-br from-sky-50 to-white opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-                    <div className="relative flex flex-col gap-3">
-                      <div className="flex items-center gap-3">
-                        <div className="flex h-11 w-11 items-center justify-center rounded-full bg-sky-50 text-sky-600 ring-1 ring-sky-100 transition group-hover:ring-sky-200">
-                          <item.icon className="text-2xl" />
-                        </div>
+
+          <div className="mb-8 text-center max-w-3xl mx-auto">
+            <h3 className="text-3xl font-bold text-[#272727] mb-4">
+              The Sage in Power
+            </h3>
+            <p className="text-neutral-500 text-lg leading-8 italic">
+              "Service to the nation is the only philosophy of my life."
+            </p>
+          </div>
+
+          {/* Main Content Grid */}
+          <div className="grid grid-cols-2 gap-8 max-lg:grid-cols-1 mb-12">
+            {/* Image */}
+            <div className="relative w-full h-[500px] max-lg:h-[400px]">
+              <ImageWithFallback
+                src="/images/contributions/5.png"
+                alt="JBP Personal Life"
+                fill
+                className="rounded-xl object-cover"
+              />
+            </div>
+
+            {/* Key Highlights Cards */}
+            <div className="grid grid-cols-1 gap-4">
+              {personalHighlights.map((item) => (
+                <div
+                  key={item.title}
+                  className="group relative overflow-hidden rounded-xl border-2 border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:border-sky-300 hover:shadow-lg hover:-translate-y-1"
+                >
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0">
+                      <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br from-sky-50 to-sky-100 text-sky-600 ring-2 ring-sky-100 transition-all duration-300 group-hover:ring-sky-300 group-hover:scale-110">
+                        <item.icon className="text-2xl" />
                       </div>
-                      <h4 className="text-lg font-semibold text-[#272727]">{item.title}</h4>
-                      <p className="text-sm text-neutral-500 leading-6">{item.description}</p>
+                    </div>
+                    <div className="flex-1">
+                      <h4 className="text-xl font-bold text-[#272727] mb-2 group-hover:text-sky-600 transition-colors">
+                        {item.title}
+                      </h4>
+                      <p className="text-neutral-600 leading-7">
+                        {item.description}
+                      </p>
                     </div>
                   </div>
-                ))}
-              </div>
+                </div>
+              ))}
             </div>
-            
-            <div className="flex-shrink-0 max-lg:w-full">
-              <div className="relative w-[400px] h-[350px] max-lg:w-full max-lg:h-[300px]">
-                <ImageWithFallback
-                  src="/images/contributions/5.png"
-                  alt="JBP Personal Life"
-                  fill
-                  className="rounded-lg"
-                />
+          </div>
+
+          {/* Detailed Sections */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="p-8 bg-gradient-to-br from-blue-50 to-white rounded-xl border border-blue-100 shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="h-1 w-12 bg-sky-500 rounded-full"></div>
+                <h4 className="text-2xl font-bold text-[#272727]">
+                  A Man of Principles
+                </h4>
               </div>
+              <p className="text-neutral-600 leading-7 mb-4">
+                J.B. Patnaik was known for his composure and dignity. Even in
+                the face of harsh political criticism, he maintained the decorum
+                of a statesman, believing that "work speaks louder than words."
+                He navigated the corridors of power with the discipline of a
+                yogi, practicing Pranayama and swimming daily until the very
+                end.
+              </p>
+            </div>
+
+            <div className="p-8 bg-gradient-to-br from-purple-50 to-white rounded-xl border border-purple-100 shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="h-1 w-12 bg-purple-500 rounded-full"></div>
+                <h4 className="text-2xl font-bold text-[#272727]">
+                  Writer & Intellectual
+                </h4>
+              </div>
+              <p className="text-neutral-600 leading-7">
+                Beyond the files of governance, he was a literary giant. He was
+                the founder-editor of the monthly literary magazine Paurusha. A
+                profound Sanskrit scholar, he won the Sahitya Akademi Award for
+                his translation of Bankim Chandra Chattopadhyay's novels into
+                Odia. He also translated the Ramayana, Mahabharata, and Bhagavad
+                Gita into lucid Odia prose, making the epics accessible to the
+                common man.
+              </p>
+            </div>
+
+            <div className="p-8 bg-gradient-to-br from-green-50 to-white rounded-xl border border-green-100 shadow-sm hover:shadow-md transition-shadow md:col-span-2">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="h-1 w-12 bg-green-500 rounded-full"></div>
+                <h4 className="text-2xl font-bold text-[#272727]">
+                  Gandhian Values & Service to People
+                </h4>
+              </div>
+              <p className="text-neutral-600 leading-7">
+                A lifelong Gandhian, he wore Khadi and spun the charkha in his
+                youth. His philosophy was simple: "Service to the nation is the
+                only philosophy of my life." Whether resolving the grievances of
+                temple servitors in Puri or visiting flood-hit villages, he
+                remained accessible and rooted.
+              </p>
             </div>
           </div>
         </div>
@@ -431,36 +936,104 @@ export default function LegacyPage() {
       <section className="py-16 px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
           <SectionTitle title="Lasting" highlight="Legacy" />
-          
-          <div className="text-center mb-12 max-w-3xl mx-auto">
-            <p className="text-neutral-400 text-lg leading-8">
-              Janaki Ballabh Patnaik passed away on April 21, 2015, in Bhubaneswar, leaving behind 
-              a legacy that continues to inspire generations of politicians and public servants.
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-3 gap-6 max-lg:grid-cols-2 max-md:grid-cols-1">
-            {legacyHighlights.map((item, index) => (
-              <div
-                key={item.title}
-                className="group relative overflow-hidden rounded-xl border border-gray-100 bg-white shadow-sm transition-shadow duration-300 hover:shadow-lg"
-              >
-                <div className="relative h-40 w-full overflow-hidden bg-slate-100">
-                  <ImageWithFallback
-                    src={item.image}
-                    alt={item.title}
-                    fill
-                    className="rounded-none group-hover:scale-105 transition-transform duration-500"
-                  />
+
+          {/* Legacy Categories */}
+          <div className="space-y-6">
+            {legacyCategories.map((category) => (
+              <div key={category.id} className="space-y-6">
+                {/* Category Header */}
+                <div
+                  className="flex items-center justify-between p-5 rounded-lg cursor-pointer transition-all duration-200 hover:bg-gray-50 border border-gray-200"
+                  onClick={() =>
+                    setExpandedCategory(
+                      expandedCategory === category.id ? null : category.id
+                    )
+                  }
+                >
+                  <div className="flex items-center gap-4">
+                    <div className="flex-shrink-0">
+                      <div
+                        className={`p-2.5 rounded-lg bg-gradient-to-br ${category.color}`}
+                      >
+                        <category.icon className="text-2xl text-[#272727]" />
+                      </div>
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-semibold text-[#272727]">
+                        {category.title}
+                      </h3>
+                    </div>
+                  </div>
+                  <div className="text-sky-500 transition-all duration-200">
+                    {expandedCategory === category.id ? (
+                      <FiChevronDown className="text-xl" />
+                    ) : (
+                      <FiChevronRight className="text-xl" />
+                    )}
+                  </div>
                 </div>
-                <div className="p-5 space-y-2">
-                  <h4 className="text-xl font-semibold text-[#272727]">{item.title}</h4>
-                  <p className="text-neutral-500 text-base leading-6">{item.description}</p>
-                </div>
+
+                {/* Category Achievements Grid */}
+                {expandedCategory === category.id && (
+                  <div className="grid grid-cols-3 gap-4 max-lg:grid-cols-2 max-md:grid-cols-1 animate-in slide-in-from-top-5 duration-300">
+                    {category.achievements.map((achievement, idx) => (
+                      <div
+                        key={idx}
+                        className="group relative overflow-hidden rounded-xl border border-gray-100 bg-white shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+                      >
+                        {achievement.image && (
+                          <div className="relative h-40 w-full overflow-hidden bg-slate-100">
+                            <ImageWithFallback
+                              src={achievement.image}
+                              alt={achievement.title}
+                              fill
+                              className="rounded-t-xl group-hover:scale-105 transition-transform duration-500"
+                            />
+                          </div>
+                        )}
+                        <div className="p-5 space-y-2">
+                          <h4 className="text-lg font-semibold text-[#272727] group-hover:text-sky-600 transition-colors">
+                            {achievement.title}
+                          </h4>
+                          <p className="text-neutral-500 text-sm leading-6">
+                            {achievement.description}
+                          </p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
             ))}
           </div>
-          
+        </div>
+      </section>
+
+      {/* Legacy Conclusion Section */}
+      <section className="py-20 px-6 lg:px-8 bg-gradient-to-br from-sky-500 to-sky-600">
+        <div className="max-w-4xl mx-auto text-center">
+          <div className="mb-6">
+            <h2 className="text-4xl font-bold text-white mb-6 max-md:text-3xl">
+              A Legacy That Lives On
+            </h2>
+          </div>
+          <div className="space-y-6">
+            <p className="text-sky-50 text-lg leading-8 text-center">
+              Janaki Ballav Patnaik passed away on April 21, 2015, in Tirupati,
+              fittingly after attending a convocation of Sanskrit scholars. He
+              left behind a state that was unrecognizable from the one he
+              inherited—endowed with major industries, a thriving capital city,
+              and a revived cultural identity.
+            </p>
+            <div className="pt-6 border-t border-sky-400/30">
+              <p className="text-white text-xl leading-8 font-medium italic">
+                He is remembered today not just as a politician, but as a
+                Renaissance Man—the "Scholar-Statesman" who taught Odisha to
+                dream of industrial might while keeping its feet firmly planted
+                in its glorious heritage.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -476,6 +1049,19 @@ export default function LegacyPage() {
         }
         .animate-marquee-vertical {
           animation: marquee-vertical linear infinite;
+        }
+        @keyframes slide-in-from-top-5 {
+          from {
+            opacity: 0;
+            transform: translateY(-1.25rem);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        .animate-in {
+          animation: slide-in-from-top-5 0.3s ease-out;
         }
       `}</style>
     </main>

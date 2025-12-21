@@ -96,14 +96,14 @@ function BookCard({
             }}
           />
         </div>
-        <div className="flex-1 space-y-1">
+        <div className="flex-1 space-y-1 min-w-0 overflow-hidden">
           <div className="flex items-center gap-2">
-            <h4 className="text-lg font-semibold text-[#272727]">{title}</h4>
-            <span className="px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wide bg-sky-50 text-sky-600 rounded-full">
+            <h4 className="text-lg font-semibold text-[#272727] truncate flex-1 min-w-0">{title}</h4>
+            <span className="px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wide bg-sky-50 text-sky-600 rounded-full whitespace-nowrap flex-shrink-0">
               {year}
             </span>
           </div>
-          <p className="text-neutral-500 text-sm leading-6">{description}</p>
+          <p className="text-neutral-500 text-sm leading-6 break-words overflow-hidden">{description}</p>
         </div>
       </div>
     </div>
@@ -132,16 +132,16 @@ export default function LiteraturePage() {
       <section className="min-h-screen flex items-center justify-center px-6 lg:px-8 pt-20">
         <div className="w-full max-w-7xl mx-auto">
           <div className="flex items-center justify-between gap-12 max-lg:flex-col max-lg:items-center">
-            <div className="flex-1 space-y-6 max-lg:text-center max-lg:w-full">
+            <div className="flex-1 space-y-2 max-lg:text-center max-lg:w-full">
               <h1 className="text-5xl text-[#272727] leading-[64px] max-md:text-3xl">
                 <span className="font-semibold">
                   The Scholar Statesman
-                  <br />
-                </span>
-                <span className="font-normal">
-                  Beyond Politics: The Philosophy, Ideology, and Literary-Journalistic Universe
                 </span>
               </h1>
+              
+              <h2 className="max-w-[584px] text-xl text-[#272727] font-normal leading-8 max-md:text-lg max-lg:max-w-full">
+                Beyond Politics: The Philosophy, Ideology, and Literary-Journalistic Universe
+              </h2>
 
               <p className="max-w-[584px] text-neutral-400 text-base font-normal leading-6 max-lg:max-w-full">
                 Long before taking the oath of office, Janaki Ballav Patnaik took up the pen. For him, 
@@ -225,7 +225,7 @@ export default function LiteraturePage() {
         <div className="max-w-7xl mx-auto">
           <SectionTitle title="Literary" highlight="Works" />
 
-          <div className="max-w-4xl space-y-6 mx-auto text-center">
+          <div className="max-w-4xl space-y-6 mx-auto text-center mb-12">
             <h3 className="text-2xl font-semibold text-[#272727]">A Prolific Author</h3>
             <p className="text-neutral-400 text-base leading-7">
               J.B. Patnaik authored numerous books, articles, and essays throughout his life. 
@@ -236,28 +236,245 @@ export default function LiteraturePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-5xl mx-auto mt-8">
-            <BookCard
-              title="Asamapta Atmalipi"
-              year="Autobiography"
-              description="Janaki Ballav Patnaik's unfinished self-portrait, capturing his public journey and inner reflections."
-              imageSrc="https://ritikart.com/cdn/shop/products/asamaptaatmalipi_130x.jpg?v=1647432780"
-              imageAlt="Asamapta Atmalipi book cover"
-            />
-            <BookCard
-              title="Goutam Buddha"
-              year="Biography"
-              description="A thoughtful retelling of the life and teachings of Gautam Buddha for Odia readers."
-              imageSrc="https://www.odishashop.com/wp-content/uploads/2022/12/Odia-Book-Goutama-budha-From-Odishashop.jpg"
-              imageAlt="Goutam Buddha book cover"
-            />
-            <BookCard
-              title="Srimad Bhagabat"
-              year="Translation"
-              description="An Odia rendering of the Bhagavata Purana, reflecting his dedication to classical texts."
-              imageSrc="https://ritikart.com/cdn/shop/products/srimadbhagabatfinalcopy_130x.jpg?v=1648290628"
-              imageAlt="Srimad Bhagabat book cover"
-            />
+          {/* Translations */}
+          <div className="mb-12">
+            <h4 className="text-xl font-semibold text-[#272727] mb-6 flex items-center gap-2">
+              <FiBookOpen className="text-sky-500" />
+              Translations
+            </h4>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <BookCard
+                title="Bankima Upanyasmala (Vol 1 & 2)"
+                year="2001"
+                description="Sahitya Akademi Award winner - Translation of Bankim Chandra Chattopadhyay's novels into Odia."
+                imageSrc="/images/contributions/1.png"
+                imageAlt="Bankima Upanyasmala"
+              />
+              <BookCard
+                title="Bairagya Sataka (Bhartruhari)"
+                year="1996"
+                description="Odisha Sahitya Akademi Award winner - Translation of Bhartruhari's philosophical verses."
+                imageSrc="/images/contributions/2.png"
+                imageAlt="Bairagya Sataka"
+              />
+              <BookCard
+                title="Niti Sataka & Srungar Sataka"
+                year="Translation"
+                description="The complete Satakatrayi - Translation of Bhartruhari's three collections of verses."
+                imageSrc="/images/contributions/3.png"
+                imageAlt="Niti Sataka & Srungar Sataka"
+              />
+              <BookCard
+                title="Srimad Bhagabata"
+                year="Scripture"
+                description="Prose translation of the Bhagavata Purana into Odia, making the epic accessible to common readers."
+                imageSrc="/images/contributions/4.png"
+                imageAlt="Srimad Bhagabata"
+              />
+              <BookCard
+                title="Valmiki Ramayana"
+                year="Scripture"
+                description="Odia translation of the ancient Sanskrit epic Valmiki Ramayana, preserving the essence of the original."
+                imageSrc="/images/contributions/5.png"
+                imageAlt="Valmiki Ramayana"
+              />
+              <BookCard
+                title="Byasakruta Mahabharata"
+                year="Scripture"
+                description="Translation of the epic Mahabharata into Odia, bringing the great epic to Odia readers."
+                imageSrc="/images/contributions/6.png"
+                imageAlt="Byasakruta Mahabharata"
+              />
+            </div>
+          </div>
+
+          {/* Original Prose */}
+          <div className="mb-12">
+            <h4 className="text-xl font-semibold text-[#272727] mb-6 flex items-center gap-2">
+              <FiFileText className="text-sky-500" />
+              Original Prose
+            </h4>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <BookCard
+                title="Gautama Buddha"
+                year="Biography"
+                description="A modern democratic interpretation of the life and teachings of Gautama Buddha."
+                imageSrc="/images/contributions/1.png"
+                imageAlt="Gautama Buddha"
+              />
+              <BookCard
+                title="Swapna O Sankalpa"
+                year="Essays"
+                description="Essays on Odisha's Vision - A collection of thoughtful writings on the state's future."
+                imageSrc="/images/contributions/2.png"
+                imageAlt="Swapna O Sankalpa"
+              />
+              <BookCard
+                title="Balmikikruta Ramayana"
+                year="Prose"
+                description="Critical Prose Retelling of the Ramayana with modern interpretations."
+                imageSrc="/images/contributions/3.png"
+                imageAlt="Balmikikruta Ramayana"
+              />
+              <BookCard
+                title="Nirbachita Prabandha Samkalan"
+                year="Essays"
+                description="Selected Essays on Literature & Politics - A compilation of his finest writings."
+                imageSrc="/images/contributions/4.png"
+                imageAlt="Nirbachita Prabandha Samkalan"
+              />
+              <BookCard
+                title="Samayara Sopanare"
+                year="Prose"
+                description="A collection of prose writings reflecting on contemporary times and society."
+                imageSrc="/images/contributions/5.png"
+                imageAlt="Samayara Sopanare"
+              />
+              <BookCard
+                title="Panchatatwatmaka Srichaitanya O Panchasakha"
+                year="Odia Prose"
+                description="An exploration of the five elements of Chaitanya and the Panchasakha tradition."
+                imageSrc="/images/contributions/6.png"
+                imageAlt="Panchatatwatmaka Srichaitanya O Panchasakha"
+              />
+            </div>
+          </div>
+
+          {/* Poetry & Other Works */}
+          <div className="mb-12">
+            <h4 className="text-xl font-semibold text-[#272727] mb-6 flex items-center gap-2">
+              <FiFeather className="text-sky-500" />
+              Poetry & Other Works
+            </h4>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <BookCard
+                title="Sindhu Upatyaka"
+                year="Poetry"
+                description="A collection of poems that has been translated into Bengali, showcasing his poetic prowess."
+                imageSrc="/images/contributions/1.png"
+                imageAlt="Sindhu Upatyaka"
+              />
+              <BookCard
+                title="Samskrtavanmayavaibhavam"
+                year="Sanskrit"
+                description="Original Sanskrit Essays & Poems - Demonstrating his mastery of classical Sanskrit literature."
+                imageSrc="/images/contributions/2.png"
+                imageAlt="Samskrtavanmayavaibhavam"
+              />
+              <BookCard
+                title="Malunira Fula O Anyana Galpa"
+                year="Odia"
+                description="Short stories collection - A compilation of his finest short stories in Odia."
+                imageSrc="/images/contributions/3.png"
+                imageAlt="Malunira Fula O Anyana Galpa"
+              />
+            </div>
+          </div>
+
+          {/* Memoirs & Autobiography */}
+          <div className="mb-12">
+            <h4 className="text-xl font-semibold text-[#272727] mb-6 flex items-center gap-2">
+              <FiBookmark className="text-sky-500" />
+              Memoirs & Autobiography
+            </h4>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <BookCard
+                title="Asamapta Atmalipi"
+                year="Autobiography"
+                description="Unfinished Autobiography of JBP - A self-portrait capturing his public journey and inner reflections."
+                imageSrc="/images/contributions/4.png"
+                imageAlt="Asamapta Atmalipi"
+              />
+              <BookCard
+                title="Assamru Lekhuchi"
+                year="Memoir"
+                description="A collection of his writings while serving as the Governor of Assam (2009-2014)."
+                imageSrc="/images/contributions/5.png"
+                imageAlt="Assamru Lekhuchi"
+              />
+              <BookCard
+                title="Bachaspati Mahodaya"
+                year="Memoir"
+                description="Collection of his writings - Reflections and thoughts from his distinguished career."
+                imageSrc="/images/contributions/6.png"
+                imageAlt="Bachaspati Mahodaya"
+              />
+            </div>
+          </div>
+
+          {/* Edited Works */}
+          <div className="mb-12">
+            <h4 className="text-xl font-semibold text-[#272727] mb-6 flex items-center gap-2">
+              <FiLayers className="text-sky-500" />
+              Edited Works
+            </h4>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <BookCard
+                title="Gokulananda Granthavali"
+                year="Edited Volume"
+                description="Collected works of his father, Gokulananda Patnaik - A tribute to the noted poet and freedom fighter."
+                imageSrc="/images/contributions/1.png"
+                imageAlt="Gokulananda Granthavali"
+              />
+            </div>
+          </div>
+
+          {/* Journalism & Periodicals */}
+          <div className="mb-12">
+            <h4 className="text-xl font-semibold text-[#272727] mb-6 flex items-center gap-2">
+              <FiFeather className="text-sky-500" />
+              Journalism & Periodicals
+            </h4>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <div className="p-6 bg-white/80 rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all">
+                <div className="flex items-start gap-4">
+                  <div className="relative w-14 h-16 rounded-lg overflow-hidden flex-shrink-0 shadow-inner bg-gradient-to-br from-sky-100 to-sky-200 flex items-center justify-center">
+                    <FiFeather className="text-sky-500 text-2xl" />
+                  </div>
+                  <div className="flex-1 space-y-1">
+                    <div className="flex items-center gap-2">
+                      <h4 className="text-lg font-semibold text-[#272727]">Paurusha</h4>
+                      <span className="px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wide bg-sky-50 text-sky-600 rounded-full">
+                        Founder-Editor
+                      </span>
+                    </div>
+                    <p className="text-neutral-500 text-sm leading-6">Monthly Literary Digest - A platform for Odia literature and culture.</p>
+                  </div>
+                </div>
+              </div>
+              <div className="p-6 bg-white/80 rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all">
+                <div className="flex items-start gap-4">
+                  <div className="relative w-14 h-16 rounded-lg overflow-hidden flex-shrink-0 shadow-inner bg-gradient-to-br from-sky-100 to-sky-200 flex items-center justify-center">
+                    <FiFileText className="text-sky-500 text-2xl" />
+                  </div>
+                  <div className="flex-1 space-y-1">
+                    <div className="flex items-center gap-2">
+                      <h4 className="text-lg font-semibold text-[#272727]">Eastern Times</h4>
+                      <span className="px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wide bg-sky-50 text-sky-600 rounded-full">
+                        Editor
+                      </span>
+                    </div>
+                    <p className="text-neutral-500 text-sm leading-6">English Newspaper - Edited from 1952 to 1966, championing the causes of the common man.</p>
+                  </div>
+                </div>
+              </div>
+              <div className="p-6 bg-white/80 rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all">
+                <div className="flex items-start gap-4">
+                  <div className="relative w-14 h-16 rounded-lg overflow-hidden flex-shrink-0 shadow-inner bg-gradient-to-br from-sky-100 to-sky-200 flex items-center justify-center">
+                    <FiFileText className="text-sky-500 text-2xl" />
+                  </div>
+                  <div className="flex-1 space-y-1">
+                    <div className="flex items-center gap-2">
+                      <h4 className="text-lg font-semibold text-[#272727]">Prajatantra</h4>
+                      <span className="px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wide bg-sky-50 text-sky-600 rounded-full">
+                        Editor
+                      </span>
+                    </div>
+                    <p className="text-neutral-500 text-sm leading-6">Odia Newspaper - Edited from 1952 to 1967, amplifying the Odia voice in national debates.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

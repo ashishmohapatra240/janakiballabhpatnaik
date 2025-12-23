@@ -1,17 +1,6 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
-
-const filterTabs = [
-  "All",
-  "Sports",
-  "Literature",
-  "Politics",
-  "Influence",
-  "Odisha",
-  "Geography",
-];
 
 const contributionCards = [
   {
@@ -67,13 +56,6 @@ const contributionCards = [
 ];
 
 export default function ContributionsSection() {
-  const [activeFilter, setActiveFilter] = useState("All");
-
-  const filteredCards =
-    activeFilter === "All"
-      ? contributionCards
-      : contributionCards.filter((card) => card.category === activeFilter);
-
   return (
     <section
       id="contributions"
@@ -86,27 +68,11 @@ export default function ContributionsSection() {
           <h2 className="text-4xl text-[#272727] mb-10 max-md:text-2xl font-normal">
             The Essence of a Legacy
           </h2>
-
-          <div className="flex items-center justify-center gap-5 flex-wrap max-md:gap-3">
-            {filterTabs.map((tab) => (
-              <button
-                key={tab}
-                onClick={() => setActiveFilter(tab)}
-                className={`px-4 py-1.5 rounded-lg border outline outline-1 outline-offset-[-1px] outline-neutral-200 transition-colors ${
-                  activeFilter === tab
-                    ? "bg-neutral-100 text-neutral-800"
-                    : "bg-white text-neutral-800 hover:bg-gray-50"
-                }`}
-              >
-                {tab}
-              </button>
-            ))}
-          </div>
         </div>
 
         {/* Cards Grid */}
         <div className="grid grid-cols-3 gap-5 mt-10 max-lg:grid-cols-2 max-md:grid-cols-1">
-          {filteredCards.map((card) => (
+          {contributionCards.map((card) => (
             <div
               key={card.id}
               className="bg-white rounded-2xl outline outline-1 outline-offset-[-1px] outline-neutral-200 overflow-hidden pb-5"

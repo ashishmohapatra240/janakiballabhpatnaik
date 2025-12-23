@@ -180,46 +180,6 @@ export default function LiteraturePage() {
         </div>
       </section>
 
-      {/* Core Pillars Section */}
-      <section className="py-12 px-6 lg:px-8 bg-gradient-to-b from-white to-slate-50">
-        <div className="max-w-7xl mx-auto">
-          <SectionTitle title="Legacy" highlight="Pillars" />
-          <div className="grid grid-cols-3 gap-6 max-md:grid-cols-1">
-            {[
-              {
-                title: "Writer & Intellectual",
-                description:
-                  "Translated the Mahabharata, Ramayana, and Shrimad Bhagavat into Odia and earned the Sahitya Akademi (2001) and Odisha Sahitya Akademi (1996) awards for his translations and literary scholarship.",
-                icon: FiBookOpen,
-              },
-              {
-                title: "Gandhian Values",
-                description:
-                  "Championed non-violence, truth, and service-led governance, shaping welfare programmes around rural uplift, self-reliance, and inclusive growth inspired by Gandhian ideals.",
-                icon: FiHeart,
-              },
-              {
-                title: "Service to People",
-                description:
-                  "Served three terms as Odisha Chief Minister (1980–1989, 1995–1999) and later as Governor of Assam (2009–2014), driving initiatives like the '1000 industries in 1000 days' push to expand opportunity.",
-                icon: FiUsers,
-              },
-            ].map((item, index) => (
-              <div
-                key={index}
-                className="p-6 bg-white rounded-xl border border-gray-100 hover:shadow-md transition-shadow"
-              >
-                <div className="w-12 h-12 rounded-full bg-sky-50 text-sky-500 flex items-center justify-center mb-4">
-                  <item.icon className="text-xl" />
-                </div>
-                <h3 className="text-xl font-semibold text-[#272727] mb-2">{item.title}</h3>
-                <p className="text-neutral-400 text-sm leading-6">{item.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Literary Works Section */}
       <section className="py-16 px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white">
         <div className="max-w-7xl mx-auto">
@@ -741,17 +701,6 @@ export default function LiteraturePage() {
                 opinion pieces and columns throughout his political career, maintaining his 
                 connection with the written word.
               </p>
-              
-              <div className="grid grid-cols-2 gap-4 mt-6 max-md:grid-cols-1">
-                <div className="p-4 bg-white rounded-lg border border-gray-100">
-                  <p className="text-sky-500 font-bold text-xl">Editor</p>
-                  <p className="text-neutral-400 text-sm">Leading Odia publications</p>
-                </div>
-                <div className="p-4 bg-white rounded-lg border border-gray-100">
-                  <p className="text-sky-500 font-bold text-xl">Columnist</p>
-                  <p className="text-neutral-400 text-sm">Regular political commentary</p>
-                </div>
-              </div>
             </div>
             
             <div className="flex-shrink-0 max-lg:w-full">
@@ -761,47 +710,6 @@ export default function LiteraturePage() {
                   alt="JBP Journalism Work"
                   fill
                   className="rounded-lg"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Speeches & Oratory Section */}
-      <section className="py-16 px-6 lg:px-8 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <SectionTitle title="Speeches" highlight="& Oratory" />
-          
-          <div className="flex items-start gap-12 max-lg:flex-col">
-            <div className="flex-shrink-0 max-lg:w-full">
-              <div className="relative w-[400px] h-[350px] max-lg:w-full max-lg:h-[300px]">
-                <ImageWithFallback
-                  src="/images/drive/15th Convocation of RSVP_Photo.png"
-                  alt="JBP Speaking at Events"
-                  fill
-                  className="rounded-lg"
-                />
-              </div>
-            </div>
-            
-            <div className="flex-1 space-y-6">
-              <h3 className="text-2xl font-semibold text-[#272727]">A Master Orator</h3>
-              <p className="text-neutral-400 text-base leading-7">
-                J.B. Patnaik was renowned for his powerful oratory. His speeches in the 
-                Legislative Assembly, Parliament, and public gatherings were marked by 
-                eloquence, depth, and a command over both Odia and Hindi languages. His 
-                ability to connect with audiences made him a compelling public speaker.
-              </p>
-              
-              <div className="space-y-4">
-                <QuoteCard
-                  quote="Development without social justice is meaningless. Our progress must lift every citizen of Odisha."
-                  context="Assembly Speech, 1985"
-                />
-                <QuoteCard
-                  quote="The strength of Odisha lies in its culture, its people, and their unwavering spirit."
-                  context="Public Address, Bhubaneswar"
                 />
               </div>
             </div>
@@ -866,103 +774,6 @@ export default function LiteraturePage() {
                 <p className="text-neutral-400 text-base">{item.description}</p>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Publications Gallery Section */}
-      <section className="py-16 px-6 lg:px-8 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <SectionTitle title="Publications" highlight="Gallery" />
-          
-          <p className="text-center text-neutral-400 text-base mb-12 max-w-2xl mx-auto">
-            A showcase of J.B. Patnaik's published works, including books, articles, and 
-            contributions to various publications over his illustrious career.
-          </p>
-
-          <div className="grid lg:grid-cols-2 gap-10 items-center">
-            <div className="relative group">
-              <div className="w-full h-[450px] max-md:h-[340px] overflow-hidden rounded-2xl shadow-lg bg-gradient-to-br from-slate-100 to-white">
-                <ImageWithFallback
-                  src="/images/drive/At Srimandir-1.png"
-                  alt="Janaki Ballabh Patnaik during a literary event"
-                  fill
-                  className="rounded-2xl group-hover:scale-[1.02] transition-transform"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-black/15 to-transparent rounded-2xl" />
-                <div className="absolute bottom-4 left-4 right-4 flex flex-wrap gap-3">
-                  {[
-                    { icon: FiAward, label: "Sahitya Akademi laureate" },
-                    { icon: FiBookOpen, label: "25+ published works" },
-                    { icon: FiFeather, label: "Voice for Odia readers" },
-                  ].map((chip, index) => (
-                    <span
-                      key={index}
-                      className="inline-flex items-center gap-2 px-3 py-2 bg-white/90 text-slate-700 rounded-lg shadow-sm"
-                    >
-                      <chip.icon className="text-sky-500" />
-                      <span className="text-sm font-medium">{chip.label}</span>
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
-
-            <div className="space-y-6">
-              <div className="space-y-3">
-                <h3 className="text-2xl font-semibold text-[#272727]">Signature Works</h3>
-                <p className="text-neutral-500">
-                  Essays, translations, and policy writings that shaped discourse in Odisha and beyond.
-                  Explore the diversity of his contributions spanning literature, governance, and culture.
-                </p>
-              </div>
-
-              {/* Featured Publications Grid */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {[
-                  {
-                    title: "Political Essays",
-                    type: "Book",
-                    description: "Sharp commentaries on democracy, welfare, and governance.",
-                    icon: FiFileText,
-                  },
-                  {
-                    title: "Odia Editorials",
-                    type: "Collection",
-                    description: "Influential op-eds that amplified the Odia voice in national debates.",
-                    icon: FiFeather,
-                  },
-                  {
-                    title: "Freedom Memories",
-                    type: "Memoir",
-                    description: "Recollections from the independence movement and early public life.",
-                    icon: FiBookmark,
-                  },
-                  {
-                    title: "Development Vision",
-                    type: "Policy Papers",
-                    description: "Blueprints for inclusive growth, rural upliftment, and education.",
-                    icon: FiLayers,
-                  },
-                ].map((pub, index) => (
-                  <div
-                    key={index}
-                    className="p-5 bg-gradient-to-br from-slate-50 to-white rounded-xl border border-gray-100 hover:shadow-md transition-shadow"
-                  >
-                    <div className="flex items-center gap-3 mb-2">
-                      <div className="w-11 h-11 rounded-lg bg-sky-50 text-sky-500 flex items-center justify-center">
-                        <pub.icon className="text-xl" />
-                      </div>
-                      <div>
-                        <h4 className="text-lg font-semibold text-[#272727] leading-6">{pub.title}</h4>
-                        <p className="text-sky-500 text-sm">{pub.type}</p>
-                      </div>
-                    </div>
-                    <p className="text-neutral-500 text-sm leading-6">{pub.description}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
           </div>
         </div>
       </section>

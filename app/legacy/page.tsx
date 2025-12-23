@@ -59,11 +59,16 @@ function ImageWithFallback({
   width?: number;
   height?: number;
 }) {
+  const hasObjectContain = className.includes("object-contain");
+  const hasObjectCover = className.includes("object-cover");
+  const objectFit = hasObjectContain ? "object-contain" : hasObjectCover ? "object-cover" : "object-cover";
+  const otherClasses = className.replace(/object-(contain|cover)/g, "").trim();
+  
   return (
     <div
       className={`relative ${
         fill ? "w-full h-full" : ""
-      } bg-gradient-to-br from-gray-200 to-gray-300 rounded-lg flex items-center justify-center overflow-hidden`}
+      } rounded-lg flex items-center justify-center overflow-hidden`}
     >
       <span className="text-gray-500 absolute z-0">Image</span>
       <Image
@@ -72,7 +77,7 @@ function ImageWithFallback({
         fill={fill}
         width={!fill ? width : undefined}
         height={!fill ? height : undefined}
-        className={`object-cover z-10 ${className}`}
+        className={`${objectFit} z-10 ${otherClasses}`}
         onError={(e) => {
           e.currentTarget.style.display = "none";
         }}
@@ -151,48 +156,48 @@ const legacyCategories = [
         title: "1000 Industries in 1000 Days",
         description:
           "The transformative policy that revolutionized Odisha's industrial landscape",
-        image: "/images/contributions/1.png",
+        image: "/images/drive/DSC07805.JPG",
       },
       {
         title: "NALCO",
         description: "National Aluminium Company Limited",
-        image: "/images/contributions/2.png",
+        image: "/images/contributions/1.png",
       },
       {
         title: "NTPC",
         description: "National Thermal Power Corporation",
-        image: "/images/contributions/3.png",
+        image: "/images/drive/DSC07856.JPG",
       },
       {
         title: "Paradeep Phosphates Limited (PPL)",
         description: "Major fertilizer plant",
-        image: "/images/contributions/4.png",
+        image: "/images/contributions/2.png",
       },
       {
         title: "IFFCO",
         description: "Indian Farmers Fertiliser Cooperative",
-        image: "/images/contributions/5.png",
+        image: "/images/drive/DSC07844.JPG",
       },
       {
         title: "MESCO",
         description: "Metal and Steel Company",
-        image: "/images/contributions/6.png",
+        image: "/images/contributions/3.png",
       },
       {
         title: "Birla Tyres",
         description: "Major tire manufacturing unit",
-        image: "/images/contributions/1.png",
+        image: "/images/drive/DSC07867.JPG",
       },
       {
         title: "IDCO & IPICOL",
         description:
           "Revitalized Industrial Development Corporation and Industrial Promotion & Investment Corporation",
-        image: "/images/contributions/2.png",
+        image: "/images/contributions/4.png",
       },
       {
         title: "Hotels as Industry",
         description: "Granted industry status, triggering the tourism boom",
-        image: "/images/contributions/3.png",
+        image: "/images/drive/At Srimandir-1.png",
       },
     ],
   },
@@ -206,7 +211,7 @@ const legacyCategories = [
         title: "400+ Bridges",
         description:
           "Connecting divided regions, including critical links over the Mahanadi",
-        image: "/images/contributions/4.png",
+        image: "/images/drive/DSC07867.JPG",
       },
       {
         title: "Mahanadi Bridge Links",
@@ -222,12 +227,12 @@ const legacyCategories = [
       {
         title: "Sambalpur-Talcher Rail Link",
         description: "Key railway connectivity",
-        image: "/images/contributions/1.png",
+        image: "/images/drive/DSC07812.JPG",
       },
       {
         title: "Koraput-Rayagada Rail Link",
         description: "Rail connectivity in tribal regions",
-        image: "/images/contributions/2.png",
+        image: "/images/contributions/1.png",
       },
     ],
   },
@@ -241,27 +246,27 @@ const legacyCategories = [
         title: "Power Transformation",
         description:
           "From power-deficit (373 MW) to power-surplus status by 2000",
-        image: "/images/contributions/3.png",
+        image: "/images/drive/DSC07856.JPG",
       },
       {
         title: "Upper Indravati Hydro Electric Project",
         description: "Massive hydroelectric power generation",
-        image: "/images/contributions/4.png",
+        image: "/images/contributions/3.png",
       },
       {
         title: "Ib Valley Thermal Power Station",
         description: "Thermal power generation facility",
-        image: "/images/contributions/5.png",
+        image: "/images/drive/DSC07844.JPG",
       },
       {
         title: "OPGC",
         description: "Odisha Power Generation Corporation",
-        image: "/images/contributions/6.png",
+        image: "/images/contributions/4.png",
       },
       {
         title: "Power Sector Reforms",
         description: "Pioneering reforms creating GRIDCO and OHPC",
-        image: "/images/contributions/1.png",
+        image: "/images/drive/DSC07805.JPG",
       },
     ],
   },
@@ -274,42 +279,42 @@ const legacyCategories = [
       {
         title: "Xavier Institute of Management (XIMB)",
         description: "Premier management institute",
-        image: "/images/contributions/2.png",
+        image: "/images/drive/15th Convocation of RSVP_Photo.png",
       },
       {
         title: "Kalinga Stadium",
         description: "Major sports facility",
-        image: "/images/contributions/3.png",
+        image: "/images/drive/DSC07812.JPG",
       },
       {
         title: "Jawaharlal Nehru Indoor Stadium",
         description: "Indoor sports complex",
-        image: "/images/contributions/4.png",
+        image: "/images/contributions/3.png",
       },
       {
         title: "District-level Sports Hostels",
         description: "For nurturing rural talent",
-        image: "/images/contributions/5.png",
+        image: "/images/contributions/4.png",
       },
       {
         title: "Sri Jagannath Sanskrit University",
         description: "Puri-based Sanskrit university",
-        image: "/images/contributions/6.png",
+        image: "/images/drive/At Srimandir-1.png",
       },
       {
         title: "Odissi Research Centre",
         description: "Cultural preservation and research",
-        image: "/images/contributions/1.png",
+        image: "/images/contributions/5.png",
       },
       {
         title: "Odia as Official Language",
         description: "Mandated in 1985 with first Odia typewriter",
-        image: "/images/contributions/2.png",
+        image: "/images/drive/Book Fair.png",
       },
       {
         title: "Pathani Samanta Planetarium",
         description: "Astronomical education and research",
-        image: "/images/contributions/3.png",
+        image: "/images/drive/Ekamra Pustk Mela-14_.png",
       },
     ],
   },
@@ -322,32 +327,32 @@ const legacyCategories = [
       {
         title: "Industry Status for Agriculture",
         description: "Granted industry status to agriculture sector",
-        image: "/images/contributions/4.png",
+        image: "/images/drive/DSC07844.JPG",
       },
       {
         title: "2-Rupee Rice Scheme",
         description: "Subsidized rice in tribal blocks",
-        image: "/images/contributions/5.png",
+        image: "/images/drive/With Fakir Harichandan.jpg",
       },
       {
         title: "Mid-Day Meal Scheme (1995)",
         description: "Nutrition program for school children",
-        image: "/images/contributions/6.png",
+        image: "/images/contributions/5.png",
       },
       {
         title: "OMFED",
         description: "Odisha State Cooperative Milk Producers' Federation",
-        image: "/images/contributions/1.png",
+        image: "/images/contributions/6.png",
       },
       {
         title: "White Revolution in Odisha",
         description: "Dairy development program",
-        image: "/images/contributions/2.png",
+        image: "/images/contributions/1.png",
       },
       {
         title: "ERRP",
         description: "Economic Rehabilitation of Rural Poor program",
-        image: "/images/contributions/3.png",
+        image: "/images/drive/DSC07766.JPG",
       },
     ],
   },
@@ -360,12 +365,12 @@ const legacyCategories = [
       {
         title: "Chandaka Elephant Sanctuary",
         description: "Wildlife conservation and protection",
-        image: "/images/contributions/4.png",
+        image: "/images/drive/brahmagiri_asham rajyapala sapatnika brahmagiri stita shree alaranathanku darshan kale.png",
       },
       {
         title: "Ekamra Kanan Botanical Garden",
         description: "Botanical research and preservation",
-        image: "/images/contributions/5.png",
+        image: "/images/drive/Ekamra Pustk Mela-14_.png",
       },
       {
         title: "Joint Forest Management",
@@ -414,7 +419,7 @@ export default function LegacyPage() {
             <div className="flex-shrink-0 max-lg:w-full">
               <div className="relative w-[456px] h-[500px] max-lg:w-full max-lg:h-[400px]">
                 <ImageWithFallback
-                  src="/images/contributions/5.png"
+                  src="/images/drive/janaki patnayak (3).JPG"
                   alt="Janaki Ballav Patnaik Portrait"
                   fill
                   className="rounded-lg"
@@ -434,10 +439,10 @@ export default function LegacyPage() {
             <div className="flex-shrink-0 max-lg:w-full">
               <div className="relative w-[400px] h-[350px] max-lg:w-full max-lg:h-[300px]">
                 <ImageWithFallback
-                  src="/images/contributions/3.png"
+                  src="/images/drive/a1 (22).JPG"
                   alt="JBP Early Life"
                   fill
-                  className="rounded-lg"
+                  className="object-contain rounded-lg"
                 />
               </div>
             </div>
@@ -483,7 +488,7 @@ export default function LegacyPage() {
             <div className="space-y-6">
               <div className="relative w-full h-[300px]">
                 <ImageWithFallback
-                  src="/images/contributions/2.png"
+                  src="/images/drive/Swearing in ceremoney of CMJ.B.Patnaik  in presence of Governer B.N. pande on 10.03.1985.jpg"
                   alt="JBP Political Journey"
                   fill
                   className="rounded-lg"
@@ -725,7 +730,7 @@ export default function LegacyPage() {
               <div className="flex-shrink-0 max-md:w-full">
                 <div className="relative w-[300px] h-[250px] max-md:w-full max-md:h-[200px]">
                   <ImageWithFallback
-                    src="/images/contributions/3.png"
+                    src="/images/drive/Swearing in ceremoney of CM J.B.Patnaik in presence of Governer B. Satyanarayan Reddy on 15.03.1995.JPG"
                     alt="JBP as Chief Minister"
                     fill
                     className="rounded-lg"
@@ -768,7 +773,7 @@ export default function LegacyPage() {
             <div className="flex-shrink-0 max-lg:w-full">
               <div className="relative w-[400px] h-[350px] max-lg:w-full max-lg:h-[300px]">
                 <ImageWithFallback
-                  src="/images/contributions/4.png"
+                  src="/images/drive/DSC07805.JPG"
                   alt="JBP as Governor of Assam"
                   fill
                   className="rounded-lg"
@@ -842,7 +847,7 @@ export default function LegacyPage() {
             {/* Image */}
             <div className="relative w-full h-[500px] max-lg:h-[400px]">
               <ImageWithFallback
-                src="/images/contributions/5.png"
+                src="/images/drive/With Fakir Harichandan.jpg"
                 alt="JBP Personal Life"
                 fill
                 className="rounded-xl object-cover"

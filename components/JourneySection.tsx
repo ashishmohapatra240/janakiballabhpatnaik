@@ -23,9 +23,9 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Born on January 3 in Rameswar village, Khordha.",
     images: [
-      "images/contributions/1.png",
-      "images/contributions/2.png",
-      "images/contributions/3.png",
+      "/images/drive/a1 (22).JPG",
+      "/images/contributions/1.png",
+      "/images/contributions/2.png",
     ],
   },
   {
@@ -34,9 +34,9 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Participated in the historic Quit India Movement while a student at Khordha High School.",
     images: [
-      "images/contributions/4.png",
-      "images/contributions/5.png",
-      "images/contributions/6.png",
+      "/images/contributions/3.png",
+      "/images/contributions/4.png",
+      "/images/drive/a1 (4).JPG",
     ],
   },
   {
@@ -45,9 +45,9 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Emerged as a fearless student leader, leading the protest to lower the British Union Jack from the Ravenshaw College premises.",
     images: [
-      "images/contributions/1.png",
-      "images/contributions/2.png",
-      "images/contributions/3.png",
+      "/images/contributions/5.png",
+      "/images/contributions/6.png",
+      "/images/drive/ABC_7635.png",
     ],
   },
   {
@@ -56,9 +56,9 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Graduated with Honours in Sanskrit from the prestigious Ravenshaw College.",
     images: [
-      "images/contributions/4.png",
-      "images/contributions/5.png",
-      "images/contributions/6.png",
+      "/images/drive/15th Convocation of RSVP_Photo.png",
+      "/images/contributions/1.png",
+      "/images/contributions/2.png",
     ],
   },
   {
@@ -67,9 +67,9 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Completes his M.A. in Political Science from Banaras Hindu University (BHU).",
     images: [
-      "images/contributions/1.png",
-      "images/contributions/2.png",
-      "images/contributions/3.png",
+      "/images/contributions/3.png",
+      "/images/drive/Ekamra Pustk Mela-14_.png",
+      "/images/contributions/4.png",
     ],
   },
   {
@@ -78,9 +78,9 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Began his professional journey in journalism by joining The Eastern Times as a Sub-Editor.",
     images: [
-      "images/contributions/4.png",
-      "images/contributions/5.png",
-      "images/contributions/6.png",
+      "/images/drive/Book Fair.png",
+      "/images/contributions/5.png",
+      "/images/contributions/6.png",
     ],
   },
   {
@@ -89,9 +89,9 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Appointed Joint Editor of the popular Odia daily Prajatantra.",
     images: [
-      "images/contributions/1.png",
-      "images/contributions/2.png",
-      "images/contributions/3.png",
+      "/images/drive/Ekamra Pustk Mela-14_.png",
+      "/images/contributions/1.png",
+      "/images/contributions/2.png",
     ],
   },
   {
@@ -100,9 +100,9 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Took charge as the President of the State Youth Congress, marking his entry into organised politics.",
     images: [
-      "images/contributions/4.png",
-      "images/contributions/5.png",
-      "images/contributions/6.png",
+      "/images/contributions/3.png",
+      "/images/drive/DSC07766.JPG",
+      "/images/contributions/4.png",
     ],
   },
   {
@@ -111,9 +111,9 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Assumed the rare distinction of being the Editor of both The Eastern Times and Prajatantra concurrently.",
     images: [
-      "images/contributions/1.png",
-      "images/contributions/2.png",
-      "images/contributions/3.png",
+      "/images/drive/Book Fair.png",
+      "/images/contributions/5.png",
+      "/images/contributions/6.png",
     ],
   },
   {
@@ -122,9 +122,9 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Led a successful Farmers' Agitation in Madhupur, Cuttack district, championing the rights of the tillers.",
     images: [
-      "images/contributions/4.png",
-      "images/contributions/5.png",
-      "images/contributions/6.png",
+      "/images/drive/With Fakir Harichandan.jpg",
+      "/images/contributions/1.png",
+      "/images/drive/DSC07844.JPG",
     ],
   },
   {
@@ -133,9 +133,9 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Became a Member of the Working Committee, Pradesh Congress Committee.",
     images: [
-      "images/contributions/1.png",
-      "images/contributions/2.png",
-      "images/contributions/3.png",
+      "/images/contributions/2.png",
+      "/images/drive/DSC07773.JPG",
+      "/images/contributions/3.png",
     ],
   },
   {
@@ -144,9 +144,9 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Appointed Member of the Odisha Sahitya Akademi and the Executive Committee of the All-India Newspaper Editors' Conference (served until 1967).",
     images: [
-      "images/contributions/4.png",
-      "images/contributions/5.png",
-      "images/contributions/6.png",
+      "/images/drive/Book Fair.png",
+      "/images/drive/Ekamra Pustk Mela-14_.png",
+      "/images/contributions/4.png",
     ],
   },
   {
@@ -155,9 +155,9 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Became a Member of the Senate, Utkal University (served until 1967).",
     images: [
-      "images/contributions/1.png",
-      "images/contributions/2.png",
-      "images/contributions/3.png",
+      "/images/drive/15th Convocation of RSVP_Photo.png",
+      "/images/contributions/5.png",
+      "/images/contributions/6.png",
     ],
   },
   {
@@ -166,9 +166,9 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Founded the iconic monthly literary magazine Paurusha as its Founder-Editor.",
     images: [
-      "images/contributions/4.png",
-      "images/contributions/5.png",
-      "images/contributions/6.png",
+      "/images/drive/Book Fair.png",
+      "/images/drive/Ekamra Pustk Mela-14_.png",
+      "/images/contributions/1.png",
     ],
   },
   {
@@ -177,9 +177,9 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Entered electoral politics for the first time, contesting from the Dharmasala constituency as an Independent candidate.",
     images: [
-      "images/contributions/1.png",
-      "images/contributions/2.png",
-      "images/contributions/3.png",
+      "/images/contributions/2.png",
+      "/images/drive/DSC07775.JPG",
+      "/images/contributions/3.png",
     ],
   },
   {
@@ -188,9 +188,9 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Elected to the Lok Sabha for the first time.",
     images: [
-      "images/contributions/4.png",
-      "images/contributions/5.png",
-      "images/contributions/6.png",
+      "/images/contributions/4.png",
+      "/images/drive/DSC07777.JPG",
+      "/images/contributions/5.png",
     ],
   },
   {
@@ -199,9 +199,9 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Inducted into the Union Government as the Minister of State for Defence.",
     images: [
-      "images/contributions/1.png",
-      "images/contributions/2.png",
-      "images/contributions/3.png",
+      "/images/drive/DSC07779.JPG",
+      "/images/contributions/6.png",
+      "/images/drive/DSC07781.JPG",
     ],
   },
   {
@@ -210,9 +210,9 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Became a member of the All-India Congress Committee (AICC).",
     images: [
-      "images/contributions/4.png",
-      "images/contributions/5.png",
-      "images/contributions/6.png",
+      "/images/contributions/1.png",
+      "/images/drive/DSC07783.JPG",
+      "/images/contributions/2.png",
     ],
   },
   {
@@ -221,9 +221,9 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Appointed President of the Odisha Pradesh Congress Committee (OPCC).",
     images: [
-      "images/contributions/1.png",
-      "images/contributions/2.png",
-      "images/contributions/3.png",
+      "/images/drive/DSC07785.JPG",
+      "/images/contributions/3.png",
+      "/images/drive/DSC07791.JPG",
     ],
   },
   {
@@ -232,9 +232,9 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Appointed Union Cabinet Minister holding key portfolios of Labour, Civil Aviation, and Tourism.",
     images: [
-      "images/contributions/4.png",
-      "images/contributions/5.png",
-      "images/contributions/6.png",
+      "/images/contributions/4.png",
+      "/images/drive/DSC07799.JPG",
+      "/images/contributions/5.png",
     ],
   },
   {
@@ -243,9 +243,9 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Sworn in as the Chief Minister of Odisha (First Tenure) and launched the visionary \"1000 Industries in 1000 Days\" policy.",
     images: [
-      "images/contributions/1.png",
-      "images/contributions/2.png",
-      "images/contributions/3.png",
+      "/images/drive/DSC07801.JPG",
+      "/images/drive/DSC07803.JPG",
+      "/images/contributions/6.png",
     ],
   },
   {
@@ -254,9 +254,9 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Sworn in as Chief Minister of Odisha (Second Tenure); mandated Odia as the official language of administration.",
     images: [
-      "images/contributions/4.png",
-      "images/contributions/5.png",
-      "images/contributions/6.png",
+      "/images/drive/Swearing in ceremoney of CMJ.B.Patnaik  in presence of Governer B.N. pande on 10.03.1985.jpg",
+      "/images/drive/DSC07805.JPG",
+      "/images/contributions/1.png",
     ],
   },
   {
@@ -265,9 +265,9 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Sworn in as Chief Minister of Odisha (Third Tenure); established institutions like XIMB and introduced the Mid-Day Meal scheme.",
     images: [
-      "images/contributions/1.png",
-      "images/contributions/2.png",
-      "images/contributions/3.png",
+      "/images/drive/Swearing in ceremoney of CM J.B.Patnaik in presence of Governer B. Satyanarayan Reddy on 15.03.1995.JPG",
+      "/images/drive/DSC07812.JPG",
+      "/images/contributions/2.png",
     ],
   },
   {
@@ -276,9 +276,9 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Awarded the prestigious Sahitya Akademi Translation Prize for his work Bankima Upanyasmala.",
     images: [
-      "images/contributions/4.png",
-      "images/contributions/5.png",
-      "images/contributions/6.png",
+      "/images/drive/Book Fair.png",
+      "/images/drive/Ekamra Pustk Mela-14_.png",
+      "/images/contributions/3.png",
     ],
   },
   {
@@ -287,9 +287,9 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Assumed the role of Leader of Opposition in the Odisha Legislative Assembly.",
     images: [
-      "images/contributions/1.png",
-      "images/contributions/2.png",
-      "images/contributions/3.png",
+      "/images/contributions/4.png",
+      "/images/drive/DSC07844.JPG",
+      "/images/contributions/5.png",
     ],
   },
   {
@@ -298,9 +298,9 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Appointed as the Governor of Assam, where he played a pivotal role in cultural and social reforms.",
     images: [
-      "images/contributions/4.png",
-      "images/contributions/5.png",
-      "images/contributions/6.png",
+      "/images/drive/DSC07805.JPG",
+      "/images/drive/DSC07856.JPG",
+      "/images/contributions/6.png",
     ],
   },
   {
@@ -309,9 +309,9 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Passed away on April 21 in Tirupati.",
     images: [
-      "images/contributions/1.png",
-      "images/contributions/2.png",
-      "images/contributions/3.png",
+      "/images/drive/15th Convocation of RSVP_Photo.png",
+      "/images/contributions/1.png",
+      "/images/contributions/2.png",
     ],
   },
 ];

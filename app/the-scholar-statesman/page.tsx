@@ -169,7 +169,7 @@ export default function LiteraturePage() {
             <div className="flex-shrink-0 max-lg:w-full">
               <div className="relative w-[456px] h-[500px] max-lg:w-full max-lg:h-[400px]">
                 <ImageWithFallback
-                  src="/images/contributions/2.png"
+                  src="/images/drive/Book Fair.png"
                   alt="JBP as Writer and Intellectual"
                   fill
                   className="rounded-lg"
@@ -757,7 +757,7 @@ export default function LiteraturePage() {
             <div className="flex-shrink-0 max-lg:w-full">
               <div className="relative w-[400px] h-[350px] max-lg:w-full max-lg:h-[300px]">
                 <ImageWithFallback
-                  src="/images/contributions/1.png"
+                  src="/images/drive/Ekamra Pustk Mela-14_.png"
                   alt="JBP Journalism Work"
                   fill
                   className="rounded-lg"
@@ -777,7 +777,7 @@ export default function LiteraturePage() {
             <div className="flex-shrink-0 max-lg:w-full">
               <div className="relative w-[400px] h-[350px] max-lg:w-full max-lg:h-[300px]">
                 <ImageWithFallback
-                  src="/images/contributions/6.png"
+                  src="/images/drive/15th Convocation of RSVP_Photo.png"
                   alt="JBP Speaking at Events"
                   fill
                   className="rounded-lg"
@@ -884,7 +884,7 @@ export default function LiteraturePage() {
             <div className="relative group">
               <div className="w-full h-[450px] max-md:h-[340px] overflow-hidden rounded-2xl shadow-lg bg-gradient-to-br from-slate-100 to-white">
                 <ImageWithFallback
-                  src="/images/contributions/4.png"
+                  src="/images/drive/At Srimandir-1.png"
                   alt="Janaki Ballabh Patnaik during a literary event"
                   fill
                   className="rounded-2xl group-hover:scale-[1.02] transition-transform"

@@ -45,14 +45,14 @@ export default function Hero() {
 
           <div className="flex-shrink-0 max-lg:w-full">
             <div className="relative w-[456px] h-96 max-lg:w-full">
-              <div className="absolute inset-0 bg-gradient-to-br from-gray-200 to-gray-300 rounded-lg flex items-center justify-center">
+              <div className="absolute inset-0 flex items-center justify-center">
                 <span className="text-gray-500">Portrait Image</span>
               </div>
               <Image
                 src="/images/hero.png"
                 alt="Janaki Ballav Patnaik"
                 fill
-                className="object-cover rounded-lg"
+                className="object-contain rounded-lg"
                 priority
                 onError={(e) => {
                   e.currentTarget.style.display = "none";

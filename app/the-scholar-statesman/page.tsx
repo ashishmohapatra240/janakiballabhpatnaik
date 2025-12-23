@@ -151,19 +151,6 @@ export default function LiteraturePage() {
                 reader. His writings reflect a deep love for the Odia ethos, leaving an intellectual 
                 legacy as enduring as his political achievements.
               </p>
-
-              <div className="flex gap-4 max-lg:justify-center">
-                <button className="h-11 px-6 bg-sky-500 rounded-lg cursor-pointer hover:opacity-90 transition-opacity flex items-center justify-center whitespace-nowrap">
-                  <span className="text-white text-base font-normal capitalize leading-5">
-                    Explore Works
-                  </span>
-                </button>
-                <button className="h-11 px-6 border border-sky-500 text-sky-500 rounded-lg cursor-pointer hover:bg-sky-50 transition-colors flex items-center justify-center whitespace-nowrap">
-                  <span className="text-base font-normal capitalize leading-5">
-                    Read Quotes
-                  </span>
-                </button>
-              </div>
             </div>
 
             <div className="flex-shrink-0 max-lg:w-full">

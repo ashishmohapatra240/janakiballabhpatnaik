@@ -2,6 +2,7 @@ import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import JourneySection from '@/components/JourneySection';
 import ContributionsSection from '@/components/ContributionsSection';
+import VisualGallery from '@/components/VisualGallery';
 import Footer from '@/components/Footer';
 
 export default function Home() {
@@ -10,7 +11,8 @@ export default function Home() {
       <Navbar />
       <Hero />
       <JourneySection />
-      <ContributionsSection />
+      {/* <ContributionsSection /> */}
+      <VisualGallery />
       <Footer />
     </main>
   );

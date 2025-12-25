@@ -74,7 +74,7 @@ export default function Navbar() {
 
           {/* Right Section: Button + Socials */}
           <div className="hidden md:flex items-center gap-6">
-            <button 
+            {/* <button 
               onClick={handlePdfClick}
               className="h-10 px-6 bg-sky-500 rounded-lg cursor-pointer hover:opacity-90 transition-opacity flex items-center justify-center whitespace-nowrap"
             >
@@ -85,7 +85,7 @@ export default function Navbar() {
                 </sup>{" "}
                 Birth Anniversary
               </span>
-            </button>
+            </button> */}
 
             <div className="flex items-center gap-3">
               <a

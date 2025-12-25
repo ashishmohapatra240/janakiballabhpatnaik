@@ -52,9 +52,13 @@ function ImageWithFallback({
 }) {
   const hasObjectContain = className.includes("object-contain");
   const hasObjectCover = className.includes("object-cover");
-  const objectFit = hasObjectContain ? "object-contain" : hasObjectCover ? "object-cover" : "object-cover";
+  const objectFit = hasObjectContain
+    ? "object-contain"
+    : hasObjectCover
+    ? "object-cover"
+    : "object-cover";
   const otherClasses = className.replace(/object-(contain|cover)/g, "").trim();
-  
+
   return (
     <div
       className={`relative ${
@@ -191,19 +195,41 @@ const galleryImages = [
   { id: 4, src: "/images/contributions/4.png", alt: "Contribution 4" },
   { id: 5, src: "/images/contributions/5.png", alt: "Contribution 5" },
   { id: 6, src: "/images/contributions/6.png", alt: "Contribution 6" },
-  { id: 7, src: "/images/drive/Swearing in ceremoney of CM J.B.Patnaik in presence of Governer B. Satyanarayan Reddy on 15.03.1995.JPG", alt: "Swearing in ceremony 1995" },
-  { id: 8, src: "/images/drive/Swearing in ceremoney of CMJ.B.Patnaik  in presence of Governer B.N. pande on 10.03.1985.jpg", alt: "Swearing in ceremony 1985" },
-  { id: 9, src: "/images/drive/15th Convocation of RSVP_Photo.png", alt: "15th Convocation of RSVP" },
+  {
+    id: 7,
+    src: "/images/drive/Swearing in ceremoney of CM J.B.Patnaik in presence of Governer B. Satyanarayan Reddy on 15.03.1995.JPG",
+    alt: "Swearing in ceremony 1995",
+  },
+  {
+    id: 8,
+    src: "/images/drive/Swearing in ceremoney of CMJ.B.Patnaik  in presence of Governer B.N. pande on 10.03.1985.jpg",
+    alt: "Swearing in ceremony 1985",
+  },
+  {
+    id: 9,
+    src: "/images/drive/15th Convocation of RSVP_Photo.png",
+    alt: "15th Convocation of RSVP",
+  },
   { id: 10, src: "/images/drive/Book Fair.png", alt: "Book Fair" },
-  { id: 11, src: "/images/drive/Ekamra Pustk Mela-14_.png", alt: "Ekamra Pustk Mela" },
+  {
+    id: 11,
+    src: "/images/drive/Ekamra Pustk Mela-14_.png",
+    alt: "Ekamra Pustk Mela",
+  },
   { id: 12, src: "/images/drive/At Srimandir-1.png", alt: "At Srimandir" },
-  { id: 13, src: "/images/drive/With Fakir Harichandan.jpg", alt: "With Fakir Harichandan" },
+  {
+    id: 13,
+    src: "/images/drive/With Fakir Harichandan.jpg",
+    alt: "With Fakir Harichandan",
+  },
   { id: 14, src: "/images/drive/DSC07805.JPG", alt: "JBP Event" },
   { id: 15, src: "/images/drive/DSC07844.JPG", alt: "JBP Event" },
 ];
 
 export default function ContributionsPage() {
-  const [openSections, setOpenSections] = useState<Set<string>>(new Set(["economic"]));
+  const [openSections, setOpenSections] = useState<Set<string>>(
+    new Set(["economic"])
+  );
 
   const toggleSection = (sectionId: string) => {
     setOpenSections((prev) => {
@@ -235,28 +261,14 @@ export default function ContributionsPage() {
               </h1>
 
               <p className="max-w-[584px] text-neutral-400 text-base font-normal leading-6 max-lg:max-w-full">
-                In 1980, Odisha was a land of immense potential but weighed down by economic stagnation. Shree Janaki Ballav Patnaik entered with a mandate to transform this reality. His philosophy was rooted in a singular truth: "Poverty can only be fought with production." Over two transformative decades, he dismantled the inertia of the past, replacing it with a roadmap of aggressive industrialisation, social equity, and cultural pride.
+                In 1980, Odisha was a land of immense potential but weighed down
+                by economic stagnation. Shree Janaki Ballav Patnaik entered with
+                a mandate to transform this reality. His philosophy was rooted
+                in a singular truth: "Poverty can only be fought with
+                production." Over two transformative decades, he dismantled the
+                inertia of the past, replacing it with a roadmap of aggressive
+                industrialisation, social equity, and cultural pride.
               </p>
-
-              <div className="flex gap-4 max-lg:justify-center flex-wrap">
-                {[
-                  { value: "13+", label: "Years as CM" },
-                  { value: "1000+", label: "Projects Initiated" },
-                  { value: "30", label: "Districts Served" },
-                ].map((stat) => (
-                  <div
-                    key={stat.label}
-                    className="px-6 py-4 rounded-xl border border-slate-200 bg-white shadow-sm transition-transform duration-200 hover:-translate-y-1"
-                  >
-                    <p className="text-[#0ea5e9] text-2xl font-bold tracking-tight">
-                      {stat.value}
-                    </p>
-                    <p className="text-neutral-500 text-sm font-medium">
-                      {stat.label}
-                    </p>
-                  </div>
-                ))}
-              </div>
             </div>
 
             <div className="flex-shrink-0 max-lg:w-full">
@@ -279,8 +291,9 @@ export default function ContributionsPage() {
           <SectionTitle title="Key" highlight="Contributions" />
 
           <p className="text-center text-neutral-400 text-base mb-12 max-w-3xl mx-auto">
-            Explore J.B. Patnaik's transformative contributions across various fields. 
-            Click on any category to learn more about his visionary initiatives.
+            Explore J.B. Patnaik's transformative contributions across various
+            fields. Click on any category to learn more about his visionary
+            initiatives.
           </p>
 
           <div className="space-y-4">
@@ -302,7 +315,7 @@ export default function ContributionsPage() {
                     "Pioneered granting 'Industry Status' to non-traditional sectors like Hotels and the Film Industry, leading to a boom in tourism infrastructure and construction of Kalinga Studio",
                     "Laid the groundwork for the IT revolution by establishing the Software Technology Park and Fortune Tower in Bhubaneswar, facilitating the entry of major companies like Infosys and Satyam",
                   ]}
-                  imageSrc="/images/drive/DSC07805.JPG"
+                  imageSrc="/images/contri/IMG_5519.jpg"
                   imageAlt="Industrial Revolution"
                 />
 
@@ -316,7 +329,7 @@ export default function ContributionsPage() {
                     "Completed the Upper Indravati Project for Kalahandi (irrigating over 1.25 lakh hectares) by securing alternative funding from Japan (OECF) and the Power Finance Corporation when the World Bank withdrew",
                     "Replaced 100-year-old British-era weirs with modern barrages at Mahanadi (Jobra) and Birupa, introduced 'Creek Irrigation' technology for coastal areas, and drastically increased Lift Irrigation points",
                   ]}
-                  imageSrc="/images/drive/DSC07844.JPG"
+                  imageSrc="/images/contri/apicol-baramunda-colony-bhubaneshwar-finance-consultants-coa3u8f9ew.avif"
                   imageAlt="Agriculture & Irrigation"
                   reverse
                 />
@@ -329,7 +342,7 @@ export default function ContributionsPage() {
                     "Established the Odisha Power Generation Corporation (OPGC) and commissioned the Ib Valley Thermal Power Plant",
                     "Implemented comprehensive power sector reforms (Orissa Electricity Reform Act, 1995), unbundling the State Electricity Board and establishing the Odisha Electricity Regulatory Commission (OERC)",
                   ]}
-                  imageSrc="/images/drive/DSC07856.JPG"
+                  imageSrc="/images/contri/opgc.webp"
                   imageAlt="Power & Energy"
                 />
 
@@ -341,7 +354,7 @@ export default function ContributionsPage() {
                     "Aggressively developed and marketed the Puri-Konark-Bhubaneswar 'Golden Triangle' as a major international tourist destination",
                     "Improved air and rail connectivity (Neelachal Express) explicitly to support tourist inflow",
                   ]}
-                  imageSrc="/images/drive/At Srimandir-1.png"
+                  imageSrc="/images/contri/konark old.png"
                   imageAlt="Tourism Development"
                   reverse
                 />
@@ -365,7 +378,7 @@ export default function ContributionsPage() {
                   "Developed an all-weather port",
                   "Constructed New Jagannath Sadak - an alternative route connecting Puri district with southern Odisha",
                 ]}
-                imageSrc="/images/drive/DSC07867.JPG"
+                imageSrc="/images/contri/old_mahanadi_enlarge.jpg"
                 imageAlt="Transport Infrastructure"
               />
             </AccordionItem>
@@ -389,7 +402,7 @@ export default function ContributionsPage() {
                     "Established Navodaya Vidyalayas in every district and declared primary school teachers as government servants to ensure quality at the grassroots level",
                     "Massive expansion in ITIs and polytechnics ensured that there is 'no dearth of technical manpower in the State now'",
                   ]}
-                  imageSrc="/images/drive/15th Convocation of RSVP_Photo.png"
+                  imageSrc="/images/contri/ximb old.jpeg"
                   imageAlt="Education Science & Technical Training"
                 />
 
@@ -401,7 +414,7 @@ export default function ContributionsPage() {
                     "Established the Sri Jagannath Sanskrit University in Puri to preserve Sanskrit learning",
                     "Established the Odissi Research Centre to codify the dance form and launched the Konark Dance Festival, building the open-air auditorium against the backdrop of the Sun Temple",
                   ]}
-                  imageSrc="/images/drive/At Srimandir-1.png"
+                  imageSrc="/images/contri/jagannath.png"
                   imageAlt="Culture Heritage & Jagannath Cult"
                   reverse
                 />
@@ -415,7 +428,7 @@ export default function ContributionsPage() {
                     "Established the Odisha Urdu Academy and promoted literary awards",
                     "Encouraged the publishing industry by enhancing government grants for book purchases for rural libraries",
                   ]}
-                  imageSrc="/images/drive/Book Fair.png"
+                  imageSrc="/images/contri/DSC05612.JPG"
                   imageAlt="Language & Literature"
                 />
               </div>
@@ -439,7 +452,7 @@ export default function ContributionsPage() {
                     "Introduced rice at Rs. 2 per kg in tribal-majority blocks to prevent hunger",
                     "Granted property rights to slum dwellers in Bhubaneswar, a humane policy unprecedented at the time",
                   ]}
-                  imageSrc="/images/drive/With Fakir Harichandan.jpg"
+                  imageSrc="/images/contri/DSC05642.JPG"
                   imageAlt="Social Welfare & Tribal Development"
                 />
 
@@ -451,7 +464,7 @@ export default function ContributionsPage() {
                     "Reserved 30% of government jobs for women and appointed 5,000 female primary school teachers",
                     "Established the State Commission for Women (first in India) and implemented the DWCRA scheme for economic independence",
                   ]}
-                  imageSrc="/images/drive/DSC07766.JPG"
+                  imageSrc="/images/contri/DSC05634.JPG"
                   imageAlt="Women's Empowerment"
                   reverse
                 />
@@ -475,7 +488,7 @@ export default function ContributionsPage() {
                     "Established the State Pollution Prevention and Control Board to regulate industrial impact",
                     "Transformed Bhubaneswar into a garden city by creating Ekamra Kanan (Regional Plant Resource Centre), Indira Gandhi Park, and Forest Park",
                   ]}
-                  imageSrc="/images/drive/brahmagiri_asham rajyapala sapatnika brahmagiri stita shree alaranathanku darshan kale.png"
+                  imageSrc="/images/contri/IMG_5524.jpg"
                   imageAlt="Environment Conservation"
                 />
 
@@ -488,7 +501,7 @@ export default function ContributionsPage() {
                     "Created a separate Directorate of Sports to give focused attention to the sector",
                     "Built the Kalinga Stadium in Bhubaneswar (taking corrective measures when initial designs were flawed) and the Jawaharlal Nehru Indoor Stadium in Cuttack (one of the largest in Asia at the time)",
                   ]}
-                  imageSrc="/images/drive/DSC07812.JPG"
+                  imageSrc="/images/contri/IMG_5523.jpg"
                   imageAlt="Sports Legacy"
                   reverse
                 />

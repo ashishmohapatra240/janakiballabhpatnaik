@@ -70,7 +70,6 @@ function ImageWithFallback({
         fill ? "w-full h-full" : ""
       } rounded-lg flex items-center justify-center overflow-hidden`}
     >
-      <span className="text-gray-500 absolute z-0">Image</span>
       <Image
         src={src}
         alt={alt}
@@ -773,10 +772,10 @@ export default function LegacyPage() {
             <div className="flex-shrink-0 max-lg:w-full">
               <div className="relative w-[400px] h-[350px] max-lg:w-full max-lg:h-[300px]">
                 <ImageWithFallback
-                  src="/images/drive/DSC07805.JPG"
+                  src="/images/legacy/Governor Janaki Ballav Patnaik taking the Oath of Office.jpg"
                   alt="JBP as Governor of Assam"
                   fill
-                  className="rounded-lg"
+                  className="object-contain rounded-lg"
                 />
               </div>
             </div>

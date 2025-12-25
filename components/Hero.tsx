@@ -29,7 +29,7 @@ export default function Hero() {
               engineered the Odisha we live in today.
             </p>
 
-            <button 
+            {/* <button 
               onClick={handlePdfClick}
               className="h-11 px-6 bg-sky-500 rounded-lg cursor-pointer hover:opacity-90 transition-opacity flex items-center justify-center whitespace-nowrap max-lg:mx-auto mt-4"
             >
@@ -40,7 +40,7 @@ export default function Hero() {
                 </sup>{" "}
                 Birth Anniversary
               </span>
-            </button>
+            </button> */}
           </div>
 
           <div className="flex-shrink-0 max-lg:w-full">

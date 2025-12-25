@@ -29,7 +29,7 @@ export default function RootLayout({
         className={`${sora.variable} ${instrumentSans.variable} antialiased`}
       >
         {children}
-        <BottomMarquee />
+        {/* <BottomMarquee /> */}
       </body>
     </html>
   );

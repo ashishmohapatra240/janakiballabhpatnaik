@@ -10,10 +10,10 @@ export default function Footer() {
             {/* Left Column - Logo and Description */}
             <div className="w-[484px] flex flex-col gap-3 max-lg:w-full">
               <h3 className="text-2xl font-bold text-[#272727] leading-9">
-                Janaki Ballav Patnaik
+                Shree Janaki Ballav Patnaik
               </h3>
               <p className="text-base text-neutral-400 font-normal">
-                Janaki Ballabh Patnaik (3 January 1927 – 21 April 2015) was an Indian politician who had been 25th Governor of Assam from 2009 to 2014.
+                Janaki Ballav Patnaik (3 January 1927 – 21 April 2015) was an Indian politician who had been 25th Governor of Assam from 2009 to 2014.
               </p>
             </div>
 
@@ -72,7 +72,7 @@ export default function Footer() {
           {/* Copyright */}
           <div className="border-t border-zinc-300 pt-4 flex justify-center items-center">
             <p className="text-center text-base text-neutral-400 font-instrument-sans leading-6">
-              Copyright © 2025 Janaki Ballav Patnaik. All rights reserved.
+              Copyright © 2025 Shree Janaki Ballav Patnaik. All rights reserved.
             </p>
           </div>
         </div>

@@ -27,7 +27,7 @@ export default function Navbar() {
                 href="/"
                 className="text-xl font-bold text-[#272727] whitespace-nowrap"
               >
-                Janaki Ballav Patnaik
+                Shree Janaki Ballav Patnaik
               </Link>
             </div>
 

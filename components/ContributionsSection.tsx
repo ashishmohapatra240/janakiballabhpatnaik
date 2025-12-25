@@ -5,7 +5,7 @@ import Image from "next/image";
 const contributionCards = [
   {
     id: 1,
-    title: "Janaki Ballav Patnaik will be remembered as a political Maverick",
+    title: "Shree Janaki Ballav Patnaik will be remembered as a political Maverick",
     description:
       "Leaders cutting across party lines made a beeline for his residence in Bhubaneswar after the body was brought was brought from Tirupati.",
     image: "/images/contributions/1.png",
@@ -13,7 +13,7 @@ const contributionCards = [
   },
   {
     id: 2,
-    title: "Janaki Ballav Patnaik Park, Khordha",
+    title: "Shree Janaki Ballav Patnaik Park, Khordha",
     description:
       "Leaders cutting across party lines made a beeline for his residence in Bhubaneswar after the body was brought was brought from Tirupati.",
     image: "/images/contributions/2.png",
@@ -30,7 +30,7 @@ const contributionCards = [
   },
   {
     id: 4,
-    title: "Janaki Ballav Patnaik will be remembered as a political Maverick",
+    title: "Shree Janaki Ballav Patnaik will be remembered as a political Maverick",
     description:
       "Leaders cutting across party lines made a beeline for his residence in Bhubaneswar after the body was brought was brought from Tirupati.",
     image: "/images/contributions/4.png",
@@ -38,7 +38,7 @@ const contributionCards = [
   },
   {
     id: 5,
-    title: "Janaki Ballav Patnaik Park, Khordha",
+    title: "Shree Janaki Ballav Patnaik Park, Khordha",
     description:
       "Leaders cutting across party lines made a beeline for his residence in Bhubaneswar after the body was brought was brought from Tirupati.",
     image: "/images/contributions/5.png",

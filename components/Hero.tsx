@@ -21,7 +21,7 @@ export default function Hero() {
             </h2>
 
             <p className="max-w-[584px] text-neutral-400 text-sm font-normal leading-6 max-lg:max-w-full">
-              History remembers Janaki Ballav Patnaik as the man who woke a
+              History remembers Shree Janaki Ballav Patnaik as the man who woke a
               sleeping state. He was the rare leader who could command the
               assembly floor and translate the Mahabharata with equal mastery.
               From the roar of 1000 industries to the quiet revival of the Odia
@@ -50,7 +50,7 @@ export default function Hero() {
               </div>
               <Image
                 src="/images/hero.png"
-                alt="Janaki Ballav Patnaik"
+                alt="Shree Janaki Ballav Patnaik"
                 fill
                 className="object-contain rounded-lg"
                 priority

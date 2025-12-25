@@ -20,12 +20,10 @@ const timelineEvents: TimelineEvent[] = [
   {
     year: 1927,
     title: "Birth of a Visionary",
-    description:
-      "Born on January 3 in Rameswar village, Khordha.",
+    description: "Born on January 3 in Rameswar village, Khordha.",
     images: [
-      "/images/drive/a1 (22).JPG",
-      "/images/contributions/1.png",
-      "/images/contributions/2.png",
+      "/images/timeline/1927/1.jpeg",
+      "/images/timeline/1927/2.jpeg",
     ],
   },
   {
@@ -34,9 +32,8 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Participated in the historic Quit India Movement while a student at Khordha High School.",
     images: [
-      "/images/contributions/3.png",
-      "/images/contributions/4.png",
-      "/images/drive/a1 (4).JPG",
+      "/images/timeline/1942/download.jpg",
+      "/images/timeline/1942/quit-india-movement_640.avif",
     ],
   },
   {
@@ -45,9 +42,8 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Emerged as a fearless student leader, leading the protest to lower the British Union Jack from the Ravenshaw College premises.",
     images: [
-      "/images/contributions/5.png",
-      "/images/contributions/6.png",
-      "/images/drive/ABC_7635.png",
+      "/images/timeline/1946/Fv0wFRNaMAAWoMV.png",
+      "/images/timeline/1946/images.jpg",
     ],
   },
   {
@@ -56,9 +52,8 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Graduated with Honours in Sanskrit from the prestigious Ravenshaw College.",
     images: [
-      "/images/drive/15th Convocation of RSVP_Photo.png",
-      "/images/contributions/1.png",
-      "/images/contributions/2.png",
+      "/images/timeline/1947/download.jpg",
+      "/images/timeline/1947/Katha_Upanishad_1.1.1_to_1.1.3_verses,_Krishna_Yajurveda.jpg",
     ],
   },
   {
@@ -67,9 +62,8 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Completes his M.A. in Political Science from Banaras Hindu University (BHU).",
     images: [
-      "/images/contributions/3.png",
-      "/images/drive/Ekamra Pustk Mela-14_.png",
-      "/images/contributions/4.png",
+      "/images/timeline/1949/dda0d87a438c1b62b6cf66228ce9a80958e733cc-1088x612.jpg",
+      "/images/timeline/1949/images.jpg",
     ],
   },
   {
@@ -78,9 +72,8 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Began his professional journey in journalism by joining The Eastern Times as a Sub-Editor.",
     images: [
-      "/images/drive/Book Fair.png",
-      "/images/contributions/5.png",
-      "/images/contributions/6.png",
+      "/images/drive/DSC07777.JPG",
+      "/images/drive/DSC07783.JPG",
     ],
   },
   {
@@ -89,9 +82,8 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Appointed Joint Editor of the popular Odia daily Prajatantra.",
     images: [
-      "/images/drive/Ekamra Pustk Mela-14_.png",
-      "/images/contributions/1.png",
-      "/images/contributions/2.png",
+      "/images/drive/DSC07785.JPG",
+      "/images/drive/DSC07791.JPG",
     ],
   },
   {
@@ -111,9 +103,8 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Assumed the rare distinction of being the Editor of both The Eastern Times and Prajatantra concurrently.",
     images: [
-      "/images/drive/Book Fair.png",
-      "/images/contributions/5.png",
-      "/images/contributions/6.png",
+      "/images/timeline/1951/PHOTO-2025-12-25-17-35-57.jpg",
+      "/images/timeline/1951/PXL_20251211_090533288.MP.jpg",
     ],
   },
   {
@@ -122,8 +113,8 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Led a successful Farmers' Agitation in Madhupur, Cuttack district, championing the rights of the tillers.",
     images: [
-      "/images/drive/With Fakir Harichandan.jpg",
-      "/images/contributions/1.png",
+      "/images/timeline/1953/DSC05687.JPG",
+      "/images/timeline/1953/PXL_20251211_090533288.MP.jpg",
       "/images/drive/DSC07844.JPG",
     ],
   },
@@ -133,9 +124,8 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Became a Member of the Working Committee, Pradesh Congress Committee.",
     images: [
-      "/images/contributions/2.png",
-      "/images/drive/DSC07773.JPG",
-      "/images/contributions/3.png",
+      "/images/timeline/1954/PXL_20251211_084659444.MP.jpg",
+      "/images/timeline/1954/PXL_20251211_085620487.MP.jpg",
     ],
   },
   {
@@ -144,9 +134,8 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Appointed Member of the Odisha Sahitya Akademi and the Executive Committee of the All-India Newspaper Editors' Conference (served until 1967).",
     images: [
-      "/images/drive/Book Fair.png",
-      "/images/drive/Ekamra Pustk Mela-14_.png",
-      "/images/contributions/4.png",
+      "/images/timeline/1956/Screenshot 2025-12-25 at 9.41.32 PM.png",
+      "/images/timeline/1956/_DSC0024.JPG",
     ],
   },
   {
@@ -155,9 +144,8 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Became a Member of the Senate, Utkal University (served until 1967).",
     images: [
-      "/images/drive/15th Convocation of RSVP_Photo.png",
-      "/images/contributions/5.png",
-      "/images/contributions/6.png",
+      "/images/timeline/1957/utkal university .jpeg",
+      "/images/timeline/1957/utkal university stane house.png",
     ],
   },
   {
@@ -177,20 +165,17 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Entered electoral politics for the first time, contesting from the Dharmasala constituency as an Independent candidate.",
     images: [
-      "/images/contributions/2.png",
-      "/images/drive/DSC07775.JPG",
-      "/images/contributions/3.png",
+      "/images/timeline/1967/307661550_397200172599461_3834021899959530748_n.jpg",
+      "/images/timeline/1967/DSC05683.JPG",
     ],
   },
   {
     year: 1971,
     title: "Lok Sabha Debut",
-    description:
-      "Elected to the Lok Sabha for the first time.",
+    description: "Elected to the Lok Sabha for the first time.",
     images: [
-      "/images/contributions/4.png",
-      "/images/drive/DSC07777.JPG",
-      "/images/contributions/5.png",
+      "/images/timeline/1971/jp voting in ctc.png",
+      "/images/timeline/1971/lok sabha 1950.jpeg",
     ],
   },
   {
@@ -199,20 +184,17 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Inducted into the Union Government as the Minister of State for Defence.",
     images: [
-      "/images/drive/DSC07779.JPG",
-      "/images/contributions/6.png",
-      "/images/drive/DSC07781.JPG",
+      "/images/timeline/1973/DSC07777.JPG",
+      "/images/timeline/1967 a/Screenshot 2025-12-25 at 9.24.27 PM.png",
     ],
   },
   {
     year: 1975,
     title: "AICC Member",
-    description:
-      "Became a member of the All-India Congress Committee (AICC).",
+    description: "Became a member of the All-India Congress Committee (AICC).",
     images: [
-      "/images/contributions/1.png",
-      "/images/drive/DSC07783.JPG",
-      "/images/contributions/2.png",
+      "/images/timeline/1975/deccanherald_2025-01-15_rfxs20vr_file7yxp7jhc25u11qdkeeu.avif",
+      "/images/timeline/1975/DSC07783.JPG",
     ],
   },
   {
@@ -221,9 +203,8 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Appointed President of the Odisha Pradesh Congress Committee (OPCC).",
     images: [
-      "/images/drive/DSC07785.JPG",
-      "/images/contributions/3.png",
-      "/images/drive/DSC07791.JPG",
+      "/images/timeline/1978/Congress-Bhawan.jpg",
+      "/images/timeline/1978/DSC05695.JPG",
     ],
   },
   {
@@ -232,16 +213,15 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Appointed Union Cabinet Minister holding key portfolios of Labour, Civil Aviation, and Tourism.",
     images: [
-      "/images/contributions/4.png",
-      "/images/drive/DSC07799.JPG",
-      "/images/contributions/5.png",
+      "/images/timeline/1980/DSC05675.JPG",
+      "/images/timeline/1980/paradeep-02.jpg",
     ],
   },
   {
     year: 1980,
     title: "First Tenure as CM",
     description:
-      "Sworn in as the Chief Minister of Odisha (First Tenure) and launched the visionary \"1000 Industries in 1000 Days\" policy.",
+      'Sworn in as the Chief Minister of Odisha (First Tenure) and launched the visionary "1000 Industries in 1000 Days" policy.',
     images: [
       "/images/drive/DSC07801.JPG",
       "/images/drive/DSC07803.JPG",
@@ -254,9 +234,8 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Sworn in as Chief Minister of Odisha (Second Tenure); mandated Odia as the official language of administration.",
     images: [
-      "/images/drive/Swearing in ceremoney of CMJ.B.Patnaik  in presence of Governer B.N. pande on 10.03.1985.jpg",
-      "/images/drive/DSC07805.JPG",
-      "/images/contributions/1.png",
+      "/images/timeline/1985/DSC05653.JPG",
+      "/images/timeline/1985/Swearing in ceremoney of CMJ.B.Patnaik  in presence of Governer B.N. pande on 10.03.1985.jpg",
     ],
   },
   {
@@ -265,9 +244,8 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Sworn in as Chief Minister of Odisha (Third Tenure); established institutions like XIMB and introduced the Mid-Day Meal scheme.",
     images: [
-      "/images/drive/Swearing in ceremoney of CM J.B.Patnaik in presence of Governer B. Satyanarayan Reddy on 15.03.1995.JPG",
-      "/images/drive/DSC07812.JPG",
-      "/images/contributions/2.png",
+      "/images/timeline/1995/F8e0D_GbwAAsbXt.jpeg",
+      "/images/timeline/1995/Swearing in ceremoney of CM J.B.Patnaik in presence of Governer B. Satyanarayan Reddy on 15.03.1995.JPG",
     ],
   },
   {
@@ -276,9 +254,8 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Awarded the prestigious Sahitya Akademi Translation Prize for his work Bankima Upanyasmala.",
     images: [
-      "/images/drive/Book Fair.png",
-      "/images/drive/Ekamra Pustk Mela-14_.png",
-      "/images/contributions/3.png",
+      "/images/timeline/2001/DSC05610.JPG",
+      "/images/timeline/2001/Odisha_history_image.png",
     ],
   },
   {
@@ -287,9 +264,8 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Assumed the role of Leader of Opposition in the Odisha Legislative Assembly.",
     images: [
-      "/images/contributions/4.png",
-      "/images/drive/DSC07844.JPG",
-      "/images/contributions/5.png",
+      "/images/timeline/2004/104_8530.jpg",
+      "/images/timeline/2004/a1 (26).JPG",
     ],
   },
   {
@@ -298,20 +274,17 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Appointed as the Governor of Assam, where he played a pivotal role in cultural and social reforms.",
     images: [
-      "/images/drive/DSC07805.JPG",
-      "/images/drive/DSC07856.JPG",
-      "/images/contributions/6.png",
+      "/images/timeline/2009/Sanskruti bihar ra Swarna Jayanti.jpg",
+      "/images/timeline/2009/DSCN8984.jpg",
     ],
   },
   {
     year: 2015,
     title: "A Legend Departs",
-    description:
-      "Passed away on April 21 in Tirupati.",
+    description: "Passed away on April 21 in Tirupati.",
     images: [
-      "/images/drive/15th Convocation of RSVP_Photo.png",
-      "/images/contributions/1.png",
-      "/images/contributions/2.png",
+      "/images/timeline/2015/DSC_0382.JPG",
+      "/images/timeline/2015/DSC08114.JPG",
     ],
   },
 ];
@@ -391,40 +364,27 @@ export default function JourneySection() {
         >
           <div className="relative w-[450px] h-[350px] max-lg:w-full max-lg:h-[300px] flex-shrink-0">
             <div
-              className="absolute top-0 left-[70px] w-72 h-40 transform -rotate-[5.87deg] border-4 border-white rounded-lg shadow-[0_8px_30px_rgba(0,0,0,0.12)] z-10 max-lg:w-48 max-lg:h-32 max-lg:left-4 transition-all duration-700 ease-out hover:scale-105 hover:z-40"
+              className="absolute top-0 left-[70px] max-w-72 max-h-96 transform -rotate-[5.87deg] border-4 border-white rounded-lg shadow-[0_8px_30px_rgba(0,0,0,0.12)] z-10 max-lg:max-w-48 max-lg:max-h-64 max-lg:left-4 transition-all duration-700 ease-out hover:scale-105 hover:z-40"
               style={{ transitionDelay: "100ms" }}
             >
-              <div className="w-full h-full bg-gray-200 rounded-lg overflow-hidden">
+              <div className="rounded-lg overflow-hidden inline-block">
                 <img
                   src={currentEvent.images[0]}
                   alt={`${currentEvent.title} - 1`}
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                  className="max-w-full max-h-full w-auto h-auto block transition-transform duration-500 hover:scale-110"
                 />
               </div>
             </div>
 
             <div
-              className="absolute top-[140px] left-0 w-56 h-44 transform -rotate-[3.29deg] border-4 border-white rounded-lg shadow-[0_8px_30px_rgba(0,0,0,0.12)] z-20 max-lg:w-40 max-lg:h-32 max-lg:top-[100px] transition-all duration-700 ease-out hover:scale-105 hover:z-40"
+              className="absolute top-[120px] left-0 max-w-54 max-h-96 transform -rotate-[3.29deg] border-4 border-white rounded-lg shadow-[0_8px_30px_rgba(0,0,0,0.12)] z-20 max-lg:max-w-40 max-lg:max-h-72 max-lg:top-[120px] transition-all duration-700 ease-out hover:scale-105 hover:z-40"
               style={{ transitionDelay: "200ms" }}
             >
-              <div className="w-full h-full bg-gray-300 rounded-lg overflow-hidden">
+              <div className="rounded-lg overflow-hidden inline-block">
                 <img
                   src={currentEvent.images[1]}
                   alt={`${currentEvent.title} - 2`}
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
-                />
-              </div>
-            </div>
-
-            <div
-              className="absolute top-[80px] right-[30px] w-40 h-56 transform rotate-3 border-4 border-white rounded-lg shadow-[0_8px_30px_rgba(0,0,0,0.12)] z-30 max-lg:w-32 max-lg:h-40 max-lg:right-0 max-lg:top-[40px] transition-all duration-700 ease-out hover:scale-105 hover:z-40"
-              style={{ transitionDelay: "300ms" }}
-            >
-              <div className="w-full h-full bg-gray-400 rounded-lg overflow-hidden">
-                <img
-                  src={currentEvent.images[2]}
-                  alt={`${currentEvent.title} - 3`}
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                  className="max-w-full max-h-full w-auto h-auto block transition-transform duration-500 hover:scale-110"
                 />
               </div>
             </div>
@@ -498,7 +458,6 @@ export default function JourneySection() {
                     transform: `scale(${scale})`,
                   }}
                 >
-           
                   <div
                     className={`relative transition-all duration-300 ${
                       isActive ? "scale-100" : "scale-75 group-hover:scale-90"

@@ -235,7 +235,7 @@ export default function ContributionsPage() {
               </h1>
 
               <p className="max-w-[584px] text-neutral-400 text-base font-normal leading-6 max-lg:max-w-full">
-                In 1980, Odisha was a land of immense potential but weighed down by economic stagnation. Janaki Ballav Patnaik entered with a mandate to transform this reality. His philosophy was rooted in a singular truth: "Poverty can only be fought with production." Over two transformative decades, he dismantled the inertia of the past, replacing it with a roadmap of aggressive industrialisation, social equity, and cultural pride.
+                In 1980, Odisha was a land of immense potential but weighed down by economic stagnation. Shree Janaki Ballav Patnaik entered with a mandate to transform this reality. His philosophy was rooted in a singular truth: "Poverty can only be fought with production." Over two transformative decades, he dismantled the inertia of the past, replacing it with a roadmap of aggressive industrialisation, social equity, and cultural pride.
               </p>
 
               <div className="flex gap-4 max-lg:justify-center flex-wrap">
@@ -538,7 +538,7 @@ export default function ContributionsPage() {
             Explore More About JBP's Legacy
           </h2>
           <p className="text-white/80 mb-8 max-w-2xl mx-auto">
-            Discover the life, journey, and literary works of Janaki Ballabh
+            Discover the life, journey, and literary works of Janaki Ballav
             Patnaik - the visionary leader who shaped modern Odisha.
           </p>
           <div className="flex gap-4 justify-center max-md:flex-col max-md:items-center">

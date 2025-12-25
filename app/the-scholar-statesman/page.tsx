@@ -144,7 +144,7 @@ export default function LiteraturePage() {
               </h2>
 
               <p className="max-w-[584px] text-neutral-400 text-base font-normal leading-6 max-lg:max-w-full">
-                Long before taking the oath of office, Janaki Ballav Patnaik took up the pen. For him, 
+                Long before taking the oath of office, Shree Janaki Ballav Patnaik took up the pen. For him, 
                 politics was a vehicle for progress, but literature was the vessel for the soul. A prolific 
                 writer and polyglot, he bridged the gap between ancient wisdom and modern thought—whether 
                 thundering against injustice in the press or translating the Mahabharata for the common 
@@ -772,7 +772,7 @@ export default function LiteraturePage() {
             Continue Exploring
           </h2>
           <p className="text-neutral-400 mb-8 max-w-2xl mx-auto">
-            Discover more about Janaki Ballabh Patnaik's remarkable life, his contributions 
+            Discover more about Janaki Ballav Patnaik's remarkable life, his contributions 
             to Odisha, and his lasting legacy.
           </p>
           <div className="flex gap-4 justify-center max-md:flex-col max-md:items-center">

@@ -401,15 +401,15 @@ export default function LegacyPage() {
                   Life & Legacy of
                   <br />
                 </span>
-                <span className="font-normal">Janaki Ballav Patnaik</span>
+                <span className="font-normal">Shree Janaki Ballav Patnaik</span>
               </h1>
 
               <p className="max-w-[584px] text-neutral-400 text-base font-normal leading-6 max-lg:max-w-full">
                 Born on January 3, 1927, in the village of Rameswar in Khordha
-                district, Janaki Ballav Patnaik was steeped in a heritage of
+                district, Shree Janaki Ballav Patnaik was steeped in a heritage of
                 patriotism and learning. His father, Gokulananda Patnaik, was a
                 noted poet and freedom fighter, an influence that shaped Janaki
-                Ballav's character early on. Janaki Ballav Patnaik's fourteen
+                Ballav's character early on. Shree Janaki Ballav Patnaik's fourteen
                 years at the helm marked a decisive turning point in Odisha's
                 history—shifting its trajectory from a quiet agrarian past to a
                 confident, modern future.
@@ -420,7 +420,7 @@ export default function LegacyPage() {
               <div className="relative w-[456px] h-[500px] max-lg:w-full max-lg:h-[400px]">
                 <ImageWithFallback
                   src="/images/drive/janaki patnayak (3).JPG"
-                  alt="Janaki Ballav Patnaik Portrait"
+                  alt="Shree Janaki Ballav Patnaik Portrait"
                   fill
                   className="rounded-lg"
                 />
@@ -453,7 +453,7 @@ export default function LegacyPage() {
               </h3>
               <p className="text-neutral-400 text-base leading-7">
                 Born on January 3, 1927, in the village of Rameswar in Khordha
-                district, Janaki Ballav Patnaik was steeped in a heritage of
+                district, Shree Janaki Ballav Patnaik was steeped in a heritage of
                 patriotism and learning. His father, Gokulananda Patnaik, was a
                 noted poet and freedom fighter, an influence that shaped Janaki
                 Ballav's character early on.
@@ -500,7 +500,7 @@ export default function LegacyPage() {
                   A Desire to Serve
                 </h3>
                 <p className="text-neutral-400 text-base leading-7">
-                  Janaki Ballav Patnaik's political ascent was driven by a
+                  Shree Janaki Ballav Patnaik's political ascent was driven by a
                   desire to serve. Starting as the President of the State Youth
                   Congress in 1950, he rose to national prominence in 1971 when
                   he was elected to the Lok Sabha.
@@ -560,7 +560,7 @@ export default function LegacyPage() {
 
           <div className="mb-8">
             <p className="text-center text-neutral-400 text-lg leading-8 max-w-4xl mx-auto">
-              Janaki Ballav Patnaik's fourteen years at the helm marked a
+              Shree Janaki Ballav Patnaik's fourteen years at the helm marked a
               decisive turning point in Odisha's history. His tenure was less
               about managing the status quo and more about re-engineering the
               state's identity; shifting its trajectory from a quiet agrarian
@@ -1024,7 +1024,7 @@ export default function LegacyPage() {
           </div>
           <div className="space-y-6">
             <p className="text-sky-50 text-lg leading-8 text-center">
-              Janaki Ballav Patnaik passed away on April 21, 2015, in Tirupati,
+              Shree Janaki Ballav Patnaik passed away on April 21, 2015, in Tirupati,
               fittingly after attending a convocation of Sanskrit scholars. He
               left behind a state that was unrecognizable from the one he
               inherited—endowed with major industries, a thriving capital city,

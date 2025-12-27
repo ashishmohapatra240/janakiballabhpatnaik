@@ -181,18 +181,18 @@ const legacyCategories = [
       {
         title: "MESCO",
         description: "Metal and Steel Company",
-        image: "/images/legacy/category/mesco.jfif",
+        image: "/images/legacy/category/mesco.jpg",
       },
       {
         title: "Birla Tyres",
         description: "Major tire manufacturing unit",
-        image: "/images/legacy/category/birlatyres.jfif",
+        image: "/images/legacy/category/birlatyres.jpg",
       },
       {
         title: "IDCO & IPICOL",
         description:
           "Revitalized Industrial Development Corporation and Industrial Promotion & Investment Corporation",
-        image: "/images/legacy/category/idco.jfif",
+        image: "/images/legacy/category/idco.jpg",
       },
       {
         title: "Hotels as Industry",
@@ -299,12 +299,12 @@ const legacyCategories = [
       {
         title: "Sri Jagannath Sanskrit University",
         description: "Puri-based Sanskrit university",
-        image: "/images/legacy/category/Sri Jagannath Sanskrit University.jfif",
+        image: "/images/legacy/category/Sri Jagannath Sanskrit University.jpg",
       },
       {
         title: "Odissi Research Centre",
         description: "Cultural preservation and research",
-        image: "/images/legacy/category/Odissi Research Centre.jfif",
+        image: "/images/legacy/category/Odissi Research Centre.jpg",
       },
       {
         title: "Odia as Official Language",
@@ -332,7 +332,7 @@ const legacyCategories = [
       {
         title: "2-Rupee Rice Scheme",
         description: "Subsidized rice in tribal blocks",
-        image: "/images/legacy/category/2-Rupee Rice Scheme.jfif",
+        image: "/images/legacy/category/2-Rupee Rice Scheme.jpg",
       },
       {
         title: "Mid-Day Meal Scheme (1995)",
@@ -365,12 +365,12 @@ const legacyCategories = [
       {
         title: "Chandaka Elephant Sanctuary",
         description: "Wildlife conservation and protection",
-        image: "/images/legacy/category/Chandaka_Forest_and_Elephant_Reserve_01.jfif",
+        image: "/images/legacy/category/Chandaka_Forest_and_Elephant_Reserve_01.jpg",
       },
       {
         title: "Ekamra Kanan Botanical Garden",
         description: "Botanical research and preservation",
-        image: "/images/legacy/category/Ekamra Kanan Botanical Garden.jfif",
+        image: "/images/legacy/category/Ekamra Kanan Botanical Garden.jpg",
       },
       {
         title: "Joint Forest Management",
@@ -545,7 +545,7 @@ export default function LegacyPage() {
       </section>
 
       {/* Chief Ministership Section - Timeline Based */}
-      <section className="py-16 px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white border border-red-800">
+      <section className="py-16 px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white">
         <div className="max-w-7xl mx-auto">
           <SectionTitle title="Chief Minister" highlight="of Odisha" />
 

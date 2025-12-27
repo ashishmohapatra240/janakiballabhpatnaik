@@ -23,7 +23,7 @@ const timelineEvents: TimelineEvent[] = [
     description: "Born on January 3 in Rameswar village, Khordha.",
     images: [
       "/images/timeline/1927/1.jpeg",
-      "/images/timeline/1927/2.jpeg",
+      "/images/timeline/1927/kid.jpeg",
     ],
   },
   {
@@ -82,8 +82,8 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Appointed Joint Editor of the popular Odia daily Prajatantra.",
     images: [
-      "/images/drive/DSC07785.JPG",
-      "/images/drive/DSC07791.JPG",
+      "/images/timeline/1950/1950.jpeg",
+      "/images/timeline/1950/19501.avif",
     ],
   },
   {
@@ -235,7 +235,7 @@ const timelineEvents: TimelineEvent[] = [
       "Appointed Union Cabinet Minister holding key portfolios of Labour, Civil Aviation, and Tourism.",
     images: [
       "/images/timeline/1980/DSC05675.JPG",
-      "/images/timeline/1980/paradeep-02.jpg",
+      "/images/timeline/1980/aeroplane.jpg",
     ],
   },
   {
@@ -244,7 +244,7 @@ const timelineEvents: TimelineEvent[] = [
     description:
       'Sworn in as the Chief Minister of Odisha (First Tenure) and launched the visionary "1000 Industries in 1000 Days" policy.',
     images: [
-      "/images/drive/DSC07801.JPG",
+      "/images/timeline/1980/oath1.JPG",
       "/images/drive/DSC07803.JPG",
       "/images/contributions/6.png",
     ],
@@ -265,7 +265,8 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Sworn in as Chief Minister of Odisha (Third Tenure); established institutions like XIMB and introduced the Mid-Day Meal scheme.",
     images: [
-      "/images/timeline/1995/F8e0D_GbwAAsbXt.jpeg",
+      "/images/timeline/1980/oath3.jpeg",
+      "/images/timeline/1980/oath2.jpeg",
       "/images/timeline/1995/Swearing in ceremoney of CM J.B.Patnaik in presence of Governer B. Satyanarayan Reddy on 15.03.1995.JPG",
     ],
   },
@@ -295,8 +296,8 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Appointed as the Governor of Assam, where he played a pivotal role in cultural and social reforms.",
     images: [
-      "/images/timeline/2009/Sanskruti bihar ra Swarna Jayanti.jpg",
-      "/images/timeline/2009/DSCN8984.jpg",
+      "/images/timeline/2009/Governor2.jpg",
+      "/images/timeline/2009/Governor3.jpg",
     ],
   },
   {

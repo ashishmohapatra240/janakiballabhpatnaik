@@ -114,8 +114,7 @@ const timelineEvents: TimelineEvent[] = [
       "Janaki Ballabh Patnaik married Jayanti Pattnaik, who later served as a Member of Parliament and President of the All India Mahila Congress.",
     images: [
       "/images/timeline/1953/withwife.JPG",
-      "/images/timeline/1953/withwife1.jpg",
-      "/images/drive/DSC07844.JPG",
+      "/images/timeline/1953/withwife1.JPG",
     ],
   },
   {

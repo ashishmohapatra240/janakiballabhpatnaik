@@ -177,7 +177,7 @@ const timelineEvents: TimelineEvent[] = [
       "Founded the iconic monthly literary magazine Paurusha as its Founder-Editor.",
     images: [
       "/images/timeline/1967/paurusha.jpg",
-      "/images/timeline/1967/1967.JPG",
+      "/images/timeline/1967/1967a.png",
       "/images/contributions/1.png",
     ],
   },
@@ -258,7 +258,8 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Sworn in as Chief Minister of Odisha (Second Tenure); mandated Odia as the official language of administration.",
     images: [
-      "/images/timeline/1985/DSC05653.JPG",
+      "/images/timeline/1985/oath2term.jpeg",
+      // "/images/timeline/1985/DSC05653.JPG",
       "/images/timeline/1985/Swearing in ceremoney of CMJ.B.Patnaik  in presence of Governer B.N. pande on 10.03.1985.jpg",
     ],
   },
@@ -266,10 +267,10 @@ const timelineEvents: TimelineEvent[] = [
     year: 1995,
     title: "Third Tenure as CM",
     description:
-      "Sworn in as Chief Minister of Odisha (Third Tenure); established institutions like XIMB and introduced the Mid-Day Meal scheme.",
+      "Sworn in as CM of Odisha for 3rd Time",
     images: [
       "/images/timeline/1980/oath3.jpeg",
-      "/images/timeline/1980/oath2.jpeg",
+      // "/images/timeline/1980/oath2.jpeg",
       "/images/timeline/1995/Swearing in ceremoney of CM J.B.Patnaik in presence of Governer B. Satyanarayan Reddy on 15.03.1995.JPG",
     ],
   },
@@ -290,7 +291,7 @@ const timelineEvents: TimelineEvent[] = [
       "Assumed the role of Leader of Opposition in the Odisha Legislative Assembly.",
     images: [
       "/images/timeline/2004/104_8530.jpg",
-      "/images/timeline/2004/a1 (26).JPG",
+      "/images/timeline/2004/2004.jpeg",
     ],
   },
   {

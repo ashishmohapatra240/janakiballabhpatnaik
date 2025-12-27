@@ -176,8 +176,8 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Founded the iconic monthly literary magazine Paurusha as its Founder-Editor.",
     images: [
-      "/images/drive/Book Fair.png",
-      "/images/drive/Ekamra Pustk Mela-14_.png",
+      "/images/timeline/1967/paurusha.jpg",
+      "/images/timeline/1967/1967.JPG",
       "/images/contributions/1.png",
     ],
   },

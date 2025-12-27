@@ -70,7 +70,7 @@ const timelineEvents: TimelineEvent[] = [
     year: 1949,
     title: "Journalism Begins",
     description:
-      "Began his professional journey in journalism by joining The Eastern Times as a Sub-Editor.",
+      "Began his professional journey in journalism by joining The Eastern Times as an Assistant Editor.",
     images: [
       "/images/drive/DSC07777.JPG",
       "/images/drive/DSC07783.JPG",
@@ -98,13 +98,24 @@ const timelineEvents: TimelineEvent[] = [
     ],
   },
   {
-    year: 1951,
+    year: 1952,
     title: "Dual Editorship",
     description:
       "Assumed the rare distinction of being the Editor of both The Eastern Times and Prajatantra concurrently.",
     images: [
       "/images/timeline/1951/PHOTO-2025-12-25-17-35-57.jpg",
       "/images/timeline/1951/PXL_20251211_090533288.MP.jpg",
+    ],
+  },
+  {
+    year: 1953,
+    title: "A New Chapter in Personal Life",
+    description:
+      "Janaki Ballabh Patnaik married Jayanti Pattnaik, who later served as a Member of Parliament and President of the All India Mahila Congress.",
+    images: [
+      "/images/timeline/1953/DSC05687.JPG",
+      "/images/timeline/1953/PXL_20251211_090533288.MP.jpg",
+      "/images/drive/DSC07844.JPG",
     ],
   },
   {
@@ -123,6 +134,16 @@ const timelineEvents: TimelineEvent[] = [
     title: "Congress Committee Member",
     description:
       "Became a Member of the Working Committee, Pradesh Congress Committee.",
+    images: [
+      "/images/timeline/1954/PXL_20251211_084659444.MP.jpg",
+      "/images/timeline/1954/PXL_20251211_085620487.MP.jpg",
+    ],
+  },
+  {
+    year: 1955,
+    title: "Association with the Bhoodan Movement",
+    description:
+      "Janaki Ballabh Patnaik joined Vinoba Bhave in the Bhoodan Movement, aligning himself with a nationwide campaign for land reform & social justice.",
     images: [
       "/images/timeline/1954/PXL_20251211_084659444.MP.jpg",
       "/images/timeline/1954/PXL_20251211_085620487.MP.jpg",

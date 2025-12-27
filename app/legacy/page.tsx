@@ -261,7 +261,7 @@ const legacyCategories = [
       {
         title: "OPGC",
         description: "Odisha Power Generation Corporation",
-        image: "/images/contributions/4.png",
+        image: "/images/legacy/category/OPGC_JBP.jpg",
       },
       {
         title: "Power Sector Reforms",
@@ -289,7 +289,7 @@ const legacyCategories = [
       {
         title: "Jawaharlal Nehru Indoor Stadium",
         description: "Indoor sports complex",
-        image: "/images/contributions/3.png",
+        image: "/images/legacy/category/JNIndoorStadium_JBP.jpg",
       },
       {
         title: "District-level Sports Hostels",
@@ -347,7 +347,7 @@ const legacyCategories = [
       {
         title: "White Revolution in Odisha",
         description: "Dairy development program",
-        image: "/images/legacy/category/White Revolution.jpg",
+        image: "/images/legacy/category/WhiteRevolution_JBP.jpeg",
       },
       {
         title: "ERRP",
@@ -941,7 +941,7 @@ export default function LegacyPage() {
             Explore the landmark institutions envisioned and established by Janaki Patnaik, enduring pillars that continue to drive Odisha’s growth and prosperity today.
             </p>
           </div>
-          
+
           {/* Legacy Categories */}
           <div className="space-y-6">
             {legacyCategories.map((category) => (

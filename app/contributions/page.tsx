@@ -404,7 +404,7 @@ export default function ContributionsPage() {
                     "Established Navodaya Vidyalayas in every district and declared primary school teachers as government servants to ensure quality at the grassroots level",
                     "Massive expansion in ITIs and polytechnics ensured that there is 'no dearth of technical manpower in the State now'",
                   ]}
-                  imageSrc="/images/contri/ximb old.jpeg"
+                  imageSrc="/images/contributions/ouat.jpeg"
                   imageAlt="Education Science & Technical Training"
                 />
 
@@ -503,7 +503,7 @@ export default function ContributionsPage() {
                     "Created a separate Directorate of Sports to give focused attention to the sector",
                     "Built the Kalinga Stadium in Bhubaneswar (taking corrective measures when initial designs were flawed) and the Jawaharlal Nehru Indoor Stadium in Cuttack (one of the largest in Asia at the time)",
                   ]}
-                  imageSrc="/images/contri/IMG_5523.jpg"
+                  imageSrc="/images/contributions/kalingastadium.jpeg"
                   imageAlt="Sports Legacy"
                   reverse
                 />
@@ -514,7 +514,7 @@ export default function ContributionsPage() {
       </section>
 
       {/* Gallery Section */}
-      <section className="py-16 px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white">
+      {/* <section className="py-16 px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white">
         <div className="max-w-7xl mx-auto">
           <SectionTitle title="Visual" highlight="Gallery" />
 
@@ -544,7 +544,7 @@ export default function ContributionsPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Call to Action */}
       <section className="py-16 px-6 lg:px-8 bg-sky-500">

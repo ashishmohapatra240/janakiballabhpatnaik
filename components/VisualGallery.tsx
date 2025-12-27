@@ -72,8 +72,9 @@ export default function VisualGallery() {
         <SectionTitle title="Visual" highlight="Gallery" />
 
         <p className="text-center text-neutral-400 text-base mb-12 max-w-2xl mx-auto">
-          A visual showcase of J.B. Patnaik's contributions and the lasting
-          impact of his development initiatives across Odisha.
+          {/* A visual showcase of J.B. Patnaik's contributions and the lasting
+          impact of his development initiatives across Odisha. */}
+          A visual showcase of J.B. Patnaik’s contributions and their lasting impact.
         </p>
 
         <div className="grid grid-cols-3 gap-5 max-lg:grid-cols-2 max-md:grid-cols-1">

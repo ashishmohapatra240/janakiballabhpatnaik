@@ -125,8 +125,9 @@ const cmTenures = [
     period: "June 9, 1980 – March 9, 1985",
     title: "First Tenure",
     subtitle: "The Era of Stability & Vision",
-    description:
-      "Ended years of political volatility by providing a stable government and launching the audacious '1000 Industries' policy that woke the state from its agrarian slumber.",
+    // description:
+    //   "Ended years of political volatility by providing a stable government and launching the audacious '1000 Industries' policy that woke the state from its agrarian slumber.",
+    description:"He brought an end to prolonged political instability by establishing a stable government and introducing the ‘1000 Industries’ policy, which helped diversify the state’s economy beyond its agrarian base."
   },
   {
     period: "March 10, 1985 – December 7, 1989",
@@ -404,14 +405,7 @@ export default function LegacyPage() {
               </h1>
 
               <p className="max-w-[584px] text-neutral-400 text-base font-normal leading-6 max-lg:max-w-full">
-                Born on January 3, 1927, in the village of Rameswar in Khordha
-                district, Shree Janaki Ballav Patnaik was steeped in a heritage of
-                patriotism and learning. His father, Gokulananda Patnaik, was a
-                noted poet and freedom fighter, an influence that shaped Janaki
-                Ballav's character early on. Shree Janaki Ballav Patnaik's fourteen
-                years at the helm marked a decisive turning point in Odisha's
-                history—shifting its trajectory from a quiet agrarian past to a
-                confident, modern future.
+              Born on January 3, 1927, in Rameswar village of Khordha district, Shree Janaki Ballav Patnaik grew up in an environment shaped by patriotism and learning. His father, Gokulananda Patnaik, a poet and freedom fighter, played a defining role in influencing his values from an early age. During his fourteen years of leadership, Janaki Ballav Patnaik guided a period of decisive change, helping move society from a primarily agrarian foundation toward a more confident and modern outlook.
               </p>
             </div>
 
@@ -451,14 +445,10 @@ export default function LegacyPage() {
                 A Heritage of Patriotism and Learning
               </h3>
               <p className="text-neutral-400 text-base leading-7">
-                Born on January 3, 1927, in the village of Rameswar in Khordha
-                district, Shree Janaki Ballav Patnaik was steeped in a heritage of
-                patriotism and learning. His father, Gokulananda Patnaik, was a
-                noted poet and freedom fighter, an influence that shaped Janaki
-                Ballav's character early on.
+              His academic years reflected both intellectual strength and an early sense of conviction. 
               </p>
               <p className="text-neutral-400 text-base leading-7">
-                His academic journey was marked by brilliance and rebellion. As
+                {/* His academic journey was marked by brilliance and rebellion. As
                 a student at Ravenshaw College, he famously led a protest to
                 lower the British Union Jack from the college building in
                 1946—an act that signalled his fearless spirit. He went on to
@@ -466,13 +456,13 @@ export default function LegacyPage() {
                 Master's in Political Science from the prestigious Banaras Hindu
                 University (BHU) in 1949. This dual grounding in ancient wisdom
                 and modern political thought would become the hallmark of his
-                career.
+                career. */}
               </p>
-              <p className="text-neutral-400 text-base leading-7">
+              {/* <p className="text-neutral-400 text-base leading-7">
                 Before entering active politics, he distinguished himself as a
                 journalist, serving as the Editor of the Eastern Times and the
                 Prajatantra, where he championed the causes of the common man.
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
@@ -499,19 +489,21 @@ export default function LegacyPage() {
                   A Desire to Serve
                 </h3>
                 <p className="text-neutral-400 text-base leading-7">
-                  Shree Janaki Ballav Patnaik's political ascent was driven by a
+                  {/* Shree Janaki Ballav Patnaik's political ascent was driven by a
                   desire to serve. Starting as the President of the State Youth
                   Congress in 1950, he rose to national prominence in 1971 when
-                  he was elected to the Lok Sabha.
+                  he was elected to the Lok Sabha. */}
+                  Shree Janaki Ballav Patnaik’s political journey began with a strong sense of public service. He started as President of the State Youth Congress in 1950 and gained national recognition in 1971 after being elected to the Lok Sabha.
                 </p>
                 <p className="text-neutral-400 text-base leading-7">
-                  His competence caught the eye of Prime Minister Indira Gandhi,
+                  {/* His competence caught the eye of Prime Minister Indira Gandhi,
                   who entrusted him with significant responsibilities. Between
                   1973 and 1980, he served as the Deputy Minister of Defence and
                   later as the Union Minister for Tourism, Civil Aviation, and
                   Labour. During this tenure, he was instrumental in placing
                   Odisha on the national aviation and tourism map, laying the
-                  groundwork for his return to the state as its leader.
+                  groundwork for his return to the state as its leader. */}
+                  His work at the national level led to greater responsibilities under Prime Minister Indira Gandhi. Between 1973 and 1980, he served as Deputy Minister of Defence and later as Union Minister for Tourism, Civil Aviation, and Labour. During this period, he played a key role in strengthening connectivity and tourism infrastructure, setting the stage for his return to state leadership.
                 </p>
               </div>
             </div>
@@ -553,17 +545,18 @@ export default function LegacyPage() {
       </section>
 
       {/* Chief Ministership Section - Timeline Based */}
-      <section className="py-16 px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white">
+      <section className="py-16 px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white border border-red-800">
         <div className="max-w-7xl mx-auto">
           <SectionTitle title="Chief Minister" highlight="of Odisha" />
 
           <div className="mb-8">
             <p className="text-center text-neutral-400 text-lg leading-8 max-w-4xl mx-auto">
-              Shree Janaki Ballav Patnaik's fourteen years at the helm marked a
+              {/* Shree Janaki Ballav Patnaik's fourteen years at the helm marked a
               decisive turning point in Odisha's history. His tenure was less
               about managing the status quo and more about re-engineering the
               state's identity; shifting its trajectory from a quiet agrarian
-              past to a confident, modern future.
+              past to a confident, modern future. */}
+              Shree Janaki Ballav Patnaik’s fourteen years in leadership marked a period of significant change for Odisha. His focus went beyond maintaining existing systems and instead centred on reshaping the state’s long-term direction, guiding Odisha from a largely agrarian base toward a more modern and forward-looking outlook.
             </p>
           </div>
 
@@ -762,9 +755,10 @@ export default function LegacyPage() {
 
           <div className="mb-8">
             <p className="text-center text-neutral-400 text-lg leading-8 max-w-4xl mx-auto">
-              In the twilight of his career (2009–2014), he served as the
+              {/* In the twilight of his career (2009–2014), he served as the
               Governor of Assam. Far from a ceremonial figurehead, he became a
-              proactive "People's Governor."
+              proactive "People's Governor." */}
+              From 2009 to 2014, he served as the Governor of Assam, where he played an active and engaged role, earning recognition as a People’s Governor rather than a ceremonial figure.
             </p>
           </div>
 
@@ -844,17 +838,17 @@ export default function LegacyPage() {
           {/* Main Content Grid */}
           <div className="grid grid-cols-2 gap-8 max-lg:grid-cols-1 mb-12">
             {/* Image */}
-            <div className="relative w-full h-[500px] max-lg:h-[400px]">
+            {/* <div className="relative w-full h-[500px] max-lg:h-[400px]">
               <ImageWithFallback
                 src="/images/drive/With Fakir Harichandan.jpg"
                 alt="JBP Personal Life"
                 fill
                 className="rounded-xl object-cover"
               />
-            </div>
+            </div> */}
 
             {/* Key Highlights Cards */}
-            <div className="grid grid-cols-1 gap-4">
+            {/* <div className="grid grid-cols-1 gap-4">
               {personalHighlights.map((item) => (
                 <div
                   key={item.title}
@@ -877,7 +871,7 @@ export default function LegacyPage() {
                   </div>
                 </div>
               ))}
-            </div>
+            </div> */}
           </div>
 
           {/* Detailed Sections */}
@@ -890,12 +884,13 @@ export default function LegacyPage() {
                 </h4>
               </div>
               <p className="text-neutral-600 leading-7 mb-4">
-                J.B. Patnaik was known for his composure and dignity. Even in
+                {/* J.B. Patnaik was known for his composure and dignity. Even in
                 the face of harsh political criticism, he maintained the decorum
                 of a statesman, believing that "work speaks louder than words."
                 He navigated the corridors of power with the discipline of a
                 yogi, practicing Pranayama and swimming daily until the very
-                end.
+                end. */}
+                J.B. Patnaik was known for his composure and dignity in public life. Even amid strong political criticism, he upheld the decorum of a statesman and remained guided by a clear sense of right and wrong. His decisions were shaped by conviction rather than convenience, and he believed that consistent work, not rhetoric, was the true measure of leadership.
               </p>
             </div>
 

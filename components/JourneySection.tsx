@@ -92,6 +92,8 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Took charge as the President of the State Youth Congress, marking his entry into organised politics.",
     images: [
+      "/images/timeline/1950/entrypolitcs.JPG",
+      "/images/timeline/1950/entrypolitcss.jpeg",
       "/images/contributions/3.png",
       "/images/drive/DSC07766.JPG",
       "/images/contributions/4.png",
@@ -233,6 +235,8 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Appointed Union Cabinet Minister holding key portfolios of Labour, Civil Aviation, and Tourism.",
     images: [
+      "/images/timeline/1980/UnionMinister.jpg",
+      "/images/timeline/1980/unionminister2.JPG",
       "/images/timeline/1980/DSC05675.JPG",
       "/images/timeline/1980/aeroplane.jpg",
     ],

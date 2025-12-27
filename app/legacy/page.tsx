@@ -412,7 +412,7 @@ export default function LegacyPage() {
             <div className="flex-shrink-0 max-lg:w-full">
               <div className="relative w-[456px] h-[500px] max-lg:w-full max-lg:h-[400px]">
                 <ImageWithFallback
-                  src="/images/drive/janaki patnayak (3).JPG"
+                  src="/images/legacy/a1 (4) (1).JPG"
                   alt="Shree Janaki Ballav Patnaik Portrait"
                   fill
                   className="rounded-lg"

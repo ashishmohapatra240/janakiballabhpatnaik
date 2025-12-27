@@ -49,7 +49,7 @@ export default function Hero() {
                 <span className="text-gray-500">Portrait Image</span>
               </div>
               <Image
-                src="/images/hero.png"
+                src="/images/Sketch.jpg"
                 alt="Shree Janaki Ballav Patnaik"
                 fill
                 className="object-contain rounded-lg"

@@ -316,6 +316,9 @@ export default function ContributionsPage() {
                     "Established massive industries including NALCO (Damanjodi & Angul), Paradeep Phosphates, Birla Tyres (Balasore), FACOR (Bhadrak), and the Ib Valley Thermal Power Plant",
                     "Pioneered granting 'Industry Status' to non-traditional sectors like Hotels and the Film Industry, leading to a boom in tourism infrastructure and construction of Kalinga Studio",
                     "Laid the groundwork for the IT revolution by establishing the Software Technology Park and Fortune Tower in Bhubaneswar, facilitating the entry of major companies like Infosys and Satyam",
+                    "	Established OMFED (1982) to strengthen the dairy sector",
+"	Created 15 cold storage units to support farmers and agri-produce storage"
+
                   ]}
                   imageSrc="/images/contri/IMG_5519.jpg"
                   imageAlt="Industrial Revolution"
@@ -343,6 +346,10 @@ export default function ContributionsPage() {
                     "Increased generation capacity six-fold from 373 MW, making Odisha a power-surplus state by 2000",
                     "Established the Odisha Power Generation Corporation (OPGC) and commissioned the Ib Valley Thermal Power Plant",
                     "Implemented comprehensive power sector reforms (Orissa Electricity Reform Act, 1995), unbundling the State Electricity Board and establishing the Odisha Electricity Regulatory Commission (OERC)",
+                    "Established IDCO and revitalised IPICOL",
+"	Facilitated major industrial investments including IFFCO and MESCO",
+"	Developed industrial estates at Jagatpur, Rasulgarh, Chandaka, Jharsuguda, Bolangir, and Kolanga"
+
                   ]}
                   imageSrc="/images/contri/opgc.webp"
                   imageAlt="Power & Energy"
@@ -379,6 +386,8 @@ export default function ContributionsPage() {
                   "Integrated Coastal and Western Odisha through improved connectivity",
                   "Developed an all-weather port",
                   "Constructed New Jagannath Sadak - an alternative route connecting Puri district with southern Odisha",
+                  "	Introduced Odisha’s first direct air connectivity between Bhubaneswar, New Delhi, and other major Indian cities",
+                  "	Developed major urban ring roads: Cuttack Ring Road and Sambalpur Ring Road"
                 ]}
                 imageSrc="/images/contri/old_mahanadi_enlarge.jpg"
                 imageAlt="Transport Infrastructure"
@@ -403,6 +412,12 @@ export default function ContributionsPage() {
                     "Established the Pathani Samanta Planetarium, upgraded the Institute of Physics, and set up the Odisha Bigyan Academy and the Odisha Computer Application Centre (OCAC)",
                     "Established Navodaya Vidyalayas in every district and declared primary school teachers as government servants to ensure quality at the grassroots level",
                     "Massive expansion in ITIs and polytechnics ensured that there is 'no dearth of technical manpower in the State now'",
+                    "	Established 40,000 government primary schools",
+"Merged 3,000 private schools into the government education system",
+"	Set up 3,000 public libraries across the state",
+"	Built 700+ government girls’ high schools",
+"	Established ORSAC (1984)"
+
                   ]}
                   imageSrc="/images/contributions/ouat.jpeg"
                   imageAlt="Education Science & Technical Training"
@@ -415,6 +430,8 @@ export default function ContributionsPage() {
                     "Successfully managed the Nabakalebara of 1996 (the only successful one in 400 years) and introduced the Hundi system to streamline temple finances",
                     "Established the Sri Jagannath Sanskrit University in Puri to preserve Sanskrit learning",
                     "Established the Odissi Research Centre to codify the dance form and launched the Konark Dance Festival, building the open-air auditorium against the backdrop of the Sun Temple",
+                    "	Rejuvenated theatre and performing arts in Odisha",
+                    "	Provided sustained financial support to cultural troupes and institutions"
                   ]}
                   imageSrc="/images/contri/jagannath.png"
                   imageAlt="Culture Heritage & Jagannath Cult"

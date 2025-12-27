@@ -93,10 +93,8 @@ const timelineEvents: TimelineEvent[] = [
       "Took charge as the President of the State Youth Congress, marking his entry into organised politics.",
     images: [
       "/images/timeline/1950/entrypolitcs.JPG",
-      "/images/timeline/1950/entrypolitcss.jpeg",
-      "/images/contributions/3.png",
-      "/images/drive/DSC07766.JPG",
-      "/images/contributions/4.png",
+      "/images/timeline/1950/def.JPG"
+      // "/images/timeline/1950/entrypolitcss.jpeg",
     ],
   },
   {
@@ -188,7 +186,8 @@ const timelineEvents: TimelineEvent[] = [
       "Entered electoral politics for the first time, contesting from the Dharmasala constituency as an Independent candidate.",
     images: [
       "/images/timeline/1967/307661550_397200172599461_3834021899959530748_n.jpg",
-      "/images/timeline/1967/DSC05683.JPG",
+      // "/images/timeline/1967/DSC05683.JPG",
+      "/images/timeline/1967/abc.JPG"
     ],
   },
   {
@@ -207,7 +206,8 @@ const timelineEvents: TimelineEvent[] = [
       "Inducted into the Union Government as the Minister of State for Defence.",
     images: [
       "/images/timeline/1973/DSC07777.JPG",
-      "/images/timeline/1967 a/Screenshot 2025-12-25 at 9.24.27 PM.png",
+      // "/images/timeline/1967 a/Screenshot 2025-12-25 at 9.24.27 PM.png",
+      "/images/timeline/1973/mo.JPG"
     ],
   },
   {
@@ -226,7 +226,7 @@ const timelineEvents: TimelineEvent[] = [
       "Appointed President of the Odisha Pradesh Congress Committee (OPCC).",
     images: [
       "/images/timeline/1978/Congress-Bhawan.jpg",
-      "/images/timeline/1978/DSC05695.JPG",
+      "/images/timeline/1978/1978.jpg",
     ],
   },
   {
@@ -247,7 +247,8 @@ const timelineEvents: TimelineEvent[] = [
     description:
       'Sworn in as the Chief Minister of Odisha (First Tenure) and launched the visionary "1000 Industries in 1000 Days" policy.',
     images: [
-      "/images/timeline/1980/oath1.JPG",
+      "/images/timeline/1980/1980.JPG",
+      "/images/timeline/1980/19801.JPG",
       "/images/drive/DSC07803.JPG",
       "/images/contributions/6.png",
     ],

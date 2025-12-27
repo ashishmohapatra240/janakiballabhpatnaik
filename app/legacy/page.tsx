@@ -936,6 +936,12 @@ export default function LegacyPage() {
         <div className="max-w-7xl mx-auto">
           <SectionTitle title="Lasting" highlight="Legacy" />
 
+          <div className="mb-8">
+            <p className="text-center text-neutral-400 text-lg leading-8 max-w-4xl mx-auto">
+            Explore the landmark institutions envisioned and established by Janaki Patnaik, enduring pillars that continue to drive Odisha’s growth and prosperity today.
+            </p>
+          </div>
+          
           {/* Legacy Categories */}
           <div className="space-y-6">
             {legacyCategories.map((category) => (

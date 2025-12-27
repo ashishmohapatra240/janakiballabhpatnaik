@@ -72,7 +72,7 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Began his professional journey in journalism by joining The Eastern Times as an Assistant Editor.",
     images: [
-      "/images/drive/DSC07777.JPG",
+      "/images/drive/easterntimes.jpeg",
       "/images/drive/DSC07783.JPG",
     ],
   },

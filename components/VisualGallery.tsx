@@ -3,7 +3,7 @@
 import Image from "next/image";
 
 const galleryImages = [
-  { id: 1, src: "/images/contributions/1.png", alt: "Contribution 1" },
+  { id: 1, src: "/images/drive/Swearing in ceremoney of CMJ.B.Patnaik  in presence of Governer B.N. pande on 10.03.1985.jpg", alt: "Contribution 1" },
   { id: 2, src: "/images/contributions/2.png", alt: "Contribution 2" },
   { id: 3, src: "/images/contributions/3.png", alt: "Contribution 3" },
   { id: 4, src: "/images/contributions/4.png", alt: "Contribution 4" },
@@ -16,7 +16,7 @@ const galleryImages = [
   },
   {
     id: 8,
-    src: "/images/drive/Swearing in ceremoney of CMJ.B.Patnaik  in presence of Governer B.N. pande on 10.03.1985.jpg",
+    src: "/images/contributions/1.png",
     alt: "Swearing in ceremony 1985",
   },
   {

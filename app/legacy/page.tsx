@@ -432,7 +432,7 @@ export default function LegacyPage() {
             <div className="flex-shrink-0 max-lg:w-full">
               <div className="relative w-[400px] h-[350px] max-lg:w-full max-lg:h-[300px]">
                 <ImageWithFallback
-                  src="/images/drive/a1 (22).JPG"
+                  src="/images/drive/earlylife.JPG"
                   alt="JBP Early Life"
                   fill
                   className="object-contain rounded-lg"
@@ -444,11 +444,11 @@ export default function LegacyPage() {
               <h3 className="text-2xl font-semibold text-[#272727]">
                 A Heritage of Patriotism and Learning
               </h3>
-              <p className="text-neutral-400 text-base leading-7">
+              {/* <p className="text-neutral-400 text-base leading-7">
               His academic years reflected both intellectual strength and an early sense of conviction. 
-              </p>
+              </p> */}
               <p className="text-neutral-400 text-base leading-7">
-                {/* His academic journey was marked by brilliance and rebellion. As
+                His academic journey was marked by brilliance and rebellion. As
                 a student at Ravenshaw College, he famously led a protest to
                 lower the British Union Jack from the college building in
                 1946—an act that signalled his fearless spirit. He went on to
@@ -456,13 +456,13 @@ export default function LegacyPage() {
                 Master's in Political Science from the prestigious Banaras Hindu
                 University (BHU) in 1949. This dual grounding in ancient wisdom
                 and modern political thought would become the hallmark of his
-                career. */}
+                career.
               </p>
-              {/* <p className="text-neutral-400 text-base leading-7">
+              <p className="text-neutral-400 text-base leading-7">
                 Before entering active politics, he distinguished himself as a
                 journalist, serving as the Editor of the Eastern Times and the
                 Prajatantra, where he championed the causes of the common man.
-              </p> */}
+              </p>
             </div>
           </div>
         </div>

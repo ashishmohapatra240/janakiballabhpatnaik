@@ -88,7 +88,7 @@ function ContributionCard({
   reverse = false,
 }: {
   title: string;
-  description: string;
+  description?: string;
   items: string[];
   imageSrc: string;
   imageAlt: string;
@@ -121,7 +121,9 @@ function ContributionCard({
         }`}
       >
         <h3 className="text-2xl font-semibold text-[#272727]">{title}</h3>
-        <p className="text-neutral-400 text-base leading-7">{description}</p>
+        {description && (
+          <p className="text-neutral-400 text-base leading-7">{description}</p>
+        )}
 
         <ul className="space-y-3 mt-4">
           {items.map((item, index) => (
@@ -308,7 +310,7 @@ export default function ContributionsPage() {
               <div className="space-y-12">
                 <ContributionCard
                   title="The Golden Era: Shifting Odisha from Agrarian to Industrial Powerhouse"
-                  description="J.B. Patnaik is credited with shifting Odisha from an agrarian economy to an industrial powerhouse. His revolutionary '1000 Industries' policy sparked a wave of entrepreneurship and created a favorable climate for industrialization."
+                  // description="J.B. Patnaik is credited with shifting Odisha from an agrarian economy to an industrial powerhouse. His revolutionary '1000 Industries' policy sparked a wave of entrepreneurship and created a favorable climate for industrialization."
                   items={[
                     "Launched 'One Thousand Industries in One Thousand Days' with an investment target of Rs. 1000 crores",
                     "Established massive industries including NALCO (Damanjodi & Angul), Paradeep Phosphates, Birla Tyres (Balasore), FACOR (Bhadrak), and the Ib Valley Thermal Power Plant",
@@ -321,7 +323,7 @@ export default function ContributionsPage() {
 
                 <ContributionCard
                   title="Transforming the Heartland: From Deficit to Granary"
-                  description="He fundamentally changed the state's agrarian landscape by treating agriculture with the same seriousness as industry and ensuring water security. In a pioneering move, his government granted agriculture the status of an industry, extending subsidies and incentives to farmers."
+                  // description="He fundamentally changed the state's agrarian landscape by treating agriculture with the same seriousness as industry and ensuring water security. In a pioneering move, his government granted agriculture the status of an industry, extending subsidies and incentives to farmers."
                   items={[
                     "Established APICOL (Agricultural Promotion and Investment Corporation of Odisha Limited) to provide technical guidance and financial support for agro-enterprises",
                     "Transformed Odisha from a food-deficit state to a surplus one - groundnut productivity became the highest in the country, rice production increased significantly, and cash crops like cotton (in Kalahandi) and sugarcane were promoted",
@@ -336,7 +338,7 @@ export default function ContributionsPage() {
 
                 <ContributionCard
                   title="Achieving Surplus: Capacity Explosion"
-                  description="Inheriting a power-deficit state (373 MW), he increased generation capacity six-fold, making Odisha a power-surplus state by 2000. His government was the first in India to implement comprehensive power sector reforms."
+                  // description="Inheriting a power-deficit state (373 MW), he increased generation capacity six-fold, making Odisha a power-surplus state by 2000. His government was the first in India to implement comprehensive power sector reforms."
                   items={[
                     "Increased generation capacity six-fold from 373 MW, making Odisha a power-surplus state by 2000",
                     "Established the Odisha Power Generation Corporation (OPGC) and commissioned the Ib Valley Thermal Power Plant",
@@ -348,7 +350,7 @@ export default function ContributionsPage() {
 
                 <ContributionCard
                   title="Building Odisha as a Premier Tourist Destination"
-                  description="By declaring hotels as an industry, J.B. Patnaik offered incentives that led to a boom in hotel construction. He aggressively developed and marketed the Puri-Konark-Bhubaneswar 'Golden Triangle' as a major international tourist destination."
+                  // description="By declaring hotels as an industry, J.B. Patnaik offered incentives that led to a boom in hotel construction. He aggressively developed and marketed the Puri-Konark-Bhubaneswar 'Golden Triangle' as a major international tourist destination."
                   items={[
                     "By declaring hotels as an industry, offered incentives that led to a boom in hotel construction and attracted major chains like The Oberoi",
                     "Aggressively developed and marketed the Puri-Konark-Bhubaneswar 'Golden Triangle' as a major international tourist destination",
@@ -371,7 +373,7 @@ export default function ContributionsPage() {
             >
               <ContributionCard
                 title="Bridging the Divide: Bridge Revolution"
-                description="Constructed approximately 400 bridges, including critical ones over the Mahanadi (Mundali, Boudh, Sonepur) and its tributaries, integrating Coastal and Western Odisha. Also developed an all-weather port and constructed the New Jagannath Sadak."
+                // description="Constructed approximately 400 bridges, including critical ones over the Mahanadi (Mundali, Boudh, Sonepur) and its tributaries, integrating Coastal and Western Odisha. Also developed an all-weather port and constructed the New Jagannath Sadak."
                 items={[
                   "Constructed approximately 400 bridges, including critical ones over the Mahanadi (Mundali, Boudh, Sonepur) and its tributaries",
                   "Integrated Coastal and Western Odisha through improved connectivity",
@@ -394,7 +396,7 @@ export default function ContributionsPage() {
               <div className="space-y-12">
                 <ContributionCard
                   title="Holistic Vision: From Primary Schooling to Premier Technical Institutes"
-                  description="J.B. Patnaik's vision for education was holistic, ranging from primary schooling to premier technical institutes and scientific research. He personally intervened to build the state's technical infrastructure."
+                  // description="J.B. Patnaik's vision for education was holistic, ranging from primary schooling to premier technical institutes and scientific research. He personally intervened to build the state's technical infrastructure."
                   items={[
                     "Established premier technical institutions: College of Engineering and Technology (CET) within OUAT, engineering colleges at Sarang (IGIT), Choudwar, and Keonjhar",
                     "Founded the Xavier Institute of Management, Bhubaneswar (XIMB) and the Nabakrushna Choudhury Centre for Development Studies",
@@ -408,7 +410,7 @@ export default function ContributionsPage() {
 
                 <ContributionCard
                   title="Preserving Odisha's Spiritual and Cultural Legacy"
-                  description="J.B. Patnaik successfully managed the Nabakalebara of 1996 (the only successful one in 400 years) and introduced the Hundi system to streamline temple finances. He fulfilled his dream of establishing the Sri Jagannath Sanskrit University in Puri."
+                  // description="J.B. Patnaik successfully managed the Nabakalebara of 1996 (the only successful one in 400 years) and introduced the Hundi system to streamline temple finances. He fulfilled his dream of establishing the Sri Jagannath Sanskrit University in Puri."
                   items={[
                     "Successfully managed the Nabakalebara of 1996 (the only successful one in 400 years) and introduced the Hundi system to streamline temple finances",
                     "Established the Sri Jagannath Sanskrit University in Puri to preserve Sanskrit learning",
@@ -421,7 +423,7 @@ export default function ContributionsPage() {
 
                 <ContributionCard
                   title="Championing Odia Language and Literary Excellence"
-                  description="A prolific writer and translator himself, J.B. Patnaik strictly enforced Odia as the official language in administration and promoted literary excellence across the state."
+                  // description="A prolific writer and translator himself, J.B. Patnaik strictly enforced Odia as the official language in administration and promoted literary excellence across the state."
                   items={[
                     "Strictly enforced Odia as the official language in administration (1985), mandating its use in government files and introducing Odia typewriters",
                     "A prolific writer and translator (translating the Ramayana, Mahabharata, and Bankim Chandra's novels)",
@@ -445,7 +447,7 @@ export default function ContributionsPage() {
               <div className="space-y-12">
                 <ContributionCard
                   title="Empowering the Marginalized and Tribal Communities"
-                  description="True to his Gandhian principles, J.B. Patnaik implemented numerous programs for the welfare of marginalized communities, particularly tribal populations and economically weaker sections."
+                  // description="True to his Gandhian principles, J.B. Patnaik implemented numerous programs for the welfare of marginalized communities, particularly tribal populations and economically weaker sections."
                   items={[
                     "Launched the Economic Rehabilitation of Rural Poor (ERRP) scheme, providing income-generating assets (cashew orchards, pisciculture tanks) to the poorest families",
                     "Strictly enforced reservation quotas (clearing backlogs in government jobs) and abolished exploitative taxes on forest produce like Sal leaves and Sabai grass",
@@ -458,7 +460,7 @@ export default function ContributionsPage() {
 
                 <ContributionCard
                   title="Pioneering Women's Rights and Opportunities"
-                  description="J.B. Patnaik made Odisha the first state to make education free for girls from primary school up to the Post-Graduate level. He reserved 30% of government jobs for women and established the State Commission for Women (first in India)."
+                  // description="J.B. Patnaik made Odisha the first state to make education free for girls from primary school up to the Post-Graduate level. He reserved 30% of government jobs for women and established the State Commission for Women (first in India)."
                   items={[
                     "Made Odisha the first state to make education free for girls from primary school up to the Post-Graduate level",
                     "Reserved 30% of government jobs for women and appointed 5,000 female primary school teachers",
@@ -482,7 +484,7 @@ export default function ContributionsPage() {
               <div className="space-y-12">
                 <ContributionCard
                   title="Protecting Odisha's Natural Heritage"
-                  description="J.B. Patnaik established 12 of the state's 18 wildlife sanctuaries and transformed Bhubaneswar into a garden city, demonstrating his commitment to environmental conservation alongside development."
+                  // description="J.B. Patnaik established 12 of the state's 18 wildlife sanctuaries and transformed Bhubaneswar into a garden city, demonstrating his commitment to environmental conservation alongside development."
                   items={[
                     "Established 12 of the state's 18 wildlife sanctuaries, including the Chandaka Elephant Sanctuary and Bhitarkanika National Park",
                     "Established the State Pollution Prevention and Control Board to regulate industrial impact",
@@ -494,7 +496,7 @@ export default function ContributionsPage() {
 
                 <ContributionCard
                   title="Laying the Foundation for Odisha's Dominance in Sports"
-                  description="He laid the foundation for Odisha's dominance in sports, particularly hockey, by modernizing infrastructure and focusing on talent scouting. These hostels produced legendary Olympians like Dilip Tirkey, Lazarus Barla, and Jyoti Sunita Kullu."
+                  // description="He laid the foundation for Odisha's dominance in sports, particularly hockey, by modernizing infrastructure and focusing on talent scouting. These hostels produced legendary Olympians like Dilip Tirkey, Lazarus Barla, and Jyoti Sunita Kullu."
                   items={[
                     "Plans were set afoot during his tenure to lay an astro turf for hockey in the Rourkela hostel, a crucial move for modernizing the game in the state",
                     "Established SAI (Sports Authority of India) hostels for hockey in Sundargarh and Rourkela, producing legendary Olympians like Dilip Tirkey, Lazarus Barla, and Jyoti Sunita Kullu",

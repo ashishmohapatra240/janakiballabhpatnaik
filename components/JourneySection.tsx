@@ -146,8 +146,8 @@ const timelineEvents: TimelineEvent[] = [
     description:
       "Janaki Ballabh Patnaik joined Vinoba Bhave in the Bhoodan Movement, aligning himself with a nationwide campaign for land reform & social justice.",
     images: [
-      "/images/timeline/1954/PXL_20251211_084659444.MP.jpg",
-      "/images/timeline/1954/PXL_20251211_085620487.MP.jpg",
+      "/images/timeline/1955/1955_JBP1.JPG",
+      "/images/timeline/1955/1955_JBP2.jpg",
     ],
   },
   {

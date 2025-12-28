@@ -236,9 +236,7 @@ const timelineEvents: TimelineEvent[] = [
       "Appointed Union Cabinet Minister holding key portfolios of Labour, Civil Aviation, and Tourism.",
     images: [
       "/images/timeline/1980/UnionMinister.jpg",
-      "/images/timeline/1980/unionminister2.JPG",
-      "/images/timeline/1980/DSC05675.JPG",
-      "/images/timeline/1980/aeroplane.jpg",
+      "/images/timeline/1980/unionminister3.JPG",
     ],
   },
   {

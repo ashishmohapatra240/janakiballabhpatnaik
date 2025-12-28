@@ -194,42 +194,42 @@ export default function LiteraturePage() {
                 title="Bankima Upanyasmala (Vol 1 & 2)"
                 year="2001"
                 description="Sahitya Akademi Award winner - Translation of Bankim Chandra Chattopadhyay's novels into Odia."
-                imageSrc="/images/contributions/1.png"
+                imageSrc="/images/contributions/7.JPG"
                 imageAlt="Bankima Upanyasmala"
               />
               <BookCard
                 title="Bairagya Sataka (Bhartruhari)"
                 year="1996"
                 description="Odisha Sahitya Akademi Award winner - Translation of Bhartruhari's philosophical verses."
-                imageSrc="/images/contributions/2.png"
+                imageSrc="/images/contributions/8.JPG"
                 imageAlt="Bairagya Sataka"
               />
               <BookCard
                 title="Niti Sataka & Srungar Sataka"
                 year="Translation"
                 description="The complete Satakatrayi - Translation of Bhartruhari's three collections of verses."
-                imageSrc="/images/contributions/3.png"
+                imageSrc="/images/contributions/9.JPG"
                 imageAlt="Niti Sataka & Srungar Sataka"
               />
               <BookCard
                 title="Srimad Bhagabata"
                 year="Scripture"
                 description="Prose translation of the Bhagavata Purana into Odia, making the epic accessible to common readers."
-                imageSrc="/images/contributions/4.png"
+                imageSrc="/images/contributions/10.JPG"
                 imageAlt="Srimad Bhagabata"
               />
               <BookCard
                 title="Valmiki Ramayana"
                 year="Scripture"
                 description="Odia translation of the ancient Sanskrit epic Valmiki Ramayana, preserving the essence of the original."
-                imageSrc="/images/contributions/5.png"
+                imageSrc="/images/contributions/11.JPG"
                 imageAlt="Valmiki Ramayana"
               />
               <BookCard
                 title="Byasakruta Mahabharata"
                 year="Scripture"
                 description="Translation of the epic Mahabharata into Odia, bringing the great epic to Odia readers."
-                imageSrc="/images/contributions/6.png"
+                imageSrc="/images/contributions/12.JPG"
                 imageAlt="Byasakruta Mahabharata"
               />
             </div>
@@ -246,42 +246,42 @@ export default function LiteraturePage() {
                 title="Gautama Buddha"
                 year="Biography"
                 description="A modern democratic interpretation of the life and teachings of Gautama Buddha."
-                imageSrc="/images/contributions/1.png"
+                imageSrc="/images/contributions/13.JPG"
                 imageAlt="Gautama Buddha"
               />
               <BookCard
                 title="Swapna O Sankalpa"
                 year="Essays"
                 description="Essays on Odisha's Vision - A collection of thoughtful writings on the state's future."
-                imageSrc="/images/contributions/2.png"
+                imageSrc="/images/contributions/14.JPG"
                 imageAlt="Swapna O Sankalpa"
               />
               <BookCard
                 title="Balmikikruta Ramayana"
                 year="Prose"
                 description="Critical Prose Retelling of the Ramayana with modern interpretations."
-                imageSrc="/images/contributions/3.png"
+                imageSrc="/images/contributions/15.JPG"
                 imageAlt="Balmikikruta Ramayana"
               />
               <BookCard
                 title="Nirbachita Prabandha Samkalan"
                 year="Essays"
                 description="Selected Essays on Literature & Politics - A compilation of his finest writings."
-                imageSrc="/images/contributions/4.png"
+                imageSrc="/images/contributions/16.JPG"
                 imageAlt="Nirbachita Prabandha Samkalan"
               />
               <BookCard
                 title="Samayara Sopanare"
                 year="Prose"
                 description="A collection of prose writings reflecting on contemporary times and society."
-                imageSrc="/images/contributions/5.png"
+                imageSrc="/images/contributions/17.JPG"
                 imageAlt="Samayara Sopanare"
               />
               <BookCard
                 title="Panchatatwatmaka Srichaitanya O Panchasakha"
                 year="Odia Prose"
                 description="An exploration of the five elements of Chaitanya and the Panchasakha tradition."
-                imageSrc="/images/contributions/6.png"
+                imageSrc="/images/contributions/18.JPG"
                 imageAlt="Panchatatwatmaka Srichaitanya O Panchasakha"
               />
             </div>
@@ -298,21 +298,21 @@ export default function LiteraturePage() {
                 title="Sindhu Upatyaka"
                 year="Poetry"
                 description="A collection of poems that has been translated into Bengali, showcasing his poetic prowess."
-                imageSrc="/images/contributions/1.png"
+                imageSrc="/images/contributions/19.JPG"
                 imageAlt="Sindhu Upatyaka"
               />
               <BookCard
                 title="Samskrtavanmayavaibhavam"
                 year="Sanskrit"
                 description="Original Sanskrit Essays & Poems - Demonstrating his mastery of classical Sanskrit literature."
-                imageSrc="/images/contributions/2.png"
+                imageSrc="/images/contributions/20.JPG"
                 imageAlt="Samskrtavanmayavaibhavam"
               />
               <BookCard
                 title="Malunira Fula O Anyana Galpa"
                 year="Odia"
                 description="Short stories collection - A compilation of his finest short stories in Odia."
-                imageSrc="/images/contributions/3.png"
+                imageSrc="/images/contributions/21.JPG"
                 imageAlt="Malunira Fula O Anyana Galpa"
               />
             </div>
@@ -329,21 +329,21 @@ export default function LiteraturePage() {
                 title="Asamapta Atmalipi"
                 year="Autobiography"
                 description="Unfinished Autobiography of JBP - A self-portrait capturing his public journey and inner reflections."
-                imageSrc="/images/contributions/4.png"
+                imageSrc="/images/contributions/22.JPG"
                 imageAlt="Asamapta Atmalipi"
               />
               <BookCard
                 title="Assamru Lekhuchi"
                 year="Memoir"
                 description="A collection of his writings while serving as the Governor of Assam (2009-2014)."
-                imageSrc="/images/contributions/5.png"
+                imageSrc="/images/contributions/23.JPG"
                 imageAlt="Assamru Lekhuchi"
               />
               <BookCard
                 title="Bachaspati Mahodaya"
                 year="Memoir"
                 description="Collection of his writings - Reflections and thoughts from his distinguished career."
-                imageSrc="/images/contributions/6.png"
+                imageSrc="/images/contributions/24.JPG"
                 imageAlt="Bachaspati Mahodaya"
               />
             </div>
@@ -360,7 +360,7 @@ export default function LiteraturePage() {
                 title="Gokulananda Granthavali"
                 year="Edited Volume"
                 description="Collected works of his father, Gokulananda Patnaik - A tribute to the noted poet and freedom fighter."
-                imageSrc="/images/contributions/1.png"
+                imageSrc="/images/contributions/25.JPG"
                 imageAlt="Gokulananda Granthavali"
               />
             </div>

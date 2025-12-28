@@ -284,7 +284,7 @@ const legacyCategories = [
       {
         title: "Kalinga Stadium",
         description: "Major sports facility",
-        image: "/images/drive/DSC07812.JPG",
+        image: "/images/contributions/kalingastadium.jpeg",
       },
       {
         title: "Jawaharlal Nehru Indoor Stadium",

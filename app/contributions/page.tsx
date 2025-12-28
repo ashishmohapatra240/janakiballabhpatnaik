@@ -316,8 +316,10 @@ export default function ContributionsPage() {
                     "Established massive industries including NALCO (Damanjodi & Angul), Paradeep Phosphates, Birla Tyres (Balasore), FACOR (Bhadrak), and the Ib Valley Thermal Power Plant",
                     "Pioneered granting 'Industry Status' to non-traditional sectors like Hotels and the Film Industry, leading to a boom in tourism infrastructure and construction of Kalinga Studio",
                     "Laid the groundwork for the IT revolution by establishing the Software Technology Park and Fortune Tower in Bhubaneswar, facilitating the entry of major companies like Infosys and Satyam",
-                    "	Established OMFED (1982) to strengthen the dairy sector",
-"	Created 15 cold storage units to support farmers and agri-produce storage"
+"	Created 15 cold storage units to support farmers and agri-produce storage",
+"Established IDCO and revitalised IPICOL",
+"	Facilitated major industrial investments including IFFCO and MESCO",
+"	Developed industrial estates at Jagatpur, Rasulgarh, Chandaka, Jharsuguda, Bolangir, and Kolanga"
 
                   ]}
                   imageSrc="/images/contri/IMG_5519.jpg"
@@ -329,6 +331,7 @@ export default function ContributionsPage() {
                   // description="He fundamentally changed the state's agrarian landscape by treating agriculture with the same seriousness as industry and ensuring water security. In a pioneering move, his government granted agriculture the status of an industry, extending subsidies and incentives to farmers."
                   items={[
                     "Established APICOL (Agricultural Promotion and Investment Corporation of Odisha Limited) to provide technical guidance and financial support for agro-enterprises",
+                    "	Established OMFED (1982) to strengthen the dairy sector",
                     "Transformed Odisha from a food-deficit state to a surplus one - groundnut productivity became the highest in the country, rice production increased significantly, and cash crops like cotton (in Kalahandi) and sugarcane were promoted",
                     "Increased the state's irrigated land from 19% to 33%",
                     "Completed the Upper Indravati Project for Kalahandi (irrigating over 1.25 lakh hectares) by securing alternative funding from Japan (OECF) and the Power Finance Corporation when the World Bank withdrew",
@@ -346,9 +349,6 @@ export default function ContributionsPage() {
                     "Increased generation capacity six-fold from 373 MW, making Odisha a power-surplus state by 2000",
                     "Established the Odisha Power Generation Corporation (OPGC) and commissioned the Ib Valley Thermal Power Plant",
                     "Implemented comprehensive power sector reforms (Orissa Electricity Reform Act, 1995), unbundling the State Electricity Board and establishing the Odisha Electricity Regulatory Commission (OERC)",
-                    "Established IDCO and revitalised IPICOL",
-"	Facilitated major industrial investments including IFFCO and MESCO",
-"	Developed industrial estates at Jagatpur, Rasulgarh, Chandaka, Jharsuguda, Bolangir, and Kolanga"
 
                   ]}
                   imageSrc="/images/contri/opgc.webp"
@@ -382,10 +382,11 @@ export default function ContributionsPage() {
                 title="Bridging the Divide: Bridge Revolution"
                 // description="Constructed approximately 400 bridges, including critical ones over the Mahanadi (Mundali, Boudh, Sonepur) and its tributaries, integrating Coastal and Western Odisha. Also developed an all-weather port and constructed the New Jagannath Sadak."
                 items={[
-                  "Constructed approximately 400 bridges, including critical ones over the Mahanadi (Mundali, Boudh, Sonepur) and its tributaries",
+                  "Constructed approximately 400 bridges",
+                  "Strengthened intra-state connectivity through landmark bridges ,	Cuttack–Baranga Bridge,	Cuttack–Bailaisi Mouza Bridge,	Boudh–Sonepur Mahanadi Bridge	Cuttack–Choudwar Barrage & Naraj Bridge	Dasapalla–Sindhumula Mahanadi Bridge,	Kuakhai Bridge",
                   "Integrated Coastal and Western Odisha through improved connectivity",
                   "Developed an all-weather port",
-                  "Constructed New Jagannath Sadak - an alternative route connecting Puri district with southern Odisha",
+                  "Constructed New Jagannath Sadak",
                   "	Introduced Odisha’s first direct air connectivity between Bhubaneswar, New Delhi, and other major Indian cities",
                   "	Developed major urban ring roads: Cuttack Ring Road and Sambalpur Ring Road"
                 ]}
@@ -407,7 +408,7 @@ export default function ContributionsPage() {
                   title="Holistic Vision: From Primary Schooling to Premier Technical Institutes"
                   // description="J.B. Patnaik's vision for education was holistic, ranging from primary schooling to premier technical institutes and scientific research. He personally intervened to build the state's technical infrastructure."
                   items={[
-                    "Established premier technical institutions: College of Engineering and Technology (CET) within OUAT, engineering colleges at Sarang (IGIT), Choudwar, and Keonjhar",
+                    "Established premier technical institutions: College of Engineering and Technology (CET), engineering colleges at Sarang (IGIT), and Keonjhar",
                     "Founded the Xavier Institute of Management, Bhubaneswar (XIMB) and the Nabakrushna Choudhury Centre for Development Studies",
                     "Established the Pathani Samanta Planetarium, upgraded the Institute of Physics, and set up the Odisha Bigyan Academy and the Odisha Computer Application Centre (OCAC)",
                     "Established Navodaya Vidyalayas in every district and declared primary school teachers as government servants to ensure quality at the grassroots level",

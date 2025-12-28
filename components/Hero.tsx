@@ -44,12 +44,12 @@ export default function Hero() {
           </div>
 
           <div className="flex-shrink-0 max-lg:w-full">
-            <div className="relative w-[456px] h-96 max-lg:w-full">
+            <div className="relative w-[600px] h-[500px] max-lg:w-full max-lg:h-[400px]">
               <div className="absolute inset-0 flex items-center justify-center">
                 <span className="text-gray-500">Portrait Image</span>
               </div>
               <Image
-                src="/images/new.png"
+                src="/images/newoneone.png"
                 alt="Shree Janaki Ballav Patnaik"
                 fill
                 className="object-contain rounded-lg"

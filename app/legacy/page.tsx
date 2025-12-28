@@ -513,6 +513,8 @@ export default function LegacyPage() {
               <div
                 className="relative h-[360px] overflow-hidden rounded-xl border border-slate-100 bg-white shadow-sm"
                 tabIndex={0}
+                onMouseEnter={() => setIsPaused(true)}
+                onMouseLeave={() => setIsPaused(false)}
               >
                 <div className="pointer-events-none absolute inset-x-0 top-0 h-10 bg-gradient-to-b from-white to-transparent z-20" />
                 <div className="pointer-events-none absolute inset-x-0 bottom-0 h-10 bg-gradient-to-t from-white to-transparent z-20" />

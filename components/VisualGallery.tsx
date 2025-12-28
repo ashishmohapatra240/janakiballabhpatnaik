@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 
 const galleryImages = [
@@ -66,6 +67,13 @@ function SectionTitle({
 }
 
 export default function VisualGallery() {
+  const [showAll, setShowAll] = useState(false);
+  
+  // Show 9 images initially (3 rows x 3 columns)
+  const initialImageCount = 9;
+  const displayedImages = showAll ? galleryImages : galleryImages.slice(0, initialImageCount);
+  const hasMoreImages = galleryImages.length > initialImageCount;
+
   return (
     <section className="py-16 px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white">
       <div className="max-w-7xl mx-auto">
@@ -74,11 +82,11 @@ export default function VisualGallery() {
         <p className="text-center text-neutral-400 text-base mb-12 max-w-2xl mx-auto">
           {/* A visual showcase of J.B. Patnaik's contributions and the lasting
           impact of his development initiatives across Odisha. */}
-          A visual showcase of J.B. Patnaik’s contributions and their lasting impact.
+          A visual showcase of J.B. Patnaik's contributions and their lasting impact.
         </p>
 
         <div className="grid grid-cols-3 gap-5 max-lg:grid-cols-2 max-md:grid-cols-1">
-          {galleryImages.map((image) => (
+          {displayedImages.map((image) => (
             <div
               key={image.id}
               className="bg-white rounded-2xl outline outline-1 outline-offset-[-1px] outline-neutral-200 overflow-hidden hover:shadow-lg transition-shadow"
@@ -97,6 +105,17 @@ export default function VisualGallery() {
             </div>
           ))}
         </div>
+
+        {hasMoreImages && (
+          <div className="flex justify-center mt-8">
+            <button
+              onClick={() => setShowAll(!showAll)}
+              className="px-8 py-3 bg-sky-500 text-white rounded-lg font-semibold hover:bg-sky-600 transition-colors duration-300 shadow-lg hover:shadow-xl cursor-pointer"
+            >
+              {showAll ? "View Less" : "View More"}
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );

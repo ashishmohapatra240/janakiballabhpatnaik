@@ -96,14 +96,14 @@ function BookCard({
             }}
           />
         </div>
-        <div className="flex-1 space-y-1 min-w-0 overflow-hidden">
-          <div className="flex items-center gap-2">
-            <h4 className="text-lg font-semibold text-[#272727] truncate flex-1 min-w-0">{title}</h4>
-            <span className="px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wide bg-sky-50 text-sky-600 rounded-full whitespace-nowrap flex-shrink-0">
+        <div className="flex-1 space-y-1 min-w-0">
+          <div className="flex items-start gap-2">
+            <h4 className="text-lg font-semibold text-[#272727] flex-1 min-w-0 break-words">{title}</h4>
+            <span className="px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wide bg-sky-50 text-sky-600 rounded-full whitespace-nowrap flex-shrink-0 mt-0.5">
               {year}
             </span>
           </div>
-          <p className="text-neutral-500 text-sm leading-6 break-words overflow-hidden">{description}</p>
+          <p className="text-neutral-500 text-sm leading-6 break-words">{description}</p>
         </div>
       </div>
     </div>

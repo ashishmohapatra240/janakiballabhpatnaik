@@ -163,9 +163,9 @@ export default function VisualGallery() {
               <ChevronLeft size={24} />
             </button>
 
-            <span className="text-sm text-neutral-500 font-medium min-w-[60px] text-center">
+            {/* <span className="text-sm text-neutral-500 font-medium min-w-[60px] text-center">
               {currentSlide + 1} / {totalSlides}
-            </span>
+            </span> */}
 
             <button
               onClick={goToNext}

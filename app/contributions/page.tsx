@@ -472,7 +472,7 @@ export default function ContributionsPage() {
                     "Introduced rice at Rs. 2 per kg in tribal-majority blocks to prevent hunger",
                     "Granted property rights to slum dwellers in Bhubaneswar, a humane policy unprecedented at the time",
                   ]}
-                  imageSrc="/images/contri/DSC05642.JPG"
+                  imageSrc="/images/contri/DSC05634.JPG"
                   imageAlt="Social Welfare & Tribal Development"
                 />
 
@@ -484,7 +484,8 @@ export default function ContributionsPage() {
                     "Reserved 30% of government jobs for women and appointed 5,000 female primary school teachers",
                     "Established the State Commission for Women (first in India) and implemented the DWCRA scheme for economic independence",
                   ]}
-                  imageSrc="/images/contri/DSC05634.JPG"
+                  imageSrc="/images/contri/DSC05642.JPG"
+                  
                   imageAlt="Women's Empowerment"
                   reverse
                 />

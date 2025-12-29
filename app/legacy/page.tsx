@@ -441,17 +441,17 @@ export default function LegacyPage() {
             </div>
 
             <div className="flex-1 space-y-4">
-              <h3 className="text-2xl font-semibold text-[#272727]">
+              {/* <h3 className="text-2xl font-semibold text-[#272727]">
                 A Heritage of Patriotism and Learning
-              </h3>
+              </h3> */}
               {/* <p className="text-neutral-400 text-base leading-7">
               His academic years reflected both intellectual strength and an early sense of conviction. 
               </p> */}
               <p className="text-neutral-400 text-base leading-7">
-                His academic journey was marked by brilliance and rebellion. As
+              Janaki Ballav Patnaik's academic journey was marked by brilliance and rebellion. As
                 a student at Ravenshaw College, he famously led a protest to
                 lower the British Union Jack from the college building in
-                1946—an act that signalled his fearless spirit. He went on to
+                1946, an act that signalled his fearless spirit. He went on to
                 earn a degree in Sanskrit from Ravenshaw College (1947) and a
                 Master's in Political Science from the prestigious Banaras Hindu
                 University (BHU) in 1949. This dual grounding in ancient wisdom
@@ -727,7 +727,7 @@ export default function LegacyPage() {
                     src="/images/drive/Swearing in ceremoney of CM J.B.Patnaik in presence of Governer B. Satyanarayan Reddy on 15.03.1995.JPG"
                     alt="JBP as Chief Minister"
                     fill
-                    className="rounded-lg"
+                    className="object-contain rounded-lg"
                   />
                 </div>
               </div>

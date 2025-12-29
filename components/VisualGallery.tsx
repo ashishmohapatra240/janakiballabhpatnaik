@@ -40,6 +40,27 @@ const galleryImages = [
   },
   { id: 14, src: "/images/drive/DSC07805.JPG", alt: "JBP Event" },
   { id: 15, src: "/images/drive/DSC07844.JPG", alt: "JBP Event" },
+  { id: 16, src: "/images/legacy/7.png", alt: "JBP Event" },
+  
+  { id: 17, src: "/images/legacy/12.png", alt: "JBP Event" },
+
+  { id: 18, src: "/images/legacy/13.png", alt: "JBP Event" },
+  { id: 19, src: "/images/legacy/14.png", alt: "JBP Event" },
+  { id: 20, src: "/images/legacy/15.png", alt: "JBP Event" },
+  { id: 21, src: "/images/legacy/16.png", alt: "JBP Event" },
+  { id: 22, src: "/images/legacy/17.png", alt: "JBP Event" },
+  { id: 23, src: "/images/legacy/18.png", alt: "JBP Event" },
+  { id: 24, src: "/images/legacy/19.png", alt: "JBP Event" },
+  { id: 25, src: "/images/legacy/20.png", alt: "JBP Event" },
+  { id: 26, src: "/images/legacy/21.png", alt: "JBP Event" },
+  { id: 27, src: "/images/legacy/22.png", alt: "JBP Event" },
+  { id: 28, src: "/images/legacy/23.png", alt: "JBP Event" },
+  { id: 28, src: "/images/legacy/24.png", alt: "JBP Event" },
+  { id: 29, src: "/images/legacy/25.png", alt: "JBP Event" },
+  { id: 30, src: "/images/legacy/8.png", alt: "JBP Event" },
+  { id: 31, src: "/images/legacy/9.png", alt: "JBP Event" },
+  { id: 32, src: "/images/legacy/10.png", alt: "JBP Event" },
+  { id: 33, src: "/images/legacy/11.png", alt: "JBP Event" },
 ];
 
 // Section Title Component

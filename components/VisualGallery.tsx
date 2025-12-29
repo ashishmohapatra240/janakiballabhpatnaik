@@ -55,7 +55,7 @@ const galleryImages = [
   { id: 26, src: "/images/legacy/21.png", alt: "JBP Event" },
   { id: 27, src: "/images/legacy/22.png", alt: "JBP Event" },
   { id: 28, src: "/images/legacy/23.png", alt: "JBP Event" },
-  { id: 28, src: "/images/legacy/24.png", alt: "JBP Event" },
+  { id: 34, src: "/images/legacy/24.png", alt: "JBP Event" },
   { id: 29, src: "/images/legacy/25.png", alt: "JBP Event" },
   { id: 30, src: "/images/legacy/8.png", alt: "JBP Event" },
   { id: 31, src: "/images/legacy/9.png", alt: "JBP Event" },

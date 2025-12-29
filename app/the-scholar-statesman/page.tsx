@@ -194,7 +194,7 @@ export default function LiteraturePage() {
                 title="Bankima Upanyasmala (Vol 1 & 2)"
                 year="2001"
                 description="Sahitya Akademi Award winner - Translation of Bankim Chandra Chattopadhyay's novels into Odia."
-                imageSrc="/images/contributions/30.JPG"
+                imageSrc="/images/contributions/bankima.jpg"
                 imageAlt="Bankima Upanyasmala"
               />
               <BookCard
@@ -208,28 +208,28 @@ export default function LiteraturePage() {
                 title="Niti Sataka & Srungar Sataka"
                 year="Translation"
                 description="The complete Satakatrayi - Translation of Bhartruhari's three collections of verses."
-                imageSrc="/images/contributions/32.JPG"
+                imageSrc="/images/contributions/niti.jpg"
                 imageAlt="Niti Sataka & Srungar Sataka"
               />
               <BookCard
                 title="Srimad Bhagabata"
                 year="Scripture"
                 description="Prose translation of the Bhagavata Purana into Odia, making the epic accessible to common readers."
-                imageSrc="/images/contributions/33.JPG"
+                imageSrc="/images/contributions/geeta.jpeg"
                 imageAlt="Srimad Bhagabata"
               />
               <BookCard
                 title="Valmiki Ramayana"
                 year="Scripture"
                 description="Odia translation of the ancient Sanskrit epic Valmiki Ramayana, preserving the essence of the original."
-                imageSrc="/images/contributions/34.JPG"
+                imageSrc="/images/contributions/ramayan.jpg"
                 imageAlt="Valmiki Ramayana"
               />
               <BookCard
                 title="Byasakruta Mahabharata"
                 year="Scripture"
                 description="Translation of the epic Mahabharata into Odia, bringing the great epic to Odia readers."
-                imageSrc="/images/contributions/35.JPG"
+                imageSrc="/images/contributions/mahabharat.jpg"
                 imageAlt="Byasakruta Mahabharata"
               />
             </div>
@@ -246,7 +246,7 @@ export default function LiteraturePage() {
                 title="Gautama Buddha"
                 year="Biography"
                 description="A modern democratic interpretation of the life and teachings of Gautama Buddha."
-                imageSrc="/images/contributions/36.JPG"
+                imageSrc="/images/contributions/gautam.jpg"
                 imageAlt="Gautama Buddha"
               />
               <BookCard
@@ -274,7 +274,7 @@ export default function LiteraturePage() {
                 title="Samayara Sopanare"
                 year="Prose"
                 description="A collection of prose writings reflecting on contemporary times and society."
-                imageSrc="/images/contributions/40.JPG"
+                imageSrc="/images/contributions/samayara.jpg"
                 imageAlt="Samayara Sopanare"
               />
               <BookCard
@@ -312,7 +312,7 @@ export default function LiteraturePage() {
                 title="Malunira Fula O Anyana Galpa"
                 year="Odia"
                 description="Short stories collection - A compilation of his finest short stories in Odia."
-                imageSrc="/images/contributions/44.JPG"
+                imageSrc="/images/contributions/malunira.jpeg"
                 imageAlt="Malunira Fula O Anyana Galpa"
               />
             </div>
@@ -329,21 +329,21 @@ export default function LiteraturePage() {
                 title="Asamapta Atmalipi"
                 year="Autobiography"
                 description="Unfinished Autobiography of JBP - A self-portrait capturing his public journey and inner reflections."
-                imageSrc="/images/contributions/45.JPG"
+                imageSrc="/images/contributions/asampta.jpg"
                 imageAlt="Asamapta Atmalipi"
               />
               <BookCard
                 title="Assamru Lekhuchi"
                 year="Memoir"
                 description="A collection of his writings while serving as the Governor of Assam (2009-2014)."
-                imageSrc="/images/contributions/46.JPG"
+                imageSrc="/images/contributions/lekhuchi.jpg"
                 imageAlt="Assamru Lekhuchi"
               />
               <BookCard
                 title="Bachaspati Mahodaya"
                 year="Memoir"
                 description="Collection of his writings - Reflections and thoughts from his distinguished career."
-                imageSrc="/images/contributions/47.JPG"
+                imageSrc="/images/contributions/bachpati.jpg"
                 imageAlt="Bachaspati Mahodaya"
               />
             </div>

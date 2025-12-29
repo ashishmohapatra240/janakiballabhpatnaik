@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const galleryImages = [
   { id: 1, src: "/images/drive/Swearing in ceremoney of CMJ.B.Patnaik  in presence of Governer B.N. pande on 10.03.1985.jpg", alt: "Contribution 1" },
@@ -67,12 +68,31 @@ function SectionTitle({
 }
 
 export default function VisualGallery() {
-  const [showAll, setShowAll] = useState(false);
+  const [currentSlide, setCurrentSlide] = useState(0);
   
-  // Show 9 images initially (3 rows x 3 columns)
-  const initialImageCount = 9;
-  const displayedImages = showAll ? galleryImages : galleryImages.slice(0, initialImageCount);
-  const hasMoreImages = galleryImages.length > initialImageCount;
+  // Images per row: 3 on desktop, 2 on tablet, 1 on mobile
+  const imagesPerRow = 3;
+  const totalSlides = Math.ceil(galleryImages.length / imagesPerRow);
+  
+  const goToNext = () => {
+    if (currentSlide < totalSlides - 1) {
+      setCurrentSlide(currentSlide + 1);
+    }
+  };
+  
+  const goToPrevious = () => {
+    if (currentSlide > 0) {
+      setCurrentSlide(currentSlide - 1);
+    }
+  };
+  
+  const isFirstSlide = currentSlide === 0;
+  const isLastSlide = currentSlide === totalSlides - 1;
+  
+  // Get images for current slide
+  const startIndex = currentSlide * imagesPerRow;
+  const endIndex = startIndex + imagesPerRow;
+  const currentImages = galleryImages.slice(startIndex, endIndex);
 
   return (
     <section className="py-16 px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white">
@@ -85,37 +105,82 @@ export default function VisualGallery() {
           A visual showcase of J.B. Patnaik's contributions and their lasting impact.
         </p>
 
-        <div className="grid grid-cols-3 gap-5 max-lg:grid-cols-2 max-md:grid-cols-1">
-          {displayedImages.map((image) => (
+        <div className="relative">
+          {/* Images Row */}
+          <div className="overflow-hidden">
             <div
-              key={image.id}
-              className="bg-white rounded-2xl outline outline-1 outline-offset-[-1px] outline-neutral-200 overflow-hidden hover:shadow-lg transition-shadow"
+              className="flex transition-transform duration-500 ease-in-out"
+              style={{
+                transform: `translateX(-${currentSlide * 100}%)`,
+              }}
             >
-              <div className="relative w-full h-60 bg-gradient-to-br from-gray-200 to-gray-300">
-                <Image
-                  src={image.src}
-                  alt={image.alt}
-                  fill
-                  className="object-cover"
-                  onError={(e) => {
-                    e.currentTarget.style.display = "none";
-                  }}
-                />
-              </div>
+              {Array.from({ length: totalSlides }).map((_, slideIndex) => {
+                const startIdx = slideIndex * imagesPerRow;
+                const endIdx = startIdx + imagesPerRow;
+                const slideImages = galleryImages.slice(startIdx, endIdx);
+                
+                return (
+                  <div
+                    key={slideIndex}
+                    className="min-w-full grid grid-cols-3 gap-5 max-lg:grid-cols-2 max-md:grid-cols-1"
+                  >
+                    {slideImages.map((image) => (
+                      <div
+                        key={image.id}
+                        className="bg-white rounded-2xl outline outline-1 outline-offset-[-1px] outline-neutral-200 overflow-hidden hover:shadow-lg transition-shadow"
+                      >
+                        <div className="relative w-full h-60 bg-gradient-to-br from-gray-200 to-gray-300">
+                          <Image
+                            src={image.src}
+                            alt={image.alt}
+                            fill
+                            className="object-cover"
+                            onError={(e) => {
+                              e.currentTarget.style.display = "none";
+                            }}
+                          />
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                );
+              })}
             </div>
-          ))}
-        </div>
+          </div>
 
-        {hasMoreImages && (
-          <div className="flex justify-center mt-8">
+          {/* Navigation Buttons */}
+          <div className="flex items-center justify-center gap-4 mt-8">
             <button
-              onClick={() => setShowAll(!showAll)}
-              className="px-8 py-3 bg-sky-500 text-white rounded-lg font-semibold hover:bg-sky-600 transition-colors duration-300 shadow-lg hover:shadow-xl cursor-pointer"
+              onClick={goToPrevious}
+              disabled={isFirstSlide}
+              className={`p-3 rounded-full border-2 transition-all duration-300 flex items-center justify-center ${
+                isFirstSlide
+                  ? "border-gray-300 text-gray-300 cursor-not-allowed opacity-50"
+                  : "border-sky-500 text-sky-500 hover:bg-sky-50 hover:scale-110 active:scale-95"
+              }`}
+              aria-label="Previous"
             >
-              {showAll ? "View Less" : "View More"}
+              <ChevronLeft size={24} />
+            </button>
+
+            <span className="text-sm text-neutral-500 font-medium min-w-[60px] text-center">
+              {currentSlide + 1} / {totalSlides}
+            </span>
+
+            <button
+              onClick={goToNext}
+              disabled={isLastSlide}
+              className={`p-3 rounded-full border-2 transition-all duration-300 flex items-center justify-center ${
+                isLastSlide
+                  ? "border-gray-300 text-gray-300 cursor-not-allowed opacity-50"
+                  : "border-sky-500 text-sky-500 hover:bg-sky-50 hover:scale-110 active:scale-95"
+              }`}
+              aria-label="Next"
+            >
+              <ChevronRight size={24} />
             </button>
           </div>
-        )}
+        </div>
       </div>
     </section>
   );

@@ -64,21 +64,21 @@ export default function Footer() {
               </a>
               <div className="flex items-center gap-4">
                 <a
-                  href="#"
+                  href="https://www.instagram.com/janakiballavpatnaik100/"
                   aria-label="Instagram"
                   className="text-[#272727] hover:text-sky-500 transition-colors p-1"
                 >
                   <Instagram size={22} />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.facebook.com/JanakiPatnaik100"
                   aria-label="Facebook"
                   className="text-[#272727] hover:text-sky-500 transition-colors p-1"
                 >
                   <Facebook size={22} />
                 </a>
                 <a
-                  href="#"
+                  href="https://x.com/jbpatnaik100"
                   aria-label="Twitter"
                   className="text-[#272727] hover:text-sky-500 transition-colors p-1"
                 >

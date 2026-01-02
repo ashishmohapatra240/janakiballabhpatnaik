@@ -89,21 +89,21 @@ export default function Navbar() {
 
             <div className="flex items-center gap-3">
               <a
-                href="#"
+                href="https://www.instagram.com/janakiballavpatnaik100/"
                 aria-label="Instagram"
                 className="text-[#272727] hover:text-[#2BA6E0] transition-colors"
               >
                 <Instagram size={20} />
               </a>
               <a
-                href="#"
+                href="https://www.facebook.com/JanakiPatnaik100"
                 aria-label="Facebook"
                 className="text-[#272727] hover:text-[#2BA6E0] transition-colors"
               >
                 <Facebook size={20} />
               </a>
               <a
-                href="#"
+                href="https://www.x.com/jbpatnaik100"
                 aria-label="Twitter"
                 className="text-[#272727] hover:text-[#2BA6E0] transition-colors"
               >

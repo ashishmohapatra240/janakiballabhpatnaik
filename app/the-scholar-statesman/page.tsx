@@ -26,7 +26,7 @@ function SectionTitle({ title, highlight }: { title: string; highlight?: string 
   return (
     <div className="flex items-center justify-center gap-5 mb-12 max-md:mb-8">
       <div className="w-96 h-px bg-gradient-to-r from-transparent via-stone-300 to-stone-300 max-lg:w-24 max-md:hidden"></div>
-      <h2 className="text-4xl font-bold text-sky-500 px-5 whitespace-nowrap max-md:text-2xl max-md:whitespace-normal text-center leading-[54px]">
+      <h2 className="text-4xl font-bold text-sky-500 px-5 whitespace-nowrap max-md:text-xl max-md:whitespace-normal text-center leading-[54px] max-md:leading-[32px]">
         {highlight ? (
           <>
             {title} <span className="text-[#272727]">{highlight}</span>
@@ -98,12 +98,12 @@ function BookCard({
         </div>
         <div className="flex-1 space-y-1 min-w-0">
           <div className="flex items-start gap-2">
-            <h4 className="text-lg font-semibold text-[#272727] flex-1 min-w-0 break-words">{title}</h4>
+            <h4 className="text-lg font-semibold text-[#272727] flex-1 min-w-0 break-words max-md:text-base">{title}</h4>
             <span className="px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wide bg-sky-50 text-sky-600 rounded-full whitespace-nowrap flex-shrink-0 mt-0.5">
               {year}
             </span>
           </div>
-          <p className="text-neutral-500 text-sm leading-6 break-words">{description}</p>
+          <p className="text-neutral-500 text-sm leading-6 break-words max-md:text-xs">{description}</p>
         </div>
       </div>
     </div>
@@ -114,11 +114,11 @@ function BookCard({
 function QuoteCard({ quote, context }: { quote: string; context: string }) {
   return (
     <div className="p-6 bg-gradient-to-br from-slate-50 to-white rounded-xl border border-gray-100 relative">
-      <span className="text-6xl text-sky-200 absolute top-2 left-4">"</span>
-      <p className="text-[#272727] text-lg italic leading-8 relative z-10 mt-4">
+      <span className="text-6xl text-sky-200 absolute top-2 left-4 max-md:text-4xl">"</span>
+      <p className="text-[#272727] text-lg italic leading-8 relative z-10 mt-4 max-md:text-base max-md:leading-6">
         {quote}
       </p>
-      <p className="text-neutral-400 text-sm mt-4">— {context}</p>
+      <p className="text-neutral-400 text-sm mt-4 max-md:text-xs">— {context}</p>
     </div>
   );
 }
@@ -133,17 +133,17 @@ export default function LiteraturePage() {
         <div className="w-full max-w-7xl mx-auto">
           <div className="flex items-center justify-between gap-12 max-lg:flex-col max-lg:items-center">
             <div className="flex-1 space-y-2 max-lg:text-center max-lg:w-full">
-              <h1 className="text-5xl text-[#272727] leading-[64px] max-md:text-3xl">
+              <h1 className="text-5xl text-[#272727] leading-[64px] max-md:text-2xl max-md:leading-[36px]">
                 <span className="font-semibold">
                   The Scholar Statesman
                 </span>
               </h1>
               
-              <h2 className="max-w-[584px] text-xl text-[#272727] font-normal leading-8 max-md:text-lg max-lg:max-w-full">
+              <h2 className="max-w-[584px] text-xl text-[#272727] font-normal leading-8 max-md:text-base max-lg:max-w-full">
                 Beyond Politics: The Philosophy, Ideology, and Literary-Journalistic Universe
               </h2>
 
-              <p className="max-w-[584px] text-neutral-400 text-base font-normal leading-6 max-lg:max-w-full">
+              <p className="max-w-[584px] text-neutral-400 text-base font-normal leading-6 max-md:text-sm max-lg:max-w-full">
                 Long before taking the oath of office, Shree Janaki Ballav Patnaik took up the pen. For him, 
                 politics was a vehicle for progress, but literature was the vessel for the soul. A prolific 
                 writer and polyglot, he bridged the gap between ancient wisdom and modern thought—whether 
@@ -173,8 +173,8 @@ export default function LiteraturePage() {
           <SectionTitle title="Literary" highlight="Works" />
 
           <div className="max-w-4xl space-y-6 mx-auto text-center mb-12">
-            <h3 className="text-2xl font-semibold text-[#272727]">A Prolific Author</h3>
-            <p className="text-neutral-400 text-base leading-7">
+            <h3 className="text-2xl font-semibold text-[#272727] max-md:text-xl">A Prolific Author</h3>
+            <p className="text-neutral-400 text-base leading-7 max-md:text-sm">
               J.B. Patnaik authored numerous books, articles, and essays throughout his life. 
               His writings span various subjects including politics, society, culture, and his 
               personal experiences during India's freedom struggle. His literary contributions 
@@ -185,7 +185,7 @@ export default function LiteraturePage() {
 
           {/* Translations */}
           <div className="mb-12">
-            <h4 className="text-xl font-semibold text-[#272727] mb-6 flex items-center gap-2">
+            <h4 className="text-xl font-semibold text-[#272727] mb-6 flex items-center gap-2 max-md:text-lg">
               <FiBookOpen className="text-sky-500" />
               Translations
             </h4>
@@ -380,12 +380,12 @@ export default function LiteraturePage() {
                   </div>
                   <div className="flex-1 space-y-1">
                     <div className="flex items-center gap-2">
-                      <h4 className="text-lg font-semibold text-[#272727]">Paurusha</h4>
+                      <h4 className="text-lg font-semibold text-[#272727] max-md:text-base">Paurusha</h4>
                       <span className="px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wide bg-sky-50 text-sky-600 rounded-full">
                         Founder-Editor
                       </span>
                     </div>
-                    <p className="text-neutral-500 text-sm leading-6">Monthly Literary Digest - A platform for Odia literature and culture.</p>
+                    <p className="text-neutral-500 text-sm leading-6 max-md:text-xs">Monthly Literary Digest - A platform for Odia literature and culture.</p>
                   </div>
                 </div>
               </div>
@@ -432,8 +432,8 @@ export default function LiteraturePage() {
           <SectionTitle title="Philosophy" highlight="& Ideology" />
           
           <div className="max-w-4xl mx-auto mb-12 text-center">
-            <h3 className="text-3xl font-bold text-[#272727] mb-4">"Pragyan & Pragati: The Scholar-Statesman"</h3>
-            <p className="text-neutral-400 text-lg leading-8">
+            <h3 className="text-3xl font-bold text-[#272727] mb-4 max-md:text-xl">"Pragyan & Pragati: The Scholar-Statesman"</h3>
+            <p className="text-neutral-400 text-lg leading-8 max-md:text-base max-md:leading-7">
               J.B. Patnaik rejected the binary between tradition and modernity. His worldview was a unique 
               synthesis of ancient wisdom, nationalist fervor, and scientific progress.
             </p>
@@ -447,15 +447,15 @@ export default function LiteraturePage() {
                   <FiHeart className="text-2xl" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-semibold text-[#272727]">Gandhian Roots: Simplicity & Antyodaya</h3>
-                  <p className="text-sky-500 text-sm">The Living Example</p>
+                  <h3 className="text-2xl font-semibold text-[#272727] max-md:text-xl">Gandhian Roots: Simplicity & Antyodaya</h3>
+                  <p className="text-sky-500 text-sm max-md:text-xs">The Living Example</p>
                 </div>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="p-6 bg-gradient-to-br from-slate-50 to-white rounded-xl border border-gray-100">
-                  <h4 className="text-lg font-semibold text-[#272727] mb-3">The Living Example</h4>
-                  <p className="text-neutral-400 text-sm leading-6">
+                  <h4 className="text-lg font-semibold text-[#272727] mb-3 max-md:text-base">The Living Example</h4>
+                  <p className="text-neutral-400 text-sm leading-6 max-md:text-xs">
                     A lifelong Gandhian, he was steeped in the values of the freedom struggle, having participated 
                     in the Quit India Movement (1942) as a student. He wore Khadi and spun the charkha throughout 
                     his life, believing that true power lies in simplicity.
@@ -569,8 +569,8 @@ export default function LiteraturePage() {
                 </div>
               </div>
               
-              <div className="p-8 bg-gradient-to-br from-sky-50 to-white rounded-xl border border-sky-100">
-                <p className="text-neutral-600 text-base leading-8">
+              <div className="p-8 bg-gradient-to-br from-sky-50 to-white rounded-xl border border-sky-100 max-md:p-6">
+                <p className="text-neutral-600 text-base leading-8 max-md:text-sm max-md:leading-7">
                   He believed Odisha could not afford the luxury of gradual growth. His doctrine of the "Double March Order" 
                   dictated that the state must industrialize at twice the speed of others to bridge the historical gap—simultaneously 
                   building steel plants for the economy and universities for the mind.
@@ -675,14 +675,14 @@ export default function LiteraturePage() {
           
           <div className="flex items-center gap-12 max-lg:flex-col-reverse">
             <div className="flex-1 space-y-4">
-              <h3 className="text-2xl font-semibold text-[#272727]">Voice of the People</h3>
-              <p className="text-neutral-400 text-base leading-7">
+              <h3 className="text-2xl font-semibold text-[#272727] max-md:text-xl">Voice of the People</h3>
+              <p className="text-neutral-400 text-base leading-7 max-md:text-sm max-md:leading-6">
                 Before entering full-time politics, J.B. Patnaik had a distinguished career in 
                 journalism. He worked as an editor and columnist, using the power of the pen 
                 to advocate for social causes and highlight issues affecting the common people 
                 of Odisha.
               </p>
-              <p className="text-neutral-400 text-base leading-7">
+              <p className="text-neutral-400 text-base leading-7 max-md:text-sm max-md:leading-6">
                 His journalistic work during the pre-independence era was instrumental in 
                 mobilizing public opinion for the freedom struggle. He continued to write 
                 opinion pieces and columns throughout his political career, maintaining his 
@@ -710,7 +710,7 @@ export default function LiteraturePage() {
           <SectionTitle title="Influence on" highlight="Odia Literature" />
           
           <div className="text-center mb-12 max-w-3xl mx-auto">
-            <p className="text-neutral-400 text-lg leading-8">
+            <p className="text-neutral-400 text-lg leading-8 max-md:text-base max-md:leading-7">
               J.B. Patnaik's contributions to Odia literature extended beyond his own writings. 
               He actively supported and promoted Odia writers, established literary institutions, 
               and championed the cause of Odia language recognition.
@@ -757,8 +757,8 @@ export default function LiteraturePage() {
                 <div className="w-12 h-12 rounded-full bg-sky-50 text-sky-500 flex items-center justify-center mx-auto mb-4">
                   <item.icon className="text-xl" />
                 </div>
-                <h4 className="text-xl font-semibold text-[#272727] mb-2">{item.title}</h4>
-                <p className="text-neutral-400 text-base">{item.description}</p>
+                <h4 className="text-xl font-semibold text-[#272727] mb-2 max-md:text-lg">{item.title}</h4>
+                <p className="text-neutral-400 text-base max-md:text-sm">{item.description}</p>
               </div>
             ))}
           </div>
@@ -768,10 +768,10 @@ export default function LiteraturePage() {
       {/* Call to Action */}
       <section className="py-16 px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-[#272727] mb-4 max-md:text-2xl">
+          <h2 className="text-3xl font-bold text-[#272727] mb-4 max-md:text-xl">
             Continue Exploring
           </h2>
-          <p className="text-neutral-400 mb-8 max-w-2xl mx-auto">
+          <p className="text-neutral-400 mb-8 max-w-2xl mx-auto max-md:text-sm">
             Discover more about Janaki Ballav Patnaik's remarkable life, his contributions 
             to Odisha, and his lasting legacy.
           </p>

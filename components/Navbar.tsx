@@ -69,6 +69,16 @@ export default function Navbar() {
               >
                 The Scholar Statesman
               </Link>
+              <Link
+                href="/video-gallery"
+                className={`text-base ${
+                  isActive("/video-gallery")
+                    ? "font-bold text-sky-600"
+                    : "font-normal"
+                } text-[#272727] hover:text-sky-500 transition-colors`}
+              >
+                Video Gallery
+              </Link>
             </div>
           </div>
 
@@ -169,6 +179,17 @@ export default function Navbar() {
                 onClick={() => setIsMenuOpen(false)}
               >
                 The Scholar Statesman
+              </Link>
+              <Link
+                href="/video-gallery"
+                className={`text-base ${
+                  isActive("/video-gallery")
+                    ? "font-bold text-sky-600"
+                    : "font-normal"
+                } text-[#272727] hover:text-sky-500 transition-colors`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Video Gallery
               </Link>
             </div>
 

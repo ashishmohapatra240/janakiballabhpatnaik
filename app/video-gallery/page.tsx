@@ -77,7 +77,6 @@ function VideoCard({
       {/* Description */}
       <div className="p-8 pt-6 max-md:p-6 max-md:pt-4">
         <p className="text-neutral-600 text-base leading-7">
-          <span className="font-semibold text-[#272727]">Description: </span>
           {description}
         </p>
       </div>

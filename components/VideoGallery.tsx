@@ -83,7 +83,13 @@ export default function VideoGallery() {
         "A comprehensive visual narrative tracing the personal journey, political rise, and public life of Janaki Ballav Patnaik.",
       videoId: "mw_N__jPW4w",
     },
-    // Add more videos here as needed
+    {
+      id: 2,
+      title: "Janaki Ballav Patnaik - A Visionary Leader",
+      description:
+        "Exploring the remarkable leadership and contributions of Janaki Ballav Patnaik in shaping Odisha's development and progress.",
+      videoId: "3RVg-NHAKOQ",
+    },
   ];
 
   return (
